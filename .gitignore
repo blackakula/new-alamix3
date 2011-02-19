@@ -1,0 +1,3 @@
+config/base.yml
+*~
+app/views/*/*.php
