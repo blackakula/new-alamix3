@@ -8,5 +8,8 @@
     - foreach ($this->get('javascripts') as $javascript)
       -= $this->_js($javascript)
   %body
-    .abc
-      -= $this->content()
+    .all
+      .left
+        - $this->_include('left')
+      .right
+        - $this->_include('right')

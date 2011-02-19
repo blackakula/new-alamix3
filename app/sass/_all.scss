@@ -1,0 +1,23 @@
+$body_background_color: #fff;//#302c2d;
+$body_font: 'Arial, sans-serif';
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $body_background_color;
+  font-family: $body_font;
+  font-size: 10pt;
+}
+.clear {
+  height: 0;
+  width: 0;
+  float: 0;
+  clear: both;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: underline;
+}

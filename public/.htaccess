@@ -1,0 +1,15 @@
+Options +FollowSymLinks -Indexes
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  RewriteCond %{REQUEST_URI} !/(css|img|js)/.
+  RewriteRule ^(.*)$ index.php [L,QSA]
+
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^(.*)$ index.php [L,QSA]
+
+  RewriteCond %{ENV:REDIRECT_STATUS} ^$
+  RewriteRule ^(.*)$ index.php [L,QSA]
+
+</IfModule>
