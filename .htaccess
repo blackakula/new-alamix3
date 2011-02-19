@@ -4,10 +4,12 @@ Options +FollowSymLinks -Indexes
   RewriteEngine On
   RewriteBase /
 
-  RewriteCond %{ENV:REDIRECT_STATUS} ^$
-  RewriteCond %{REQUEST_URI} ^/public/index\.php(\?path=)?
-  RewriteRule ^(.*)$ public/index.php [L,QSA]
+  RewriteCond %{REQUEST_URI} !^/public
+  RewriteRule ^(.*)$ public/$1 [L,QSA]
 
-  RewriteCond %{REQUEST_URI} !^/public/index\.php(\?path=)?
-  RewriteRule ^(.*)$ public/index.php [L,QSA]
+  RewriteCond %{ENV:REDIRECT_STATUS} ^$
+  RewriteRule ^(.*)$ public/$1 [L,QSA]
+
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^(.*)$ public/$1 [L,QSA]
 </IfModule>

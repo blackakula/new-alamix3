@@ -1,8 +1,12 @@
 !!!
-%html
+%html{xmlns="http://www.w3.org/1999/xhtml"}
   %head
     %title= $this->get('title')
+    %meta{content="text/html; charset=utf-8" http-equiv="Content-Type"}
+    - foreach ($this->get('stylesheets') as $stylesheet)
+      -= $this->_css($stylesheet)
+    - foreach ($this->get('javascripts') as $javascript)
+      -= $this->_js($javascript)
   %body
-    -= $this->get('text')
-    %br
-    -= $this->content()
+    .abc
+      -= $this->content()
