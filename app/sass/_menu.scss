@@ -22,7 +22,7 @@ $menu_color_l4_b: lighten($menu_color4, $menu_lighten2);
 
 $menu_item_min_width: 66px;
 
-@mixin alamix-menu($menu_height, $menu_font_size: 10pt) {
+@mixin alamix-menu($menu_font_size: 10pt) {
 
   //set sizes
   $menu_font_hover_size: 1.15 * $menu_font_size;
@@ -30,31 +30,30 @@ $menu_item_min_width: 66px;
   $menu_item_width: 17%;
   $menu_space_width: (100% - 5 * $menu_item_width) / 4;
 
-  $menu_item_height: .78 * $menu_height;
+  $menu_item_height: .78;
 
-  $menu_item_text_height: .34 * $menu_item_height;
-  $menu_item_tab_height: ($menu_height - $menu_item_text_height) / 2;
-  $menu_item_tail_height: $menu_item_height - $menu_item_text_height - $menu_item_tab_height;
+  $menu_item_text_height: 34%;
+  $menu_item_tab_height: 50% / $menu_item_height - $menu_item_text_height / 2;
+  $menu_item_tail_height: 100% - $menu_item_text_height - $menu_item_tab_height;
 
   $menu_text_height: $menu_item_text_height;
 
-  $menu_item_round_height: .15 * $menu_item_height;
+  $menu_item_round_height: 15%;
   $menu_item_round_width: 15%;
 
   //set styles
   text-align: center;
-  height: $menu_height;
 
   .item {
     width: $menu_item_width;
     min-width: $menu_item_min_width;
     position: relative;
     float: left;
-    height: $menu_item_height;
+    height: $menu_item_height * 100%;
     span { display: block; }
     .text {
       height: $menu_item_text_height;
-      line-height: $menu_text_height;
+      line-height: 150%;
     }
     a {
       font-size: $menu_font_size;
@@ -88,7 +87,7 @@ $menu_item_min_width: 66px;
   }
 
   .up { top: 0; }
-  .down { top: $menu_height - $menu_item_height; }
+  .down { top: (1 - $menu_item_height) * 100%; }
   .up .head, .down .tail { height: $menu_item_tab_height; }
   .up .tail, .down .head { height: $menu_item_tail_height; }
 

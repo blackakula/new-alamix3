@@ -29,6 +29,6 @@ $left_content_width: 390px;
   position: relative;
   left: 50%;
   margin-left: -$left_content_width / 2;
-  //height: 90px;
-  @include alamix-menu(90px);
+  height: 90px;
+  @include alamix-menu();
 }
