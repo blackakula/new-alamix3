@@ -1,0 +1,15 @@
+- $this->setMenu()
+.menu
+  - foreach ($this->get('menu') as $i => $item)
+    <?php
+      $odd = ($i % 2 == 0) ? 'up' : 'down';
+      $class = 'item' . $i;
+      $color = 'c' . $i;
+      $bg_color = 'b' . $i;
+    ?>
+    .item.$odd.$class
+      %a.$color{href="$item[1]"}
+        %span.head.$bg_color
+        %span.text= $item[0]
+        %span.tail.$bg_color
+  .clear

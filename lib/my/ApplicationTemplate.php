@@ -27,5 +27,25 @@
       if (is_null($array) || $array === false) return false;
       return array($params[1],$array);
     }
+
+    public function setMenu() {
+      $r = get_routes();
+      $menu = array(
+          array('новини', '#'),
+          array('медіа', '#'),
+          array('фото', '#'),
+          array('лінки', '#'),
+          array('аля про', '#')
+      );
+      if ($this->get('menu-replace')) {
+      	$replace = $this->get('menu-replace');
+        foreach ($menu as $k => $item)
+      	  if ($k == $replace) {
+      	    $menu[$k][0] = 'головна';
+      	    $menu[$k][1] = $r->build_path('root');
+          }
+      }
+      $this->set('menu', $menu);
+    }
   }
 ?>
