@@ -2,30 +2,25 @@
 
   $squares_width: 6 * $height;
 
-  .inner {
-    margin-left: $squares_width;
-  }
+  .inner { margin-left: $squares_width; }
 
-  hr {
-    left: 0;
-    width: 50%;
+  .hr {
+    width: 49.999%;
     background-color: $color;
     height: $size;
     border: none;
     margin-top: ($height - $size) / 2;
   }
 
-  hr, .squares-box {
+  .hr, .squares {
     float: left;
-    position: relative;
+    display: block;
   }
 
-  hr.first, .squares-box { left: -$squares_width; }
-
-  .squares-box {
-    width: 0;
-    overflow: visible;
+  .hr.first {
+    margin-left: -$squares_width;
   }
+
   .squares {
     @include squares($height, 3, $squares_width);
   }

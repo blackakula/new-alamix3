@@ -8,7 +8,7 @@
 
 .news {
   margin-top: 40px;
-  .item { margin-top: 10px; }
+  .item { margin-top: 11px; }
   .title a {
     font-size: 18pt;
     font-weight: bold;
@@ -17,7 +17,10 @@
   }
   .title a, .date { color: #cecac0; }
   .date { margin-top: 5px; }
-  .text { margin-top: 15px; }
+  .text {
+    margin-top: 15px;
+    font-size: 11pt;
+  }
   .text, .text a { color: #6b6b6b; }
   .text a:hover, .text a:visited { color: $a_color_visited; }
 }
