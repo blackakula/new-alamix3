@@ -20,76 +20,83 @@ $menu_color_l2_b: lighten($menu_color2, $menu_lighten2);
 $menu_color_l3_b: lighten($menu_color3, $menu_lighten2);
 $menu_color_l4_b: lighten($menu_color4, $menu_lighten2);
 
-$menu_item_min_width: 66px;
+@mixin round-corner($round_size, $w: 'all', $h: 'all') {
+  @if $w == 'all' {
+    border-radius: $round_size;
+    -moz-border-radius: $round_size;
+    -webkit-border-radius: $round_size;
+  }
+  @else {
+    border-#{$h}-#{$w}-radius: $round_size;
+    -moz-border-radius-#{$h}#{$w}: $round_size;
+    -webkit-border-radius-#{$h}#{$w}: $round_size;
+  }
+}
 
-@mixin alamix-menu($menu_font_size: 10pt) {
+@mixin alamix-menu() {
 
   //set sizes
-  $menu_font_hover_size: 1.15 * $menu_font_size;
-
   $menu_item_width: 17%;
   $menu_space_width: (100% - 5 * $menu_item_width) / 4;
 
   $menu_item_height: .78;
 
-  $menu_item_text_height: 34%;
-  $menu_item_tab_height: 50% / $menu_item_height - $menu_item_text_height / 2;
-  $menu_item_tail_height: 100% - $menu_item_text_height - $menu_item_tab_height;
+  $menu_item_text_height: .34;
+  $menu_item_tab_height: .5 / $menu_item_height - $menu_item_text_height / 2;
+  $menu_item_tail_height: 1 - $menu_item_text_height - $menu_item_tab_height;
 
-  $menu_text_height: $menu_item_text_height;
-
-  $menu_item_round_height: 15%;
-  $menu_item_round_width: 15%;
+  $menu_item_round: 15%;
+  $menu_item_round_height_tab: $menu_item_round / $menu_item_tab_height;
+  $menu_item_round_height_tail: $menu_item_round / $menu_item_tail_height;
 
   //set styles
   text-align: center;
+  min-width: 350px;
 
   .item {
     width: $menu_item_width;
-    min-width: $menu_item_min_width;
     position: relative;
     float: left;
     height: $menu_item_height * 100%;
     span { display: block; }
     .text {
-      height: $menu_item_text_height;
+      height: $menu_item_text_height * 100%;
       line-height: 150%;
     }
     a {
-      font-size: $menu_font_size;
       text-decoration: none;
     }
-    a:hover { font-size: $menu_font_hover_size; }
+    a:hover .text {
+      font-size: 115%;
+      line-height: 130%;
+    }
   }
 
-  .up, .down, .tail {
-    border-bottom-right-radius: $menu_item_round_width $menu_item_round_height;
-    -moz-border-radius-bottomright: $menu_item_round_width $menu_item_round_height;
-    -webkit-border-radius-bottomright: $menu_item_round_width $menu_item_round_height;
-
-    border-bottom-left-radius: $menu_item_round_width $menu_item_round_height;
-    -moz-border-radius-bottomleft: $menu_item_round_width $menu_item_round_height;
-    -webkit-border-radius-bottomleft: $menu_item_round_width $menu_item_round_height;
+  .up {
+    @include round-corner($menu_item_round, 'right', 'bottom');
+    @include round-corner($menu_item_round, 'left', 'bottom');
   }
 
-  .down, .down .head {
-    border-top-right-radius: $menu_item_round_width $menu_item_round_height;
-    -moz-border-radius-topright: $menu_item_round_width $menu_item_round_height;
-    -webkit-border-radius-topright: $menu_item_round_width $menu_item_round_height;
+  .down { @include round-corner($menu_item_round); }
 
-    border-top-left-radius: $menu_item_round_width $menu_item_round_height;
-    -moz-border-radius-topleft: $menu_item_round_width $menu_item_round_height;
-    -webkit-border-radius-topleft: $menu_item_round_width $menu_item_round_height;
+  .up .tail {
+    @include round-corner($menu_item_round $menu_item_round_height_tail, 'right', 'bottom');
+    @include round-corner($menu_item_round $menu_item_round_height_tail, 'left', 'bottom');
   }
-
+  .down .tail {
+    @include round-corner($menu_item_round $menu_item_round_height_tab, 'right', 'bottom');
+    @include round-corner($menu_item_round $menu_item_round_height_tab, 'left', 'bottom');
+  }
+  .down .head {
+    @include round-corner($menu_item_round $menu_item_round_height_tail, 'right', 'top');
+    @include round-corner($menu_item_round $menu_item_round_height_tail, 'left', 'top');
+  }
   .item, .item .head, .item .tail {
     font-size: 0;
   }
 
   .up { top: 0; }
   .down { top: (1 - $menu_item_height) * 100%; }
-  .up .head, .down .tail { height: $menu_item_tab_height; }
-  .up .tail, .down .head { height: $menu_item_tail_height; }
 
   .item0 {
     left: 0;
