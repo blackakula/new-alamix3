@@ -52,12 +52,12 @@ $menu_color_l4_b: lighten($menu_color4, $menu_lighten2);
     span { display: block; }
     .text {
       height: $menu_item_text_height;
-      line-height: 150%;
+      line-height: 170%;
     }
     a, a:hover, a:visited, a:visited:hover { text-decoration: none; }
     a:hover .text {
       font-size: 115%;
-      line-height: 130%;
+      line-height: 150%;
     }
   }
 
