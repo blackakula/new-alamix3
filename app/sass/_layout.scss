@@ -3,6 +3,7 @@
 @import "menu";
 
 $left_content_width: 80%;
+$content_menu_margin: 60px;
 
 .all {
   overflow: hidden;
@@ -17,6 +18,15 @@ $left_content_width: 80%;
 
 .left {
   background-color: $body_background_color;
+  .menu, .content {
+    position: relative;
+    left: 50%;
+  }
+  .content {
+    width: $left_content_width;
+    margin-left: -$left_content_width / 2;
+    margin-top: $content_menu_margin;
+  }
 }
 
 .right {
@@ -24,8 +34,4 @@ $left_content_width: 80%;
 }
 
 
-.menu {
-  position: relative;
-  left: 50%;
-  @include alamix-menu(390px, 90px);
-}
+.menu { @include alamix-menu(390px, 90px); }

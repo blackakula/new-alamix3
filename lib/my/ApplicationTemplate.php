@@ -30,13 +30,7 @@
 
     public function setMenu() {
       $r = get_routes();
-      $menu = array(
-          array('новини', '#'),
-          array('медіа', '#'),
-          array('фото', '#'),
-          array('лінки', '#'),
-          array('аля про', '#')
-      );
+      $menu = $this->get('alamix-menu');
       if ($this->get('menu-replace')) {
       	$replace = $this->get('menu-replace');
         foreach ($menu as $k => $item)

@@ -32,14 +32,14 @@ $(function() {
     var itemTab = ($('.menu').height() - itemText) / 2
     var itemTail = item - itemText - itemTab
     
-    $('.up .head, .down .tail').height(itemTab)
-    $('.item .text').height(itemText + 1)
-    $('.down .head, .up .tail').height(itemTail)
+    $('.menu .up .head, .menu .down .tail').height(itemTab)
+    $('.menu .item .text').height(itemText + 1)
+    $('.menu .down .head, .menu .up .tail').height(itemTail)
 
     //border radius
     var borderRadius = (.15 * $('.menu .item').width()) + 'px ' + (.15 * item) + 'px'
-    $('.item, .tail').css(roundCss(borderRadius, 'bottom'))
-    $('.down, .down .head').css(roundCss(borderRadius, 'top'))
+    $('.menu .item, .menu .tail').css(roundCss(borderRadius, 'bottom'))
+    $('.menu .down, .menu .down .head').css(roundCss(borderRadius, 'top'))
   }
 
   resizeMenu()

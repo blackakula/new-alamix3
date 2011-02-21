@@ -1,1 +1,13 @@
-- $this->_include('menu')
+- foreach ($this->get('content') as $i => $content_item)
+  <?php
+    $color = 'c' . $content_item['category'];
+    $this->set('squares', $content_item['squares']);
+    $this->set('news-item', $content_item);
+  ?>
+  .news.$color
+    - $this->_include('separator')
+    .item
+      .title
+        %a{href="<?php echo $content_item['url']?>"}= $content_item['title']
+      - $this->_include('news_date')
+      .text= $content_item['text']

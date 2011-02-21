@@ -2,6 +2,20 @@ $body_background_color: #302c2d;
 $large_size: 10000px;
 $bottom_space: 40px;
 $body_font: Arial,sans-serif;
+$a_color_visited: #635151;
+
+@mixin round-corner($round_size, $w: 'all', $h: 'all') {
+  @if $w == 'all' {
+    border-radius: $round_size;
+    -moz-border-radius: $round_size;
+    -webkit-border-radius: $round_size;
+  }
+  @else {
+    border-#{$h}-#{$w}-radius: $round_size;
+    -moz-border-radius-#{$h}#{$w}: $round_size;
+    -webkit-border-radius-#{$h}#{$w}: $round_size;
+  }
+}
 
 body {
   margin: 0;
@@ -17,9 +31,11 @@ body {
   clear: both;
 }
 a {
-  text-decoration: none;
-  cursor: pointer;
-}
-a:hover {
   text-decoration: underline;
+  cursor: pointer;
+  img { border: none; }
+}
+
+a:hover, a:visited, a:visited:hover {
+  color: $a_color_visited;
 }

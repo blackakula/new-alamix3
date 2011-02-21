@@ -4,11 +4,11 @@ $menu_color2: #dd2150;
 $menu_color3: #c37077;
 $menu_color4: #e97749;
 
-.c0 { color: $menu_color0; }
-.c1 { color: $menu_color1; }
-.c2 { color: $menu_color2; }
-.c3 { color: $menu_color3; }
-.c4 { color: $menu_color4; }
+.c0, .c0:hover, .c0:visited, .c0:visited:hover  { color: $menu_color0; }
+.c1, .c1:hover, .c1:visited, .c1:visited:hover { color: $menu_color1; }
+.c2, .c2:hover, .c2:visited, .c2:visited:hover { color: $menu_color2; }
+.c3, .c3:hover, .c3:visited, .c3:visited:hover { color: $menu_color3; }
+.c4, .c4:hover, .c4:visited, .c4:visited:hover { color: $menu_color4; }
 
 .b0 { background-color: $menu_color0; }
 .b1 { background-color: $menu_color1; }

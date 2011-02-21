@@ -1,0 +1,27 @@
+@mixin squares($size, $count: 3, $squares_width: false) {
+
+  $space: .9;
+  $radius: .25;
+
+  $squares_width_real: $count * $size + ($count - 1) * $space * $size;
+  @if not $squares_width {
+    $squares_width: $squares_width_real;
+  }
+  width: $squares_width;
+
+  .sq {
+    width: $size;
+    height: $size;
+    float: left;
+    margin-left: $space * $size;
+    @include round-corner($radius * $size);
+  }
+
+  .sq.first { margin-left: ($squares_width - $squares_width_real) / 2; }
+
+  .col0 { background-color: $menu_color0; }
+  .col1 { background-color: $menu_color1; }
+  .col2 { background-color: $menu_color2; }
+  .col3 { background-color: $menu_color3; }
+  .col4 { background-color: $menu_color4; }
+}

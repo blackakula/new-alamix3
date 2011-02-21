@@ -10,7 +10,9 @@
   %body
     .all
       .left
-        - $this->_include('left')
+        - $this->_include('menu')
+        .content
+          - $this->_include('left')
       .right
         - $this->_include('right')
       .clear

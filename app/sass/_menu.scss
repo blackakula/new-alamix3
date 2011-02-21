@@ -20,19 +20,6 @@ $menu_color_l2_b: lighten($menu_color2, $menu_lighten2);
 $menu_color_l3_b: lighten($menu_color3, $menu_lighten2);
 $menu_color_l4_b: lighten($menu_color4, $menu_lighten2);
 
-@mixin round-corner($round_size, $w: 'all', $h: 'all') {
-  @if $w == 'all' {
-    border-radius: $round_size;
-    -moz-border-radius: $round_size;
-    -webkit-border-radius: $round_size;
-  }
-  @else {
-    border-#{$h}-#{$w}-radius: $round_size;
-    -moz-border-radius-#{$h}#{$w}: $round_size;
-    -webkit-border-radius-#{$h}#{$w}: $round_size;
-  }
-}
-
 @mixin alamix-menu($menu_width, $menu_height) {
 
   //set sizes
@@ -67,7 +54,7 @@ $menu_color_l4_b: lighten($menu_color4, $menu_lighten2);
       height: $menu_item_text_height;
       line-height: 150%;
     }
-    a { text-decoration: none; }
+    a, a:hover, a:visited, a:visited:hover { text-decoration: none; }
     a:hover .text {
       font-size: 115%;
       line-height: 130%;

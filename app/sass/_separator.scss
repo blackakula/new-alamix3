@@ -1,0 +1,32 @@
+@mixin separator($height, $size: 2px, $color: #a3a3a3) {
+
+  $squares_width: 6 * $height;
+
+  .inner {
+    margin-left: $squares_width;
+  }
+
+  hr {
+    left: 0;
+    width: 50%;
+    background-color: $color;
+    height: $size;
+    border: none;
+    margin-top: ($height - $size) / 2;
+  }
+
+  hr, .squares-box {
+    float: left;
+    position: relative;
+  }
+
+  hr.first, .squares-box { left: -$squares_width; }
+
+  .squares-box {
+    width: 0;
+    overflow: visible;
+  }
+  .squares {
+    @include squares($height, 3, $squares_width);
+  }
+}

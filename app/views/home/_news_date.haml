@@ -1,0 +1,7 @@
+<?php
+  $item = $this->get('news-item');
+  $menu = $this->get('alamix-menu');
+  $text = 'Додано до розділу <a class="c'. $item['category'] .'" href="' .
+          $menu[$item['category']][1] . '">' . $menu[$item['category']][0] . '</a> ' . $item['date'];
+?>
+.date= $text
