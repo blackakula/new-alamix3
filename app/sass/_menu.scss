@@ -33,67 +33,59 @@ $menu_color_l4_b: lighten($menu_color4, $menu_lighten2);
   }
 }
 
-@mixin alamix-menu() {
+@mixin alamix-menu($menu_width, $menu_height) {
 
   //set sizes
-  $menu_item_width: 17%;
-  $menu_space_width: (100% - 5 * $menu_item_width) / 4;
+  $menu_item_width: .17;
+  $menu_space_width: 100% * (1 - 5 * $menu_item_width) / 4;
 
   $menu_item_height: .78;
 
-  $menu_item_text_height: .34;
-  $menu_item_tab_height: .5 / $menu_item_height - $menu_item_text_height / 2;
-  $menu_item_tail_height: 1 - $menu_item_text_height - $menu_item_tab_height;
+  $menu_item_text_height: .34 * $menu_item_height * $menu_height;
+  $menu_item_tab_height: ($menu_height - $menu_item_text_height) / 2;
+  $menu_item_tail_height: $menu_height * $menu_item_height - $menu_item_text_height - $menu_item_tab_height;
 
-  $menu_item_round: 15%;
-  $menu_item_round_height_tab: $menu_item_round / $menu_item_tab_height;
-  $menu_item_round_height_tail: $menu_item_round / $menu_item_tail_height;
+  $menu_item_round_radius: .15;
+  $menu_item_round: $menu_item_round_radius * $menu_width * $menu_item_width $menu_item_round_radius * $menu_item_height * $menu_height;
 
   //set styles
+  width: $menu_width;
+  min-width: $menu_width;
+  margin-left: -$menu_width / 2;
+
+  height: $menu_height;
   text-align: center;
-  min-width: 350px;
+  font-size: 10pt;
 
   .item {
-    width: $menu_item_width;
+    width: $menu_item_width * 100%;
     position: relative;
     float: left;
     height: $menu_item_height * 100%;
     span { display: block; }
     .text {
-      height: $menu_item_text_height * 100%;
+      height: $menu_item_text_height;
       line-height: 150%;
     }
-    a {
-      text-decoration: none;
-    }
+    a { text-decoration: none; }
     a:hover .text {
       font-size: 115%;
       line-height: 130%;
     }
   }
 
-  .up {
+  .up, .down, .tail {
     @include round-corner($menu_item_round, 'right', 'bottom');
     @include round-corner($menu_item_round, 'left', 'bottom');
   }
 
-  .down { @include round-corner($menu_item_round); }
+  .down, .down .head {
+    @include round-corner($menu_item_round, 'right', 'top');
+    @include round-corner($menu_item_round, 'left', 'top');
+  }
 
-  .up .tail {
-    @include round-corner($menu_item_round $menu_item_round_height_tail, 'right', 'bottom');
-    @include round-corner($menu_item_round $menu_item_round_height_tail, 'left', 'bottom');
-  }
-  .down .tail {
-    @include round-corner($menu_item_round $menu_item_round_height_tab, 'right', 'bottom');
-    @include round-corner($menu_item_round $menu_item_round_height_tab, 'left', 'bottom');
-  }
-  .down .head {
-    @include round-corner($menu_item_round $menu_item_round_height_tail, 'right', 'top');
-    @include round-corner($menu_item_round $menu_item_round_height_tail, 'left', 'top');
-  }
-  .item, .item .head, .item .tail {
-    font-size: 0;
-  }
+  .up .head, .down .tail { height: $menu_item_tab_height; }
+  .down .head, .up .tail { height: $menu_item_tail_height; }
 
   .up { top: 0; }
   .down { top: (1 - $menu_item_height) * 100%; }

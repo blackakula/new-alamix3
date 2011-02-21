@@ -6,6 +6,12 @@ $(function() {
     })
   }
 
+  var contentWidth = 80
+  $('.menu').css({
+    width: contentWidth + '%',
+    marginLeft: (- contentWidth / 2) + '%'
+  })
+
   var roundCss = function(radius, h, w) {
     if (typeof w == 'undefined')
       return jQuery.extend(arguments.callee(radius, h, 'left'), arguments.callee(radius, h, 'right'))
@@ -19,7 +25,7 @@ $(function() {
   var resizeMenu = function() {
     var k = $('.menu').width() / 39
     $('.menu').height(k * 9)
-    $('.menu a').css({fontSize: k + 'pt'})
+    $('.menu').css({fontSize: k + 'pt'})
     
     var item = $('.menu .item').height()
     var itemText = .34 * item

@@ -9,7 +9,7 @@ $left_content_width: 80%;
   width: 100%;
 }
 .left, .right {
-  width: 50%;
+  width: 49.999%;
   float: left;
   margin-bottom: $bottom_space - $large_size;
   padding-bottom: $large_size;
@@ -25,10 +25,7 @@ $left_content_width: 80%;
 
 
 .menu {
-  width: $left_content_width;
   position: relative;
   left: 50%;
-  margin-left: -$left_content_width / 2;
-  height: 90px;
-  @include alamix-menu();
+  @include alamix-menu(390px, 90px);
 }
