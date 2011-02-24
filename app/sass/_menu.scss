@@ -127,9 +127,16 @@ $menu_text_height: .34;
 }
 
 @mixin logo($menu_height, $margin_left: 10%) {
-  $menu_text_height: $menu_text_height * $menu_item_height * $menu_height;
-  $logo_top_margin: ($menu_height - $menu_text_height) / 2;
+  $menu_text_real_height: $menu_text_height * $menu_item_height * $menu_height;
+  $logo_top_margin: ($menu_height - $menu_text_real_height) / 2;
 
   margin: $logo_top_margin 0 0 $margin_left;
-  img { height: $menu_text_height; }
+  img { height: $menu_text_real_height; }
+}
+
+@mixin right-content($menu_height, $left_content_margin, $margin_left: 10%) {
+  $menu_text_real_height: $menu_text_height * $menu_item_height * $menu_height;
+  $logo_top_margin: ($menu_height - $menu_text_real_height) / 2;
+
+  margin: $logo_top_margin + $left_content_margin 0 0 $margin_left;
 }

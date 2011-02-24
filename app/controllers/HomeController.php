@@ -6,6 +6,7 @@
 
       $data = get_config('index');
       $this->set('title', $data['title']);
+      $this->set('index-menu', $data['menu']);
 
       $content = $data['content'];
       foreach ($content as $i => $item) {
@@ -20,7 +21,6 @@
         $content[$i]['url'] = htmlspecialchars($item['url']);
         $content[$i]['text'] = str_replace('<-@->', $content[$i]['url'], $item['text']);
       }
-
       $this->set('content', $content);
     }
   }

@@ -7,6 +7,8 @@ $content_menu_margin: 60px;
 $copyright_margin: 40px;
 $menu_height: 90px;
 
+$margin_left_aligned: -$left_content_width / 2;
+
 .all {
   overflow: hidden;
   width: 100%;
@@ -31,7 +33,7 @@ $menu_height: 90px;
   .content, .copyright {
     color: $text_color;
     width: $left_content_width;
-    margin-left: -$left_content_width / 2;
+    margin-left: $margin_left_aligned;
   }
 
   .copyright {
@@ -44,13 +46,18 @@ $menu_height: 90px;
 .right {
   background-color: #000;
 
-  .logo {
-    width: $left_content_width;
+  .logo, .content {
     position: relative;
     left: 50%;
+  }
+
+  .content {
+    width: $left_content_width;
+    margin-left: $margin_left_aligned;
+    @include right-content($menu_height, $content_menu_margin, $margin_left_aligned);
   }
 }
 
 
 .menu { @include alamix-menu(390px, $menu_height); }
-.logo { @include logo($menu_height, -$left_content_width / 2); }
+.logo { @include logo($menu_height, $margin_left_aligned); }

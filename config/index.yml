@@ -32,3 +32,27 @@ content:
       <br />
       <br />
       <a href="<-@->"><img src="img/example_margo.jpg" alt="Марго" /></a>
+menu:
+  -
+    color: 2
+    title: фото
+    items:
+      - ['Настенко', '#photo_Nastenko']
+      - ['Марго', '#photo_Margo']
+      - ['Чита', '#photo_Chita']
+      - ['Рита', '#photo_Rita']
+      - ['Дрита', '#photo_Drita']
+  -
+    color: 1
+    title: медіа
+    items:
+      - ['Чита', '#media_Chita']
+      - ['Рита', '#media_Rita']
+      - ['Дрита', '#media_Drita']
+  -
+    color: 4
+    title: AlaMix
+    items:
+      - ['Настенко', '#alamix_Nastenko']
+      - ['Марго', '#alamix_Margo']
+      - ['Дрита', '#alamix_Drita']
