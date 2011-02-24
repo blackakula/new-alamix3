@@ -7,17 +7,16 @@
       $this->set('javascripts', array('jquery-1.5.min.js'));
       
       $this->set('alamix-menu', array(
-          array('новини', '#'),
-          array('медіа', '#'),
-          array('фото', '#'),
-          array('лінки', '#'),
-          array('аля про', '#'),
+          array('новини', '#novyny'),
+          array('медіа', '#media'),
+          array('фото', '#photo'),
+          array('лінки', '#linky'),
+          array('аля про', '#alya_pro'),
       ));
 
       $this->set('copyrights', array(
           array('Alina Mikhailova', 'mailto:alamix@i.ua', 'idea, design, content'),
           array('Sergey Akulinin', 'mailto:blackakula@gmail.com', 'development: php, html, css, javascript'),
-          array('ZPT ????', '#', 'hosting'),
       ));
     }
   }

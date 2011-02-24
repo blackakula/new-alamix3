@@ -1,7 +1,7 @@
 title: This is main page
 content:
   -
-    url: '#'
+    url: '#news_post_main'
     category: 0
     title: Що було і про що не написалось
     date: 12 грудня'10
@@ -12,7 +12,7 @@ content:
       обігнав канадців, отримав перше місце... <--->
   -
     squares: [1,2,3]
-    url: '#'
+    url: '#media_post_main'
     category: 1
     title: The Big Bang Theory s04e04
     date: 16 жовтня'10
@@ -20,7 +20,7 @@ content:
       <iframe title="YouTube video player" width="320" height="195" src="http://www.youtube.com/embed/Xhcj7BK-XB4" style="border:none"></iframe>
   -
     squares: [1,3,4]
-    url: '#'
+    url: '#photo_url_main'
     category: 2
     title: Марго и морожка
     date: 6 червня'10
