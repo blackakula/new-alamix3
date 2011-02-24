@@ -8,6 +8,7 @@
     - foreach ($this->get('javascripts') as $javascript)
       -= $this->_js($javascript)
   %body
+    - $this->_include('ie6update')
     .all
       .left
         - $this->_include('menu')
