@@ -5,6 +5,7 @@
 $left_content_width: 80%;
 $content_menu_margin: 60px;
 $copyright_margin: 40px;
+$menu_height: 90px;
 
 .all {
   overflow: hidden;
@@ -42,7 +43,14 @@ $copyright_margin: 40px;
 
 .right {
   background-color: #000;
+
+  .logo {
+    width: $left_content_width;
+    position: relative;
+    left: 50%;
+  }
 }
 
 
-.menu { @include alamix-menu(390px, 90px); }
+.menu { @include alamix-menu(390px, $menu_height); }
+.logo { @include logo($menu_height, -$left_content_width / 2); }

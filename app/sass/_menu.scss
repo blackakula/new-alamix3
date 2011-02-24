@@ -20,15 +20,16 @@ $menu_color_l2_b: lighten($menu_color2, $menu_lighten2);
 $menu_color_l3_b: lighten($menu_color3, $menu_lighten2);
 $menu_color_l4_b: lighten($menu_color4, $menu_lighten2);
 
+$menu_item_height: .78;
+$menu_text_height: .34;
+
 @mixin alamix-menu($menu_width, $menu_height) {
 
   //set sizes
   $menu_item_width: .17;
   $menu_space_width: 100% * (1 - 5 * $menu_item_width) / 4;
 
-  $menu_item_height: .78;
-
-  $menu_item_text_height: .34 * $menu_item_height * $menu_height;
+  $menu_item_text_height: $menu_text_height * $menu_item_height * $menu_height;
   $menu_item_tab_height: ($menu_height - $menu_item_text_height) / 2;
   $menu_item_tail_height: $menu_height * $menu_item_height - $menu_item_text_height - $menu_item_tab_height;
 
@@ -123,4 +124,12 @@ $menu_color_l4_b: lighten($menu_color4, $menu_lighten2);
     a { color: $menu_color_l4; }
     .head, .tail { background-color: $menu_color_l4; }
   }
+}
+
+@mixin logo($menu_height, $margin_left: 10%) {
+  $menu_text_height: $menu_text_height * $menu_item_height * $menu_height;
+  $logo_top_margin: ($menu_height - $menu_text_height) / 2;
+
+  margin: $logo_top_margin 0 0 $margin_left;
+  img { height: $menu_text_height; }
 }

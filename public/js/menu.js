@@ -35,6 +35,8 @@ $(function() {
     $('.menu .up .head, .menu .down .tail').height(itemTab)
     $('.menu .item .text').height(itemText + 1)
     $('.menu .down .head, .menu .up .tail').height(itemTail)
+    $('.logo').css({marginTop: itemTab})
+    $('.logo img').css({height: itemText})
 
     //border radius
     var borderRadius = (.15 * $('.menu .item').width()) + 'px ' + (.15 * item) + 'px'
