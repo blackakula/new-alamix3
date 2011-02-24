@@ -2,7 +2,10 @@ $body_background_color: #302c2d;
 $large_size: 10000px;
 $bottom_space: 40px;
 $body_font: Arial,sans-serif;
+
+$text_color: #6b6b6b;
 $a_color_visited: #635151;
+$a_color_visited_hover: #5b3b3b;
 
 @mixin round-corner($round_size, $w: 'all', $h: 'all') {
   @if $w == 'all' {
@@ -34,8 +37,8 @@ a {
   text-decoration: underline;
   cursor: pointer;
   img { border: none; }
+  color: $text_color;
 }
 
-a:hover, a:visited, a:visited:hover {
-  color: $a_color_visited;
-}
+a:hover, a:visited { color: $a_color_visited; }
+a:visited:hover { color: $a_color_visited_hover; }

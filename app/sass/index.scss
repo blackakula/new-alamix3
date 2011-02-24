@@ -21,6 +21,5 @@
     margin-top: 15px;
     font-size: 11pt;
   }
-  .text, .text a { color: #6b6b6b; }
-  .text a:hover, .text a:visited { color: $a_color_visited; }
+  .text { color: $text_color; }
 }

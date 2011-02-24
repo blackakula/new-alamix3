@@ -11,7 +11,13 @@
           array('медіа', '#'),
           array('фото', '#'),
           array('лінки', '#'),
-          array('аля про', '#')
+          array('аля про', '#'),
+      ));
+
+      $this->set('copyrights', array(
+          array('Alina Mikhailova', 'mailto:alamix@i.ua', 'idea, design, content'),
+          array('Sergey Akulinin', 'mailto:blackakula@gmail.com', 'development: php, html, css, javascript'),
+          array('ZPT ????', '#', 'hosting'),
       ));
     }
   }

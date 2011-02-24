@@ -1,0 +1,7 @@
+.copyright
+  - foreach ($this->get('copyrights') as $author)
+    .name
+      &copy; 
+      %a{href="$author[1]"}= $author[0]
+      , 2011
+    .contribution= $author[2]
