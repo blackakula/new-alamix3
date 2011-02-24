@@ -7,7 +7,7 @@
   .news.$color
     - $this->_include('separator')
     .item
-      .title
+      %h2.title
         %a{href="<?php echo $content_item['url']?>"}= $content_item['title']
       - $this->_include('news_date')
       .text= $content_item['text']
