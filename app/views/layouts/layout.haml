@@ -5,6 +5,9 @@
     %meta{charset="utf-8"}
     - foreach ($this->get('stylesheets') as $stylesheet)
       -= $this->_css($stylesheet)
+    <!--[if gte IE 6 ]>
+    -= $this->_css('ie.css')
+    <![endif]-->
     - foreach ($this->get('javascripts') as $javascript)
       -= $this->_js($javascript)
   %body

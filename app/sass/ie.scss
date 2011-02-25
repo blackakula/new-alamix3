@@ -1,0 +1,10 @@
+@import "img", "menu_colors_default";
+$imenu_opacity: .8;
+
+.i-menu {
+  @for $i from 0 through 4 {
+    .b#{$i} ul, .b#{$i} .title {
+      background-image: url('#{$_img}i-menu/#{$i}.png');
+    }
+  }
+}

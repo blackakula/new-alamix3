@@ -7,26 +7,28 @@ $(function() {
     var h = e.height()
     e.height(0)
     e.attr('maxHeight', h)
-    e.css({marginTop: titleMargin})
   })
-  $('.i-menu .container').delegate('.submenu', 'mouseover', function(event) {
+  $('.i-menu .title').css({marginBottom: titleMargin})
+
+  var iMenuAnimation = function(over, event) {
     if ($(this).find('*').andSelf().not(function() {
       return (this != event.relatedTarget)
     }).size() == 0) {
-      var e = $(this).find('.list')
+      var e = $(this).find('.list, .title')
       e.clearQueue()
       e.stop()
-      e.animate({height: e.attr('maxHeight'), marginTop: 0}, actionSpeed)
+      e = $(this).find('.list')
+      e.animate({height: (over ? e.attr('maxHeight') : 0)})
+      $(this).find('.title').animate({marginBottom: (over ? 0 : titleMargin)})
     }
+  }
+
+  $('.i-menu .container').delegate('.submenu', 'mouseover', function(event) {
+    iMenuAnimation.call(this, true, event)
   })
   $('.i-menu .container').delegate('.submenu', 'mouseout', function(event) {
-    if ($(this).find('*').andSelf().not(function() {
-      return (this != event.relatedTarget)
-    }).size() == 0) {
-      var e = $(this).find('.list')
-      e.clearQueue()
-      e.stop()
-      e.animate({height: 0, marginTop: titleMargin}, actionSpeed)
-    }
+    iMenuAnimation.call(this, false, event)
   })
+
+  $('.i-menu').css({overflow: 'hidden'})
 })

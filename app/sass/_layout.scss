@@ -12,6 +12,7 @@ $margin_left_aligned: -$left_content_width / 2;
 .all {
   overflow: hidden;
   width: 100%;
+  position: relative;
 }
 .left, .right {
   width: 49.999%;
@@ -49,10 +50,10 @@ $margin_left_aligned: -$left_content_width / 2;
   .logo, .content {
     position: relative;
     left: 50%;
+    width: $left_content_width;
   }
 
   .content {
-    width: $left_content_width;
     margin-left: $margin_left_aligned;
     @include right-content($menu_height, $content_menu_margin, $margin_left_aligned);
   }

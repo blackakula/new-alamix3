@@ -1,8 +1,4 @@
-$menu_color0: #06caff;
-$menu_color1: #88c02b;
-$menu_color2: #dd2150;
-$menu_color3: #c37077;
-$menu_color4: #e97749;
+@import "menu_colors_default";
 
 .c0, .c0:hover, .c0:visited, .c0:visited:hover  { color: $menu_color0; }
 .c1, .c1:hover, .c1:visited, .c1:visited:hover { color: $menu_color1; }

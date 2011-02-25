@@ -42,10 +42,13 @@
 
   width: 100%;
   overflow: auto;
+  position: relative;
 
   .container {
     font-size: 16pt;
     width: $imenu_items_count * ($imenu_submenu_width + $imenu_submenu_space) - $imenu_submenu_space;
+    position: relative;
+    left: 0;
   }
 
   .submenu {
@@ -73,7 +76,8 @@
   }
 
   .title {
-    display: inline;
+    /*display: inline;*/
+    float: left;
     width: auto;
     padding: 3px $imenu_left_space 5px;
     font-weight: bold;
@@ -81,7 +85,10 @@
 
   .list { overflow: hidden; }
 
-  .space { height: $imenu_separator; }
+  .space {
+    height: $imenu_separator;
+    font-size: 0;
+  }
 
   ul {
     margin: 0;
