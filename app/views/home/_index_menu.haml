@@ -1,0 +1,20 @@
+.i-menu
+  .container
+    - foreach ($this->get('index-menu') as $i => $part)
+      <?php
+        $ci = 'c' . $part['color'];
+        $bi = 'b' . $part['color'];
+        $class = 'submenu';
+        $itemi = 'item' . $i;
+        if ($i == 0) $class .= ' first';
+      ?>
+      .$class.$itemi.$bi
+        .inner
+          .title.$ci= $part['title']
+          .list
+            .space.$bi
+            %ul
+              - foreach ($part['items'] as $item)
+                %li
+                  %a.$ci{href="$item[1]"}= $item[0]
+    .clear

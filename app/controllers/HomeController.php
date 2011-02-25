@@ -3,6 +3,7 @@
     public function index() {
       $this->set('stylesheets', array('index.css'));
       $this->push('javascripts', 'menu.js');
+      $this->push('javascripts', 'index-menu.js');
 
       $data = get_config('index');
       $this->set('title', $data['title']);

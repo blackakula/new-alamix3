@@ -24,3 +24,95 @@
   }
   .text { color: $text_color; }
 }
+
+.i-menu {
+
+  //set sizes
+  $imenu_border_up: 6px;
+  $imenu_border_bottom: 10px;
+  $imenu_separator: 5px;
+  $imenu_left_space: 8px;
+  $imenu_opacity: .7;
+  $imenu_submenu_space: 25px;
+  $imenu_submenu_width: 175px;
+  $imenu_img_height: 472px;
+  $imenu_submenu_height: $imenu_img_height + $imenu_border_up + $imenu_border_bottom;
+
+  $imenu_items_count: 3;
+
+  width: 100%;
+  overflow: auto;
+
+  .container {
+    font-size: 16pt;
+    width: $imenu_items_count * ($imenu_submenu_width + $imenu_submenu_space) - $imenu_submenu_space;
+  }
+
+  .submenu {
+    width: $imenu_submenu_width;
+    height: $imenu_submenu_height;
+    float: left;
+    background-repeat: no-repeat;
+    margin-left: $imenu_submenu_space;
+    position: relative;
+  }
+
+  .submenu.first { margin-left: 0; }
+
+  @for $i from 0 through $imenu_items_count - 1 {
+    .item#{$i} {
+      background-image: url('#{$_img}index-parts.jpg');
+      background-position: -$i * $imenu_submenu_width $imenu_border_up;
+    }
+  }
+
+  .inner {
+    position: absolute;
+    bottom: $imenu_border_bottom;
+    width: $imenu_submenu_width;
+  }
+
+  .title {
+    display: inline;
+    width: auto;
+    padding: 3px $imenu_left_space 5px;
+    font-weight: bold;
+  }
+
+  .list { overflow: hidden; }
+
+  .space { height: $imenu_separator; }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+    &hover {
+      text-decoration: underline;
+    }
+  }
+
+  li, .title { line-height: 30px; }
+
+  li { padding: 7px 0 6px $imenu_left_space; }
+
+  .b0 ul, .b0 .title {
+    background-color: transparentize($menu_color0, $imenu_opacity);
+  }
+  .b1 ul, .b1 .title {
+    background-color: transparentize($menu_color1, $imenu_opacity);
+  }
+  .b2 ul, .b2 .title {
+    background-color: transparentize($menu_color2, $imenu_opacity);
+  }
+  .b3 ul, .b3 .title {
+    background-color: transparentize($menu_color3, $imenu_opacity);
+  }
+  .b4 ul, .b4 .title {
+    background-color: transparentize($menu_color4, $imenu_opacity);
+  }
+}
