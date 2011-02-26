@@ -56,3 +56,8 @@ menu:
       - ['Настенко', '#alamix_Nastenko']
       - ['Марго', '#alamix_Margo']
       - ['Дрита', '#alamix_Drita']
+photo:
+  text: випадкове фото
+  color: 2
+  url: '#random_photo'
+  img: 'example_random.jpg'

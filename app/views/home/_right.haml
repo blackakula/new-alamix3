@@ -1,1 +1,12 @@
 - $this->_include('index_menu')
+<?php
+  $photo = $this->get('random-photo');
+  $bcolor = 'b' . $photo['color'];
+  $color = 'c' . $photo['color'];
+?>
+.random-photo-box
+  .text.$color= $photo['text']
+  .random-photo.$bcolor
+    %a{href="<?php echo $photo['url']?>"}
+      -= $this->_img($photo['img'])
+  .clear

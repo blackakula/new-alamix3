@@ -15,6 +15,7 @@
     font-weight: bold;
     line-height: 22px;
     text-decoration: none;
+    font-family: Georgia,"Nimbus Roman No9 L",serif;
   }
   .title a, .date { color: #cecac0; }
   .date { margin-top: 5px; }
@@ -23,6 +24,18 @@
     font-size: 11pt;
   }
   .text { color: $text_color; }
+}
+
+.right {
+  .random-photo-box {
+    margin-top: 40px;
+  }
+  .random-photo {
+    padding: 5px;
+    float: left;
+    @include round-corner(5px);
+    line-height: 0;
+  }
 }
 
 .i-menu {

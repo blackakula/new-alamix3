@@ -8,6 +8,7 @@
       $data = get_config('index');
       $this->set('title', $data['title']);
       $this->set('index-menu', $data['menu']);
+      $this->set('random-photo', $data['photo']);
 
       $content = $data['content'];
       foreach ($content as $i => $item) {
