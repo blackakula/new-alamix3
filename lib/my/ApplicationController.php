@@ -4,6 +4,9 @@
       parent::__construct($params);
       /* Here is your code to do for all controllers */
       $this->header()->charset();
+
+      Template::setIMG(get_config('IMG_PATH'));
+
       $this->set('javascripts', array('jquery-1.5.min.js'));
       
       $this->set('alamix-menu', array(
