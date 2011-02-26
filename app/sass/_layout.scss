@@ -10,6 +10,7 @@ $menu_height: 90px;
 $margin_left_aligned: -$left_content_width / 2;
 
 .all {
+  min-width: 900px;
   overflow: hidden;
   width: 100%;
   position: relative;
