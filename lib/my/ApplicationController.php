@@ -11,7 +11,7 @@
       
       $this->set('alamix-menu', array(
           array('новини', '#novyny'),
-          array('медіа', '#media'),
+          array('мікс', '#mix'),
           array('фото', '#photo'),
           array('лінки', '#linky'),
           array('аля про', '#alya_pro'),
