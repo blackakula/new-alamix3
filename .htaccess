@@ -4,12 +4,12 @@ Options +FollowSymLinks -Indexes
   RewriteEngine On
   RewriteBase /
 
-  RewriteCond %{REQUEST_URI} !^/public
-  RewriteRule ^(.*)$ public/$1 [L,QSA]
+  RewriteCond %{REQUEST_URI} !^/web
+  RewriteRule ^(.*)$ web/$1 [L,QSA]
 
   RewriteCond %{ENV:REDIRECT_STATUS} ^$
-  RewriteRule ^(.*)$ public/$1 [L,QSA]
+  RewriteRule ^(.*)$ web/$1 [L,QSA]
 
   RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteRule ^(.*)$ public/$1 [L,QSA]
+  RewriteRule ^(.*)$ web/$1 [L,QSA]
 </IfModule>
