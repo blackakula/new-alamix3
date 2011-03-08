@@ -1,15 +1,7 @@
 !!! 5
 %html{xmlns="http://www.w3.org/1999/xhtml"}
   %head
-    %title= $this->get('title')
-    %meta{charset="utf-8"}
-    - foreach ($this->get('stylesheets') as $stylesheet)
-      -= $this->_css($stylesheet)
-    <!--[if gte IE 6 ]>
-    -= $this->_css('ie.css')
-    <![endif]-->
-    - foreach ($this->get('javascripts') as $javascript)
-      -= $this->_js($javascript)
+    - $this->_include('head')
   %body
     - $this->_include('ie6update')
     .all
