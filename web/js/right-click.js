@@ -1,0 +1,1 @@
+$('img').live("contextmenu",function(){return false;})

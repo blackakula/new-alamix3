@@ -12,6 +12,7 @@
     public function index() {
       $this->_layout = 'photo';
       $this->set('stylesheets', array('photo.css'));
+      $this->push('javascripts', 'right-click.js');
       $this->push('javascripts', 'jquery.gallery.js');
 
       $this->set('menu-replace', 2);
