@@ -141,8 +141,8 @@ noscript {
     }
 }
 
-.cursorLeft { cursor: url("#{$_img}prev.cur"), default; }
-.cursorRight { cursor: url("#{$_img}next.cur"), default; }
+.cursorLeft { cursor: url("#{$_img}prev.png"), w-resize; }
+.cursorRight { cursor: url("#{$_img}next.png"), e-resize; }
 .cursorPlus { cursor: url("#{$_img}plus.cur"), default; }
 .cursorMinus { cursor: url("#{$_img}minus.cur"), default; }
 
@@ -192,7 +192,7 @@ $info_heigth: 30px;
     text-shadow: 0 0 1px $gallery_color;
   }
   .reference {
-    font-size: 85%;
+    font-size: 60%;
     color: $text_color;
     bottom: 2px;
     left: 10px;
