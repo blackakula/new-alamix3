@@ -1,0 +1,34 @@
+$menu_darken: 30%;
+
+$menu_color0_b: darken($menu_color0, $menu_darken);
+$menu_color1_b: darken($menu_color1, $menu_darken);
+$menu_color2_b: darken($menu_color2, $menu_darken);
+$menu_color3_b: darken($menu_color3, $menu_darken);
+$menu_color4_b: darken($menu_color4, $menu_darken);
+
+$menu_item_width: .17;
+$menu_space_width: 100% * (1 - 5 * $menu_item_width) / 4;
+$menu_width: 390px;
+
+@mixin menu-items-position-and-colors($c0, $c1, $c2, $c3, $c4) {
+  .item0 {
+    left: 0;
+    background-color: $c0;
+  }
+  .item1 {
+    left: $menu_space_width;
+    background-color: $c1;
+  }
+  .item2 {
+    left: 2 * $menu_space_width;
+    background-color: $c2;
+  }
+  .item3 {
+    left: 3 * $menu_space_width;
+    background-color: $c3;
+  }
+  .item4 {
+    left: 4 * $menu_space_width;
+    background-color: $c4;
+  }
+}

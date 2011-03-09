@@ -1,6 +1,7 @@
 @import "img";
 
 $body_background_color: #302c2d;
+$body_background_color2: #000;
 $large_size: 10000px;
 $bottom_space: 40px;
 $body_font: Arial,sans-serif;
@@ -25,7 +26,6 @@ $a_color_visited_hover: #5b3b3b;
 body {
   margin: 0;
   padding: 0;
-  background-color: $body_background_color;
   font-family: $body_font;
   font-size: 10pt;
 }

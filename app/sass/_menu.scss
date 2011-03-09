@@ -1,12 +1,7 @@
-$menu_darken: 30%;
+@import "menu_default_params";
+
 $menu_lighten1: 20%;
 $menu_lighten2: 34%;
-
-$menu_color0_b: darken($menu_color0, $menu_darken);
-$menu_color1_b: darken($menu_color1, $menu_darken);
-$menu_color2_b: darken($menu_color2, $menu_darken);
-$menu_color3_b: darken($menu_color3, $menu_darken);
-$menu_color4_b: darken($menu_color4, $menu_darken);
 
 $menu_color_l0: lighten($menu_color0, $menu_lighten1);
 $menu_color_l1: lighten($menu_color1, $menu_lighten1);
@@ -26,9 +21,6 @@ $menu_text_height: .34;
 @mixin alamix-menu($menu_width, $menu_height) {
 
   //set sizes
-  $menu_item_width: .17;
-  $menu_space_width: 100% * (1 - 5 * $menu_item_width) / 4;
-
   $menu_item_text_height: $menu_text_height * $menu_item_height * $menu_height;
   $menu_item_tab_height: ($menu_height - $menu_item_text_height) / 2;
   $menu_item_tail_height: $menu_height * $menu_item_height - $menu_item_text_height - $menu_item_tab_height;
@@ -78,26 +70,7 @@ $menu_text_height: .34;
   .up { top: 0; }
   .down { top: (1 - $menu_item_height) * 100%; }
 
-  .item0 {
-    left: 0;
-    background-color: $menu_color0_b;
-  }
-  .item1 {
-    left: $menu_space_width;
-    background-color: $menu_color1_b;
-  }
-  .item2 {
-    left: 2 * $menu_space_width;
-    background-color: $menu_color2_b;
-  }
-  .item3 {
-    left: 3 * $menu_space_width;
-    background-color: $menu_color3_b;
-  }
-  .item4 {
-    left: 4 * $menu_space_width;
-    background-color: $menu_color4_b;
-  }
+  @include menu-items-position-and-colors($menu_color0_b, $menu_color1_b, $menu_color2_b, $menu_color3_b, $menu_color4_b);
 
   .item.light0 {
     background-color: $menu_color_l0_b;
@@ -132,6 +105,7 @@ $menu_text_height: .34;
 
   margin: $logo_top_margin 0 0 $margin_left;
   img { height: $menu_text_real_height; }
+  font-size: 0;
 }
 
 @mixin right-content($menu_height, $left_content_margin, $margin_left: 10%) {

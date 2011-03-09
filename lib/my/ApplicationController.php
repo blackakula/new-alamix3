@@ -8,11 +8,12 @@
       Template::setIMG(get_config('IMG_PATH'));
 
       $this->set('javascripts', array('jquery-1.5.min.js'));
-      
+
+      $r = get_routes();
       $this->set('alamix-menu', array(
           array('новини', '#novyny'),
           array('мікс', '#mix'),
-          array('фото', '#photo'),
+          array('фото', $r->build_path('photo')),
           array('лінки', '#linky'),
           array('аля про', '#alya_pro'),
       ));

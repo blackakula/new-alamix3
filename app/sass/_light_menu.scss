@@ -1,0 +1,26 @@
+@import "menu_default_params";
+
+@mixin alamix-menu2($menu_width, $menu_height) {
+
+  width: $menu_width;
+  height: $menu_height;
+  text-align: center;
+  font-size: 10pt;
+
+  .item {
+    width: $menu_item_width * 100%;
+    position: relative;
+    float: left;
+    height: $menu_height;
+    span {
+      display: block;
+      height: $menu_height;
+      line-height: 170%;
+    }
+    a, a:hover, a:visited, a:visited:hover { text-decoration: none; }
+    a:hover span {
+      font-size: 115%;
+      line-height: 150%;
+    }
+  }
+}

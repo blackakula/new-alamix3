@@ -1,0 +1,12 @@
+- $this->setMenu()
+.menu2
+  - foreach ($this->get('menu') as $i => $item)
+    <?php
+      $class = 'item' . $i;
+      $color = 'c' . $i;
+      $bg_color = 'b' . $i;
+    ?>
+    .item.$class
+      %a.$color{href="$item[1]"}
+        %span= $item[0]
+  .clear

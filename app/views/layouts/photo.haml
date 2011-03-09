@@ -1,0 +1,19 @@
+!!! 5
+%html{xmlns="http://www.w3.org/1999/xhtml"}
+  %head
+    - $this->_include('head')
+  %body
+    - $this->_include('ie6update')
+    .albumbar
+      - $this->_include('light_menu')
+      - $this->_include('logo')
+      .albumSelect.b2
+        %ul.b2
+          %li
+            %a album1
+          %li
+            %a album2
+          %li
+            %a album3
+        .title.down.b2 album X
+      .clear

@@ -1,0 +1,83 @@
+@import "all", "menu_colors", "light_menu";
+
+$albumbar_height: 30px;
+$items_height: 23px;
+$albumSelect_height: 18px;
+
+body {
+  background-color: $body_background_color2;
+}
+
+.menu2 {
+  @include alamix-menu2($menu_width, 23px);
+  @include menu-items-position-and-colors($menu_color0_b, $menu_color1_b, $menu_color2_b, $menu_color3_b, $menu_color4_b);
+  left: 25%;
+  margin-left: -$menu_width / 2;
+}
+
+.logo {
+  left: 45%;
+  margin: 0;
+  font-size: 0;
+  img { height: $items_height; }
+}
+
+.menu2, .logo {
+  position: relative;
+  top: ($albumbar_height - $items_height) / 2;
+  float: left;
+}
+
+.albumbar {
+  height: $albumbar_height;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.albumSelect {
+  height: $albumSelect_height;
+  line-height: $albumSelect_height;
+  position: absolute;
+  right: 5px;
+  top: ($albumbar_height - $albumSelect_height) / 2;;
+  width: 120px;
+
+  ul {
+    //display: none;
+    list-style: none outside none;
+    margin: 22px 0 0;
+    padding: 0;
+    width: 100%;
+
+    a {
+      display: block;
+      padding: 3px 0;
+      text-decoration: none;
+      &:hover {
+        color: #FFF;
+        background-color: $menu_color2_b;
+      }
+    }
+  }
+
+  ul a, .title {
+    color: #F0F0F0;
+    cursor: pointer;
+    text-indent: 10px;
+  }
+
+  .title {
+    background-position: 90% 50%;
+    background-repeat: no-repeat;
+    left: 0;
+    position: absolute;
+    text-align: left;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .down { background-image: url('#{$_img}down.png'); }
+}
