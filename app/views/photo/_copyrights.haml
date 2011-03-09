@@ -1,0 +1,7 @@
+%span.reference
+  &copy;
+  - foreach ($this->get('copyrights') as $i => $author)
+    - if ($i != 0)
+      ,&nbsp;
+    &nbsp;
+    %a{href="$author[1]"}= $author[0]

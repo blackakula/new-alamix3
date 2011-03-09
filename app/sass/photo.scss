@@ -1,5 +1,7 @@
 @import "all", "menu_colors", "light_menu";
 
+$gallery_color: #F0F0F0;
+
 body {
   background-color: $body_background_color2;
 }
@@ -78,7 +80,7 @@ $albumSelect_margin_right: 5px;
   }
 
   ul a, .title {
-    color: #F0F0F0;
+    color: $gallery_color;
     cursor: pointer;
     text-indent: 10px;
   }
@@ -95,4 +97,37 @@ $albumSelect_margin_right: 5px;
   }
 
   .down { background-image: url('#{$_img}down.png'); }
+}
+
+#thumbsWrapper {
+  border-top: 2px solid #000000;
+  bottom: 0;
+  height: 102px;
+  left: 0;
+  overflow-y: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+.infobar {
+  bottom: 0;
+  height: 30px;
+  left: 0;
+  line-height: 22px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  font-size: 14pt;
+  color: $gallery_color;
+
+  #description {
+    text-shadow: 0 0 1px $gallery_color;
+  }
+  .reference {
+    font-size: 85%;
+    color: $text_color;
+    bottom: 2px;
+    left: 10px;
+    position: fixed;
+  }
 }

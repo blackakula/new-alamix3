@@ -26,10 +26,12 @@
             unset($albums[$i]);
             break;
           }
-       if (is_null($selected_album))
-         $selected_album = array_shift ($albums);
-       $this->set('albums', $albums);
-       $this->set('album-selected', $selected_album);
+      if (is_null($selected_album))
+        $selected_album = array_shift ($albums);
+      $this->set('albums', $albums);
+      $this->set('album-selected', $selected_album);
+      $this->push('copyrights', array('Codrops', 'http://tympanus.net/codrops/2010/05/23/fresh-sliding-thumbnails-gallery-with-jquery-php/'));
     }
+
   }
 ?>
