@@ -99,6 +99,11 @@ $albumSelect_margin_right: 5px;
   .down { background-image: url('#{$_img}down.png'); }
 }
 
+noscript {
+  font-size: 20pt;
+  color: #FFFFFF;
+}
+
 #thumbsWrapper {
   border-top: 2px solid #000000;
   bottom: 0;
