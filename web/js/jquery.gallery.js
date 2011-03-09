@@ -119,7 +119,7 @@ $(function() {
         current=1;
         $('#imageWrapper').empty();
         $('#loading').show();
-        $.get('/ajax/photo.json?a='+album, function(data) {
+        $.get('ajax/photo.json?a='+album, function(data) {
             var countImages = data.length;
             var count = 0;
             var $tContainer = $('<div/>',{
