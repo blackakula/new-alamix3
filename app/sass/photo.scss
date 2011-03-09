@@ -62,7 +62,7 @@ $albumSelect_margin_right: 5px;
   width: $albumSelect_width;
 
   ul {
-    //display: none;
+    display: none;
     list-style: none outside none;
     margin: 22px 0 0;
     padding: 0;
@@ -86,7 +86,7 @@ $albumSelect_margin_right: 5px;
   }
 
   .title {
-    background-position: 90% 50%;
+    background-position: $albumSelect_width - 16px 50%;
     background-repeat: no-repeat;
     left: 0;
     position: absolute;
@@ -97,6 +97,7 @@ $albumSelect_margin_right: 5px;
   }
 
   .down { background-image: url('#{$_img}down.png'); }
+  .up { background-image: url('#{$_img}up.png'); }
 }
 
 noscript {
