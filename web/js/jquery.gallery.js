@@ -90,7 +90,7 @@ $(function() {
             $this.addClass('cursorMinus')
             .removeClass('cursorLeft cursorRight cursorPlus');
             $('#thumbsWrapper').stop().animate({
-                'bottom':'-85px'
+                'bottom':'-150px'
             },300);
             resize($this,1);
         }
@@ -119,7 +119,7 @@ $(function() {
         current=1;
         $('#imageWrapper').empty();
         $('#loading').show();
-        $.get('ajax/thumbs.php?album='+album, function(data) {
+        $.get('/ajax/photo.json?a='+album, function(data) {
             var countImages = data.length;
             var count = 0;
             var $tContainer = $('<div/>',{
@@ -128,7 +128,7 @@ $(function() {
             })
             for(var i = 0; i < countImages; ++i){
                 try{
-                    var description = data[i].desc[0];
+                    var description = data[i].desc;
                 }catch(e){
                     description='';
                 }
@@ -241,9 +241,9 @@ $(function() {
         var widthMargin     = 10
         var heightMargin    = 0;
         if(mode=='expanded')
-            heightMargin = 60;
+            heightMargin = 80;
         else if(mode=='small')
-            heightMargin = 150;
+            heightMargin = 200;
         //type 1 is animate, type 0 is normal
         var windowH      = $(window).height()-heightMargin;
         var windowW      = $(window).width()-widthMargin;
@@ -252,7 +252,6 @@ $(function() {
         var imgwidth     = theImage.width;
         var imgheight    = theImage.height;
 
-        if((imgwidth > windowW)||(imgheight > windowH)){
             if(imgwidth > imgheight){
                 var newwidth = windowW;
                 var ratio = imgwidth / windowW;
@@ -281,7 +280,6 @@ $(function() {
                     theImage.width= newnewwidth;
                 }
             }
-        }
         if((type==1)&&(!$.browser.msie))
             $image.stop(true).animate({
                 'width':theImage.width+'px',

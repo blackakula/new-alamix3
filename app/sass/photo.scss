@@ -4,7 +4,12 @@ $gallery_color: #F0F0F0;
 
 body {
   background-color: $body_background_color2;
+  overflow: hidden;
 }
+
+
+/*** TOP of the page ***
+***********************/
 
 $albumbar_height: 30px;
 $items_height: 23px;
@@ -18,12 +23,14 @@ $albumSelect_margin_right: 5px;
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 11;
 }
 
 .menu2 {
   @include alamix-menu2($menu_width, 23px);
   @include menu-items-position-and-colors($menu_color0_b, $menu_color1_b, $menu_color2_b, $menu_color3_b, $menu_color4_b);
   margin-left: -$menu_width / 2;
+  z-index: 12;
 }
 
 .logo {
@@ -100,26 +107,81 @@ $albumSelect_margin_right: 5px;
   .up { background-image: url('#{$_img}up.png'); }
 }
 
+/*** CENTER of the page ***
+**************************/
+
+$img_border_radius: 7px;
+
 noscript {
   font-size: 20pt;
   color: #FFFFFF;
 }
 
+#loading {
+    background: url('#{$_img}loading.gif') no-repeat scroll left top transparent;
+    display: none;
+    height: 50px;
+    left: 50%;
+    margin-left: -24px;
+    position: absolute;
+    top: 40%;
+    width: 50px;
+}
+
+#imageWrapper {
+    top: $albumbar_height + 5px;
+    position: relative;
+    text-align: center;
+    img {
+      box-shadow: 2px 2px 10px #111111;
+      margin: 0 auto;
+      border: $img_border_radius solid $menu_color2;
+      font-size: 0;
+      @include round-corner($img_border_radius);
+    }
+}
+
+.cursorLeft { cursor: url("#{$_img}prev.cur"), default; }
+.cursorRight { cursor: url("#{$_img}next.cur"), default; }
+.cursorPlus { cursor: url("#{$_img}plus.cur"), default; }
+.cursorMinus { cursor: url("#{$_img}minus.cur"), default; }
+
+/*** BOTTOM of the page ***
+**************************/
+
+$thumbs_height: 120px;
+$info_heigth: 30px;
+
 #thumbsWrapper {
   border-top: 2px solid #000000;
   bottom: 0;
-  height: 102px;
+  height: $info_heigth + $thumbs_height;
   left: 0;
   overflow-y: hidden;
   position: absolute;
   width: 100%;
+
+  #thumbsContainer {
+    display: block;
+    height: $thumbs_height;
+    margin: 0;
+  }
+
+  img {
+    cursor: pointer;
+    display: block;
+    float: left;
+    margin: 2px;
+    opacity: 0.4;
+    height: $thumbs_height;
+  }
 }
 
 .infobar {
   bottom: 0;
-  height: 30px;
+  height: $info_heigth;
   left: 0;
-  line-height: 22px;
+  line-height: $info_heigth;
   position: fixed;
   text-align: center;
   width: 100%;

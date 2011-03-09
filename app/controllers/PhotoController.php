@@ -12,6 +12,7 @@
     public function index() {
       $this->_layout = 'photo';
       $this->set('stylesheets', array('photo.css'));
+      $this->push('javascripts', 'jquery.gallery.js');
 
       $this->set('menu-replace', 2);
       $this->set('title', $this->data['title']);
@@ -19,9 +20,10 @@
       //checking and selecting album
       $albums = array_keys($this->data['photos']);
       $selected_album = null;
-      if (array_key_exists('a', $_GET))
+      $aParamName = 'a';
+      if (array_key_exists($aParamName, $_GET))
         foreach ($albums as $i => $v)
-          if ($_GET['a'] == $v) {
+          if ($_GET[$aParamName] == $v) {
             $selected_album = $v;
             unset($albums[$i]);
             break;
@@ -33,5 +35,25 @@
       $this->push('copyrights', array('Codrops', 'http://tympanus.net/codrops/2010/05/23/fresh-sliding-thumbnails-gallery-with-jquery-php/'));
     }
 
+    public function thumbs() {
+      $aParamName = 'a';
+      if (array_key_exists($aParamName, $_GET))
+        if (array_key_exists($_GET[$aParamName], $this->data['photos'])) {
+          $this->_layout = 'empty';
+          $album = $this->data['photos'][$_GET[$aParamName]];
+          $response = array();
+          foreach ($album as $photo)
+            array_push($response, array(
+                'src' => $photo['thumb'],
+                'alt' => $photo['img'],
+                'desc' => $photo['text'],
+            ));
+          get_header()->format('application/json');
+          $this->set('response', json_encode($response));
+          return;
+        }
+
+      get_header()->page404();
+    }
   }
 ?>
