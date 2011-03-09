@@ -1,0 +1,10 @@
+.albumSelect.b2
+  <?php
+    $albums = $this->get('albums');
+  ?>
+  - if (!empty($albums))
+    %ul.b2
+      - foreach ($albums as $album)
+        %li
+          %a= $album
+  .title.down.b2= $this->get('album-selected')

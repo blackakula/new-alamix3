@@ -6,14 +6,9 @@
     - $this->_include('ie6update')
     .albumbar
       - $this->_include('light_menu')
-      - $this->_include('logo')
-      .albumSelect.b2
-        %ul.b2
-          %li
-            %a album1
-          %li
-            %a album2
-          %li
-            %a album3
-        .title.down.b2 album X
+      .logo-box
+        .logo-box-inner
+          - $this->_include('logo')
+          - $this->_include('albums_select')
+          .clear
       .clear
