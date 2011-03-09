@@ -143,8 +143,8 @@ noscript {
 
 .cursorLeft { cursor: url("#{$_img}prev.png"), w-resize; }
 .cursorRight { cursor: url("#{$_img}next.png"), e-resize; }
-.cursorPlus { cursor: url("#{$_img}plus.cur"), default; }
-.cursorMinus { cursor: url("#{$_img}minus.cur"), default; }
+.cursorPlus { cursor: url("#{$_img}plus.png"), crosshair; }
+.cursorMinus { cursor: url("#{$_img}minus.png"), default; }
 
 /*** BOTTOM of the page ***
 **************************/
