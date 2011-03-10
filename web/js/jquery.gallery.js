@@ -7,7 +7,7 @@ $(function() {
     var current = 0;
 	
     /* first, let's build the thumbs for the selected album */
-    buildThumbs();
+    buildThumbs(true);
 	
     /*
     clicking on a thumb loads the image
@@ -115,7 +115,7 @@ $(function() {
     An AJAX request is made to retrieve the
     photo locations of the selected album
     */
-    function buildThumbs(){
+    function buildThumbs(check_anchor){
         current=1;
         $('#imageWrapper').empty();
         $('#loading').show();
@@ -126,6 +126,16 @@ $(function() {
                 id	: 'thumbsContainer',
                 style	: 'visibility:hidden;'
             })
+
+            if (check_anchor) {
+              var photo_anchor = document.location.toString().split('#', 2)[1]
+              if (typeof photo_anchor == 'string' && photo_anchor.match(/^p\d+$/)) {
+                check_anchor = parseInt(photo_anchor.substr(1))
+                if (check_anchor < 1 || check_anchor > countImages)
+                  check_anchor = false
+              }
+            }
+
             for(var i = 0; i < countImages; ++i){
                 try{
                     var description = data[i].desc;
@@ -134,26 +144,22 @@ $(function() {
                 }
                 if(description==undefined)
                     description='';
-                $('<img title="'+description+'" alt="'+data[i].alt+'" height="75" />').load(function(){
+                
+                var thumbImg = $('<img title="'+description+'" alt="'+data[i].alt+'" height="75" />')
+                thumbImg.load(function(){
                     var $this = $(this);
                     $tContainer.append($this);
                     ++count;
-                    if(count==1){
-                        /* load 1 image into container*/
-                        $('<img id="displayed" style="display:block;" class="cursorPlus"/>').load(function(){
-                            var $first = $(this);
-                            $('#loading').hide();
-                            resize($first,0);
-                            $('#imageWrapper').append($first);
-                            $('#description').html($this.attr('title'));
-                        }).attr('src',$this.attr('alt'));
-                    }
+                    if (typeof check_anchor != 'number' && count == 1)
+                      loadPhoto($this, 'cursorPlus')
                     if(count == countImages){
                         $('#thumbsWrapper').empty().append($tContainer);
                         thumbsDim($tContainer);
                         makeScrollable($('#thumbsWrapper'),$tContainer,15);
                     }
                 }).attr('src',data[i].src);
+                if (typeof check_anchor == 'number' && check_anchor == i + 1)
+                  loadPhoto(thumbImg,'cursorPlus')
             }
         },'json');
     }
