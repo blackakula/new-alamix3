@@ -1,4 +1,6 @@
 .twitter
   - $this->_include('twitter')
 .gallery
-  
+  <?php $src = $this->getIMG() . 'gallery.swf'?>
+  %object{data="$src" width="100%" height="100%" type="application/x-shockwave-flash"}
+    %param{name="movie" value="$src"}

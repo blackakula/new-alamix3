@@ -1,5 +1,13 @@
 <?php
   class AboutController extends ApplicationController {
+    private $data;
+
+    public function  __construct($params) {
+      parent::__construct($params);
+
+      $this->data = get_config('about');
+    }
+
     public function index() {
       $this->set('stylesheets', array('about.css'));
       $this->push('javascripts', 'right-click.js');
@@ -8,9 +16,13 @@
       
       $this->set('menu-replace', 4);
 
-      $data = get_config('about');
-      $this->set('title', $data['title']);
-      $this->set('content', $data['content']);
+      $this->set('title', $this->data['title']);
+      $this->set('content', $this->data['content']);
+    }
+
+    public function gallery() {
+      $this->_layout = 'empty';
+      $this->set('response', 'files=' . implode('|',$this->data['gallery']));
     }
   }
 ?>

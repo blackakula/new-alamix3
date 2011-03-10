@@ -3,7 +3,7 @@ Options +FollowSymLinks -Indexes
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  RewriteCond %{REQUEST_URI} !/(css|img|js)/.
+  RewriteCond %{REQUEST_URI} !/(css|img|js|thumbs|images)/.
   RewriteRule ^(.*)$ index.php [L,QSA]
 
   RewriteCond %{REQUEST_FILENAME} !-f
