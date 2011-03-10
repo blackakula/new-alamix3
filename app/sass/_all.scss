@@ -10,6 +10,8 @@ $text_color: #6b6b6b;
 $a_color_visited: #635151;
 $a_color_visited_hover: #5b3b3b;
 
+$titles_color: #cecac0;
+
 @mixin round-corner($round_size, $w: 'all', $h: 'all') {
   @if $w == 'all' {
     border-radius: $round_size;

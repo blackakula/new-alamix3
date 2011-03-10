@@ -15,7 +15,7 @@
           array('мікс', '#mix'),
           array('фото', $r->build_path('photo')),
           array('лінки', '#linky'),
-          array('аля про', '#alya_pro'),
+          array('аля про', $r->build_path('about')),
       ));
 
       $this->set('copyrights', array(

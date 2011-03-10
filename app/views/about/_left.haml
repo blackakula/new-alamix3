@@ -1,0 +1,6 @@
+- foreach ($this->get('content') as $title => $info)
+  <?php $color = 'c' . $info['color']?>
+  .about-item
+    %h2.title
+      %a.$color= $title
+    .about-text= $info['text']

@@ -1,0 +1,39 @@
+title: This is about page
+content:
+  'Портфоліо':
+    color: 2
+    text: >
+      А тут будет информация, картинки, и все такое.<br />
+      Пример:<br />
+      <a href="http://wp-themes.com/minimalist/?TB_iframe=true&amp;width=600&amp;height=400" target="_blank">http://wp-themes.com/minimalist/?TB_iframe=true&amp;width=600&amp;height=400</a><br /><br />
+      <img src="img/example_portfolio.jpg" alt="Пример картинки" />
+  'Історія в обличчях':
+    color: 1
+    text: >
+      Добавишь сама все, что хочешь!<br />
+      А тут будет информация, картинки, и все такое.<br />
+      Пример:<br />
+      <a href="http://wp-themes.com/minimalist/?TB_iframe=true&amp;width=600&amp;height=400" target="_blank">http://wp-themes.com/minimalist/?TB_iframe=true&amp;width=600&amp;height=400</a><br /><br />
+      <img src="img/example_portfolio.jpg" alt="Пример картинки" />
+  'Блоги':
+    color: 3
+    text: >
+      Не забывай меня просить о помощи :)<br />
+      А тут будет информация, картинки, и все такое.<br />
+      Пример:<br />
+      <a href="http://wp-themes.com/minimalist/?TB_iframe=true&amp;width=600&amp;height=400" target="_blank">http://wp-themes.com/minimalist/?TB_iframe=true&amp;width=600&amp;height=400</a><br /><br />
+      <img src="img/example_portfolio.jpg" alt="Пример картинки" />
+  'Друзі сайту':
+    color: 4
+    text: >
+      А тут будет информация, картинки, и все такое.<br />
+      Пример:<br />
+      <a href="http://wp-themes.com/minimalist/?TB_iframe=true&amp;width=600&amp;height=400" target="_blank">http://wp-themes.com/minimalist/?TB_iframe=true&amp;width=600&amp;height=400</a><br /><br />
+      <img src="img/example_portfolio.jpg" alt="Пример картинки" />
+  'Контакти':
+    color: 0
+    text: >
+      А тут будет информация, картинки, и все такое.<br />
+      Пример:<br />
+      <a href="http://wp-themes.com/minimalist/?TB_iframe=true&amp;width=600&amp;height=400" target="_blank">http://wp-themes.com/minimalist/?TB_iframe=true&amp;width=600&amp;height=400</a><br /><br />
+      <img src="img/example_portfolio.jpg" alt="Пример картинки" />
