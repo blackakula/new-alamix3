@@ -8,5 +8,5 @@
   .text.$color= $photo['text']
   .random-photo.$bcolor
     %a{href="<?php echo $photo['url']?>"}
-      -= $this->_img($photo['img'])
+      %img{src="<?php echo $photo['img']?>" alt="<?php echo $photo['alt']?>"}
   .clear
