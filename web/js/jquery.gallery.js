@@ -148,17 +148,15 @@ $(function() {
                 var thumbImg = $('<img title="'+description+'" alt="'+data[i].alt+'" height="75" />')
                 thumbImg.load(function(){
                     var $this = $(this);
-                    $tContainer.append($this);
                     ++count;
-                    if (typeof check_anchor != 'number' && count == 1)
-                      loadPhoto($this, 'cursorPlus')
                     if(count == countImages){
                         $('#thumbsWrapper').empty().append($tContainer);
                         thumbsDim($tContainer);
                         makeScrollable($('#thumbsWrapper'),$tContainer,15);
                     }
                 }).attr('src',data[i].src);
-                if (typeof check_anchor == 'number' && check_anchor == i + 1)
+                $tContainer.append(thumbImg);
+                if ((typeof check_anchor == 'number' && check_anchor == i + 1) || (typeof check_anchor != 'number' && i == 0))
                   loadPhoto(thumbImg,'cursorPlus')
             }
         },'json');
