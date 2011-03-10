@@ -1,1 +1,1 @@
-$('img').live("contextmenu",function(){return false;})
+$('#preview #imageWrapper img, #thumbsWrapper #thumbsContainer img, .random-photo img, .i-menu .submenu, .content .news .item .text img').live("contextmenu",function(){return false;})

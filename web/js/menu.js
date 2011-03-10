@@ -43,6 +43,17 @@ $(function() {
     var borderRadius = (.15 * $('.menu .item').width()) + 'px ' + (.15 * item) + 'px'
     $('.menu .item, .menu .tail').css(roundCss(borderRadius, 'bottom'))
     $('.menu .down, .menu .down .head').css(roundCss(borderRadius, 'top'))
+
+    //random photo
+    $('.random-photo-box').each(function() {
+      var $this = $(this)
+      var $thisWidth = $this.width()
+      var $thisImg = $this.find('.random-photo img')
+      if (!$thisImg.attr('realWidth'))
+        $thisImg.attr('realWidth', $thisImg.width())
+      var $realWidth = $thisImg.attr('realWidth')
+      $thisImg.width($realWidth > $thisWidth ? $thisWidth : $realWidth)
+    })
   }
 
   resizeMenu()

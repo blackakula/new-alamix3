@@ -2,6 +2,7 @@
   class HomeController extends ApplicationController {
     public function index() {
       $this->set('stylesheets', array('index.css'));
+      $this->push('javascripts', 'right-click.js');
       $this->push('javascripts', 'menu.js');
       $this->push('javascripts', 'index-menu.js');
 
