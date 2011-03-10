@@ -67,7 +67,7 @@ $(function() {
     var aniElement = $('.i-menu .container')
     var elWidth = el.width()
 
-    if (aniElement.width() <= elWidth) return
+    if (aniElement.width() <= elWidth) return 0
 
     var sidesWidth = elWidth * slideWidth
     if (sidesWidth == 0) return

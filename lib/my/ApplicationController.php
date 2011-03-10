@@ -19,7 +19,7 @@
       ));
 
       $this->set('copyrights', array(
-          array('Alina Mikhailova', 'mailto:alamix@i.ua', 'idea, design, content'),
+          array('Alina Mikhailova', 'mailto:alya.mikhailova@gmail.com', 'idea, design, content'),
           array('Sergey Akulinin', 'mailto:blackakula@gmail.com', 'development: php, html, css, javascript'),
       ));
     }

@@ -12,12 +12,16 @@
       $this->set('stylesheets', array('about.css'));
       $this->push('javascripts', 'right-click.js');
       $this->push('javascripts', 'menu.js');
+      $this->push('javascripts', 'index-menu.js');
       $this->push('javascripts', 'about.js');
       
       $this->set('menu-replace', 4);
 
       $this->set('title', $this->data['title']);
       $this->set('content', $this->data['content']);
+
+      $contacts = $this->data['contacts'];
+      $this->set('contacts', $this->data['contacts']);
     }
 
     public function gallery() {

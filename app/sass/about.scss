@@ -19,7 +19,19 @@
   }
 }
 
-.right .gallery {
-  margin-top: 50px;
-  height: 600px;
+.right {
+  .contacts {
+    margin-bottom: 8px;
+    margin-top: -90px;
+    height: 82px;
+    overflow: auto;
+    .container {
+      white-space: nowrap;
+      position: relative;
+    }
+  }
+  .gallery {
+    margin-top: 50px;
+    height: 600px;
+  }
 }

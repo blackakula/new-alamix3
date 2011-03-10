@@ -1,0 +1,13 @@
+.contacts.i-menu
+  <?php
+    $contacts = $this->get('contacts');
+    $width = 'width:' . (count($contacts) * 60) . 'px';
+  ?>
+  .container{style="$width"}
+    - foreach ($contacts as $contact)
+      <?php
+        $href = $contact['href'];
+        //$ico =  Template::getIMG() . 'ico/' . $contact['ico'];
+      ?>
+      %a{href="$href" target="_blank"}
+        -= $this->_img('ico/' . $contact['ico'])

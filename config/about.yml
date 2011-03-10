@@ -1,5 +1,33 @@
 title: This is about page
 gallery: [test1.jpg,test2.jpg,test3.jpg,test4.jpg,test5.jpg]
+contacts:
+  -
+    ico: vkontakte.png
+    href: http://vkontakte.ru/alamix
+  -
+    ico: facebook.png
+    href: http://www.facebook.com/alina.mikhailova
+  -
+    ico: twitter.png
+    href: http://twitter.com/ItsAlaMix
+  -
+    ico: myspace.png
+    href: http://www.myspace.com/alya.mikhailova
+  -
+    ico: mail.png
+    href: mailto:alya.mikhailova@gmail.com
+  -
+    ico: skype.png
+    href: callto://alyamix
+  -
+    ico: icq.png
+    href: http://www.icq.com/people/444882047
+  -
+    ico: youtube.png
+    href: http://www.youtube.com/profile?user=AlaMix90
+  -
+    ico: picasa.png
+    href: http://picasaweb.google.com/Alya.Mikhailova
 content:
   'Портфоліо':
     color: 2
