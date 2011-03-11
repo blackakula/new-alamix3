@@ -25,9 +25,10 @@
     margin-top: -90px;
     height: 82px;
     overflow: auto;
+    position: relative;
     .container {
-      white-space: nowrap;
       position: relative;
+      left: 0;
     }
   }
   .gallery {

@@ -51,6 +51,7 @@
   $imenu_submenu_width: 175px;
   $imenu_img_height: 472px;
   $imenu_submenu_height: $imenu_img_height + $imenu_border_up + $imenu_border_bottom;
+  $border_sides: 40px;
 
   $imenu_items_count: 3;
 
@@ -60,9 +61,10 @@
 
   .container {
     font-size: 16pt;
-    width: $imenu_items_count * ($imenu_submenu_width + $imenu_submenu_space) - $imenu_submenu_space;
+    width: $imenu_items_count * ($imenu_submenu_width + $imenu_submenu_space) + 2 * $border_sides - $imenu_submenu_space;
     position: relative;
-    left: 0;
+    left: -$border_sides;
+    padding: 0 $border_sides;
   }
 
   .submenu {

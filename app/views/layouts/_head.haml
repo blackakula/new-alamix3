@@ -5,5 +5,8 @@
 <!--[if gte IE 6 ]>
 -= $this->_css('ie.css')
 <![endif]-->
+<!--[if IE 6 ]>
+-= $this->_css('ie6.css')
+<![endif]-->
 - foreach ($this->get('javascripts') as $javascript)
   -= $this->_js($javascript)

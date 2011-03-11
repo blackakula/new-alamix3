@@ -22,6 +22,15 @@ $(function() {
     return css
   }
 
+  var resizeRandomImage = function() {
+    var $this = $(this)
+    var $realWidth = $this.attr('realWidth')
+    if ($realWidth) {
+      var $maxWidth = $this.parents('.random-photo-box').width()
+      $this.width($maxWidth > $realWidth ? $realWidth : $maxWidth)
+    }
+  }
+
   var resizeMenu = function() {
     var k = $('.menu').width() / 39
     $('.menu').height(k * 9)
@@ -45,16 +54,14 @@ $(function() {
     $('.menu .down, .menu .down .head').css(roundCss(borderRadius, 'top'))
 
     //random photo
-    $('.random-photo-box').each(function() {
-      var $this = $(this)
-      var $thisWidth = $this.width()
-      var $thisImg = $this.find('.random-photo img')
-      if (!$thisImg.attr('realWidth'))
-        $thisImg.attr('realWidth', $thisImg.width())
-      var $realWidth = $thisImg.attr('realWidth')
-      $thisImg.width($realWidth > $thisWidth ? $thisWidth : $realWidth)
-    })
+    $('.random-photo-box img').each(resizeRandomImage)
   }
+
+  $('.random-photo-box img').load(function() {
+    var $this = $(this)
+    $this.attr('realWidth', $this.width())
+    resizeRandomImage.call(this)
+  })
 
   resizeMenu()
   $(window).resize(resizeMenu)
