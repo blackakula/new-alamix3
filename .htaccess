@@ -4,7 +4,9 @@ Options +FollowSymLinks -Indexes
   RewriteEngine On
   RewriteBase /
 
-  RewriteCond %{REQUEST_URI} !^/web
+  RewriteRule ^mix/(.*) mix/$1 [L,QSA]
+
+  RewriteCond %{REQUEST_URI} !^/(web|mix)
   RewriteRule ^(.*)$ web/$1 [L,QSA]
 
   RewriteCond %{ENV:REDIRECT_STATUS} ^$
