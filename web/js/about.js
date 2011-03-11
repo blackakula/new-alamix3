@@ -1,7 +1,7 @@
 $(function() {
   $('.content .about-item .about-text').slideUp(0)
 
-  var speed = 0
+  var speed = 600
   $('.content .about-item h2.title a').click(function(event) {
     event.preventDefault()
 
@@ -15,7 +15,4 @@ $(function() {
     $this.parents('.title').toggleClass('selected')
     $this.parents('.about-item').find('.about-text').slideToggle(speed)
   })
-
-  $('.content .about-item h2.title a').first().click()
-  speed = 600
 })
