@@ -1,5 +1,42 @@
 title: Mix Photos
 photos:
+  'Fabulous':
+    -
+      text: © Alina Mikhailova, 2010. Model: Margo Levitskaya
+      img: https://lh6.googleusercontent.com/_2QfkN50ck4A/TC-f89crAgI/AAAAAAAAAhc/IoHb4-XkK24/s512/DSC_0278%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg`
+      thumb: https://lh3.googleusercontent.com/_2QfkN50ck4A/TXlask3bOuI/AAAAAAAAA2k/JuY_n8udye8/fab_01.jpg
+    -
+      text: © Alina Mikhailova, 2010. Model: Margo Levitskaya
+      img: https://lh5.googleusercontent.com/_2QfkN50ck4A/TC-f9DWBZDI/AAAAAAAAAhg/JGXjk-99OYE/s512/DSC_0336%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh3.googleusercontent.com/_2QfkN50ck4A/TXlas5Bu6WI/AAAAAAAAA2o/G7GDNTGSPTA/fab_02.jpg
+    -
+      text: © Alina Mikhailova, 2010. Model: Margo Levitskaya
+      img: https://lh4.googleusercontent.com/_2QfkN50ck4A/TC-f9sKiPzI/AAAAAAAAAhk/2znOm1QYDk8/s720/DSC_0344%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh5.googleusercontent.com/_2QfkN50ck4A/TXlas4T4IgI/AAAAAAAAA2s/GhT51SJBc3Y/fab_03.jpg
+    -
+      text: © Alina Mikhailova, 2010. Model: Margo Levitskaya
+      img: https://lh5.googleusercontent.com/_2QfkN50ck4A/TC-f-DLZaiI/AAAAAAAAAho/6hfXvJC29Jo/s512/DSC_0369%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh6.googleusercontent.com/_2QfkN50ck4A/TXlaszpB-5I/AAAAAAAAA2w/IZSCbfOGoww/fab_04.jpg
+    -
+      text: © Alina Mikhailova, 2010. Model: Margo Levitskaya
+      img: https://lh6.googleusercontent.com/_2QfkN50ck4A/TC-f-pGwAVI/AAAAAAAAAhs/oVHMwQ6ED0w/s512/DSC_0379%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh4.googleusercontent.com/_2QfkN50ck4A/TXlatB3GsmI/AAAAAAAAA20/W34WeLW3sKw/fab_05.jpg
+    -
+      text: © Alina Mikhailova, 2010. Model: Margo Levitskaya
+      img: https://lh5.googleusercontent.com/_2QfkN50ck4A/TC-f_GxdABI/AAAAAAAAAhw/loTmMrq8jgc/s512/DSC_0380%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh5.googleusercontent.com/_2QfkN50ck4A/TXlatLBDawI/AAAAAAAAA24/nHKFNSyBn4A/fab_06.jpg
+    -
+      text: © Alina Mikhailova, 2010. Model: Margo Levitskaya
+      img: https://lh4.googleusercontent.com/_2QfkN50ck4A/TC-f_g7a5CI/AAAAAAAAAh0/QD6wOC2ywzU/s512/DSC_0381%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh5.googleusercontent.com/_2QfkN50ck4A/TXlatHEzxqI/AAAAAAAAA28/3I699CyCEcw/fab_07.jpg
+    -
+      text: © Alina Mikhailova, 2010. Model: Margo Levitskaya
+      img: https://lh5.googleusercontent.com/_2QfkN50ck4A/TC-f_zXae4I/AAAAAAAAAh4/hkngYmo-p1o/s512/DSC_0385%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh6.googleusercontent.com/_2QfkN50ck4A/TXlatao7Z1I/AAAAAAAAA3E/5mDPA5BzRzw/fab_08.jpg
+    -
+      text: © Alina Mikhailova, 2010. Model: Margo Levitskaya
+      img: https://lh6.googleusercontent.com/_2QfkN50ck4A/TC-gAFpSseI/AAAAAAAAAh8/uMut_1p8gHo/s512/DSC_0412%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh3.googleusercontent.com/_2QfkN50ck4A/TXlattdD-JI/AAAAAAAAA3A/60x5g1Ld6SQ/fab_09.jpg
   'Sunrise':
     -
       text: © Alina Mikhailova, 2009. Model: Rita Vershinina. Place: Kyiv, Singing Field. 
@@ -25,7 +62,103 @@ photos:
       text: © Alina Mikhailova, 2009. Model: Nastenko Nastya. Place: Kyiv, Park Mariinskyi
       img: https://lh5.googleusercontent.com/_2QfkN50ck4A/TAV8MBy7QOI/AAAAAAAAAYw/LZXp8yD4CDQ/s512/DSC_1658%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
       thumb: https://lh4.googleusercontent.com/_2QfkN50ck4A/TXh6MUgeXWI/AAAAAAAAAwE/7wDE1ikjE5k/Natural_13.jpg
-      'Stereotypes':
+    -
+      text: © Alina Mikhailova, 2010. Model: Nastenko Nastya. Place: Kyiv, Schekovitsa
+      img: https://lh6.googleusercontent.com/_2QfkN50ck4A/TC-SkIhGoyI/AAAAAAAAAeA/0rBacvHg9oM/s512/DSC_1103%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh3.googleusercontent.com/_2QfkN50ck4A/TXlUJd5MVUI/AAAAAAAAA1I/55lIoUrc6uM/nast_01.jpg
+    -
+      text: © Alina Mikhailova, 2010. Model: Nastenko Nastya. Place: Kyiv, Schekovitsa
+      img: https://lh4.googleusercontent.com/_2QfkN50ck4A/TC-Slu2eh5I/AAAAAAAAAeI/RnWd7ZW8SfM/s720/DSC_1107%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh5.googleusercontent.com/_2QfkN50ck4A/TXlUJZE6KmI/AAAAAAAAA1E/THIV3PglAPQ/nast_02.jpg
+    -
+      text: © Alina Mikhailova, 2010. Model: Nastenko Nastya. Place: Kyiv, Schekovitsa
+      img: https://lh4.googleusercontent.com/_2QfkN50ck4A/TC-SmJiIKGI/AAAAAAAAAeM/AHb9OhRGPwU/s512/DSC_1112%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh6.googleusercontent.com/_2QfkN50ck4A/TXlUJjgWqjI/AAAAAAAAA1M/3RT_DcyETcU/nast_03.jpg
+    -
+      text: © Alina Mikhailova, 2010. Model: Nastenko Nastya. Place: Kyiv, Schekovitsa
+      img: https://lh5.googleusercontent.com/_2QfkN50ck4A/TC-SmswbPeI/AAAAAAAAAeQ/6owxP2k8DoE/s512/DSC_1120%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh6.googleusercontent.com/_2QfkN50ck4A/TXlUJ1GpM4I/AAAAAAAAA1Q/p55bKFBD-qw/nast_04.jpg
+    -
+      text: © Alina Mikhailova, 2010. Model: Nastenko Nastya. Place: Kyiv, Schekovitsa
+      img: https://lh6.googleusercontent.com/_2QfkN50ck4A/TC-SnJoW6tI/AAAAAAAAAeU/kjbiQKPfvfg/s512/DSC_1121%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh6.googleusercontent.com/_2QfkN50ck4A/TXlUJxxBrnI/AAAAAAAAA1Y/q6tpIJTH7Lg/nast_05.jpg
+    -
+      text: © Alina Mikhailova, 2010. Model: Nastenko Nastya. Place: Kyiv, Schekovitsa
+      img: https://lh4.googleusercontent.com/_2QfkN50ck4A/TC-SnnwCTfI/AAAAAAAAAeY/RvPd-CxCMR8/s512/DSC_1129%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh6.googleusercontent.com/_2QfkN50ck4A/TXlUKPiAnfI/AAAAAAAAA1c/gYUox7lmNE0/nast_06.jpg
+    -
+      text: © Alina Mikhailova, 2010. Model: Nastenko Nastya. Place: Kyiv, Schekovitsa
+      img: https://lh5.googleusercontent.com/_2QfkN50ck4A/TC-SpCb9oDI/AAAAAAAAAec/2mwNR_ypxdM/s720/DSC_1138%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh5.googleusercontent.com/_2QfkN50ck4A/TXlUKIwf1gI/AAAAAAAAA1U/RpJjKRkmAjQ/nast_07.jpg
+    -
+      text: © Alina Mikhailova, 2010. Model: Nastenko Nastya. Place: Kyiv, Schekovitsa
+      img: https://lh6.googleusercontent.com/_2QfkN50ck4A/TC-SqCnaRsI/AAAAAAAAAeg/toTarJY4I4g/s720/DSC_1141%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh4.googleusercontent.com/_2QfkN50ck4A/TXlUKysbglI/AAAAAAAAA1k/ICjtSciClDg/nast_08.jpg
+    -
+      text: © Alina Mikhailova, 2010. Model: Nastenko Nastya. Place: Kyiv, Schekovitsa
+      img: https://lh4.googleusercontent.com/_2QfkN50ck4A/TC-SqqpSSXI/AAAAAAAAAek/EwhEE2tuXcg/s512/DSC_1142%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh5.googleusercontent.com/_2QfkN50ck4A/TXlUKrPhhBI/AAAAAAAAA1g/e--5C8k2nGY/nast_09.jpg
+    -
+      text: © Alina Mikhailova, 2010. Model: Nastenko Nastya. Place: Kyiv, Schekovitsa
+      img: https://lh4.googleusercontent.com/_2QfkN50ck4A/TC-SrFAg4SI/AAAAAAAAAeo/lkjhEovXDn8/s512/DSC_1146%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh4.googleusercontent.com/_2QfkN50ck4A/TXlUKhYwBhI/AAAAAAAAA1o/rpQhlGeaH0M/nast_10.jpg
+    -
+      text: © Alina Mikhailova, 2010. Model: Nastenko Nastya. Place: Kyiv, Schekovitsa
+      img: https://lh5.googleusercontent.com/_2QfkN50ck4A/TC-Sr3JKcDI/AAAAAAAAAes/L401h6TqwJs/s512/DSC_1147%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh4.googleusercontent.com/_2QfkN50ck4A/TXlUK_E77EI/AAAAAAAAA1s/05CYK5LTSfM/nast_11.jpg
+    -
+      text: © Alina Mikhailova, 2010. Model: Nastenko Nastya. Place: Kyiv, Schekovitsa
+      img: https://lh5.googleusercontent.com/_2QfkN50ck4A/TC-SsVhwnJI/AAAAAAAAAew/VBTy6tR-oMY/s720/DSC_0011%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh4.googleusercontent.com/_2QfkN50ck4A/TXlULtKY_pI/AAAAAAAAA14/iSZCT84dvLw/nast_12.jpg
+    -
+      text: © Alina Mikhailova, 2010. Model: Nastenko Nastya. Place: Kyiv, Schekovitsa
+      img: https://lh6.googleusercontent.com/_2QfkN50ck4A/TC-SwUyhfaI/AAAAAAAAAfQ/8ikg4iznG_0/s512/DSC_0053%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh5.googleusercontent.com/_2QfkN50ck4A/TXlULYY60eI/AAAAAAAAA1w/3TlrnIuBWx8/nast_13.jpg
+    -
+      text: © Alina Mikhailova, 2010. Model: Nastenko Nastya. Place: Kyiv, Schekovitsa
+      img: https://lh4.googleusercontent.com/_2QfkN50ck4A/TC-Sw3dFADI/AAAAAAAAAfU/1-xHvYwUjvI/s720/DSC_0054%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh4.googleusercontent.com/_2QfkN50ck4A/TXlULhi81SI/AAAAAAAAA10/S1xs_YUMkXk/nast_14.jpg
+    -
+      text: © Alina Mikhailova, 2010. Model: Nastenko Nastya. Place: Kyiv, Schekovitsa
+      img: https://lh3.googleusercontent.com/_2QfkN50ck4A/TC-SxxW4whI/AAAAAAAAAfc/7GEUp1JcITI/s512/DSC_0058%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh5.googleusercontent.com/_2QfkN50ck4A/TXlUL7HweQI/AAAAAAAAA2A/KIhqmtxhSYk/nast_15.jpg
+    -
+      text: © Alina Mikhailova, 2010. Model: Nastenko Nastya. Place: Kyiv, Schekovitsa
+      img: https://lh6.googleusercontent.com/_2QfkN50ck4A/TC-Sy6k_IFI/AAAAAAAAAfo/n-GM52OuGnY/s720/DSC_0074%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh4.googleusercontent.com/_2QfkN50ck4A/TXlUMJH20wI/AAAAAAAAA2E/_OIFBwZ-hbw/nast_16.jpg
+    -
+      text: © Alina Mikhailova, 2010. Model: Nastenko Nastya. Place: Kyiv, Schekovitsa
+      img: https://lh4.googleusercontent.com/_2QfkN50ck4A/TC-SzVILC8I/AAAAAAAAAfs/ci6gR2OGZas/s720/DSC_0080%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh3.googleusercontent.com/_2QfkN50ck4A/TXlUMJLZ6nI/AAAAAAAAA18/M0-FsugYEiQ/nast_17.jpg
+    -
+      text: © Alina Mikhailova, 2010. Model: Nastenko Nastya. Place: Kyiv, Schekovitsa
+      img: https://lh5.googleusercontent.com/_2QfkN50ck4A/TC-Sz2l2UBI/AAAAAAAAAfw/-Y-EXjZrRE8/s512/DSC_0082%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh3.googleusercontent.com/_2QfkN50ck4A/TXlUMks78RI/AAAAAAAAA2I/hnjGhWRqmu4/nast_18.jpg
+    -
+      text: © Alina Mikhailova, 2010. Model: Nastenko Nastya. Place: Kyiv, Schekovitsa
+      img: https://lh3.googleusercontent.com/_2QfkN50ck4A/TC-S0cMCHtI/AAAAAAAAAf4/5JkGwNiFdpM/s512/DSC_0085%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh5.googleusercontent.com/_2QfkN50ck4A/TXlUMmc9XdI/AAAAAAAAA2M/htvnC0pEE0o/nast_19.jpg
+    -
+      text: © Alina Mikhailova, 2010. Model: Nastenko Nastya. Place: Kyiv, Schekovitsa
+      img: https://lh4.googleusercontent.com/_2QfkN50ck4A/TC-S09ORuYI/AAAAAAAAAf8/A54GsQ0O3NQ/s512/DSC_0086%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh3.googleusercontent.com/_2QfkN50ck4A/TXlUMr3POPI/AAAAAAAAA2Q/FEv5gUN4q_U/nast_20.jpg
+    -
+      text: © Alina Mikhailova, 2010. Model: Nastenko Nastya. Place: Kyiv, Schekovitsa
+      img: https://lh4.googleusercontent.com/_2QfkN50ck4A/TC-S1By4C3I/AAAAAAAAAgA/kBId_In5RHY/s512/DSC_0089%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh3.googleusercontent.com/_2QfkN50ck4A/TXlUM0vmJfI/AAAAAAAAA2U/LZbfHptCpEo/nast_21.jpg
+    -
+      text: © Alina Mikhailova, 2010. Model: Nastenko Nastya. Place: Kyiv, Schekovitsa
+      img: https://lh3.googleusercontent.com/_2QfkN50ck4A/TC-S1xgwEgI/AAAAAAAAAgI/AE6iFOEPIog/s512/DSC_0095%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh5.googleusercontent.com/_2QfkN50ck4A/TXlUNJ1f0zI/AAAAAAAAA2Y/r6qwwCPvpsw/nast_22.jpg
+    -
+      text: © Alina Mikhailova, 2010. Model: Nastenko Nastya. Place: Kyiv, Schekovitsa
+      img: https://lh4.googleusercontent.com/_2QfkN50ck4A/TC-S2Wsz0wI/AAAAAAAAAgM/RJtjd6j8_bQ/s512/DSC_0098%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh3.googleusercontent.com/_2QfkN50ck4A/TXlUNPx5GEI/AAAAAAAAA2g/dC4q0EXF744/nast_23.jpg
+    -
+      text: © Alina Mikhailova, 2010. Model: Nastenko Nastya. Place: Kyiv, Schekovitsa
+      img: https://lh5.googleusercontent.com/_2QfkN50ck4A/TC-S23Ga3iI/AAAAAAAAAgU/rInO4s_E_ic/s512/DSC_0100%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh4.googleusercontent.com/_2QfkN50ck4A/TXlUNTPB-GI/AAAAAAAAA2c/XJ2_uBZQlzQ/nast_24.jpg
+  'Walls':
     -
       text: © Alina Mikhailova, 2009. Models: Nastya Samoshina, Nastya Nastenko. Place: Kyiv, institute of journalism
       img: https://lh6.googleusercontent.com/_2QfkN50ck4A/TAV7VSbbA7I/AAAAAAAAAUs/e_fuG2-YUnw/s800/CSC_0341%20copy%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
@@ -106,28 +239,136 @@ photos:
       text: © Alina Mikhailova, 2009. Model: Nastya Nastenko. Place: Kyiv, Tymoshenko St.
       img: https://lh4.googleusercontent.com/_2QfkN50ck4A/TAV7tgX4aPI/AAAAAAAAAWo/FxjQIyNyRXI/s720/CSC_0801%20copy%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
       thumb: https://lh4.googleusercontent.com/_2QfkN50ck4A/TXiEAaQmtaI/AAAAAAAAAxU/8XU30cKPIUw/Stereotypes_20.jpg
+    - 
+      text: © Alina Mikhailova, 2010. Model: Nastya Nastenko. Place: Kyiv, Tymoshenko St.
+      img: https://lh4.googleusercontent.com/_2QfkN50ck4A/TAV7yl9smZI/AAAAAAAAAXE/zNnc94ELtr8/s512/DSC_0979%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh5.googleusercontent.com/_2QfkN50ck4A/TXlJF4GYWkI/AAAAAAAAA0Q/PGxtdr2FRWQ/st_21.jpg
+    - 
+      text: © Alina Mikhailova, 2010. Model: Nastya Nastenko. Place: Kyiv, Tymoshenko St.
+      img: https://lh5.googleusercontent.com/_2QfkN50ck4A/TAV71MJLjGI/AAAAAAAAAXU/i0A7_TnLu6c/s512/DSC_0989%20copy%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh5.googleusercontent.com/_2QfkN50ck4A/TXlJGFgrejI/AAAAAAAAA0Y/TLB_XLEiKYo/st_22.jpg
+    - 
+      text: © Alina Mikhailova, 2010. Model: Nastya Nastenko. Place: Kyiv, Tymoshenko St.
+      img: https://lh4.googleusercontent.com/_2QfkN50ck4A/TAV72YANejI/AAAAAAAAAXc/_6nNyl5NK2w/s512/DSC_0997%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh6.googleusercontent.com/_2QfkN50ck4A/TXlJF2kxgUI/AAAAAAAAA0U/ezIiLqaoZhM/st_23.jpg
+    - 
+      text: © Alina Mikhailova, 2010. Model: Nastya Nastenko. Place: Kyiv, Tymoshenko St.
+      img: https://lh4.googleusercontent.com/_2QfkN50ck4A/TAV74cXtv4I/AAAAAAAAA0M/KK3ssxILTKo/s512/DSC_1002%20copy%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh3.googleusercontent.com/_2QfkN50ck4A/TXlJGPEBbTI/AAAAAAAAA0c/3LnJmV5v2W4/st_24.jpg
+    - 
+      text: © Alina Mikhailova, 2010. Model: Nastya Nastenko. Place: Kyiv, Tymoshenko St.
+      img: https://lh3.googleusercontent.com/_2QfkN50ck4A/TAV75OC1acI/AAAAAAAAAXs/L9ePym9d2Ew/s512/DSC_1003%20copy%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh3.googleusercontent.com/_2QfkN50ck4A/TXlJGcYUGLI/AAAAAAAAA0g/I3dB-O2aRX4/st_25.jpg
+    - 
+      text: © Alina Mikhailova, 2010. Model: Nastya Nastenko. Place: Kyiv, Tymoshenko St.
+      img: https://lh3.googleusercontent.com/_2QfkN50ck4A/TAV76NxJZhI/AAAAAAAAAXw/GpulkGDRogs/s720/DSC_1018%20copy%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh5.googleusercontent.com/_2QfkN50ck4A/TXlJGgC9m8I/AAAAAAAAA0k/C0vGt0Q1VEo/st_26.jpg
+    - 
+      text: © Alina Mikhailova, 2010. Model: Nastya Nastenko. Place: Kyiv, Tymoshenko St.
+      img: https://lh5.googleusercontent.com/_2QfkN50ck4A/TAV77bY2roI/AAAAAAAAAX0/iVuDFzSoR7w/s800/DSC_1023%20copy%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh3.googleusercontent.com/_2QfkN50ck4A/TXlJGr4_JkI/AAAAAAAAA0o/9dwIYb9Cn0g/st_27.jpg
+    - 
+      text: © Alina Mikhailova, 2010. Model: Nastya Nastenko. Place: Kyiv, Tymoshenko St.
+      img: https://lh3.googleusercontent.com/_2QfkN50ck4A/TAV79A-tGJI/AAAAAAAAAX8/qZU3A4a2mTg/s512/DSC_1094%20copy%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh4.googleusercontent.com/_2QfkN50ck4A/TXlJG9rvwpI/AAAAAAAAA0s/xqJ6Fk5mhl0/st_28.jpg
+    - 
+      text: © Alina Mikhailova, 2010. Model: Nastya Nastenko. Place: Kyiv, Tymoshenko St.
+      img: https://lh3.googleusercontent.com/_2QfkN50ck4A/TAV7_Ki55JI/AAAAAAAAAYE/MblIhBhuDM0/s720/DSC_1100%20copy%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh3.googleusercontent.com/_2QfkN50ck4A/TXlJHJOF9NI/AAAAAAAAA00/MbRO_6FZ_RU/st_29.jpg
+    - 
+      text: © Alina Mikhailova, 2010. Model: Nastya Nastenko. Place: Kyiv, Tymoshenko St.
+      img: https://lh6.googleusercontent.com/_2QfkN50ck4A/TAV8A5xBtMI/AAAAAAAAAYI/8g2EHJAhmQk/s912/DSC_1102%20copy%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh3.googleusercontent.com/_2QfkN50ck4A/TXlJHBP9HzI/AAAAAAAAA0w/zlFVfBWYHOc/st_30.jpg
+    - 
+      text: © Alina Mikhailova, 2010. Model: Nastya Nastenko. Place: Kyiv, Tymoshenko St.
+      img: https://lh4.googleusercontent.com/_2QfkN50ck4A/TAV8Eex1-RI/AAAAAAAAAYQ/RCzQ1aJJBv0/s720/DSC_1114%20copy%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh4.googleusercontent.com/_2QfkN50ck4A/TXlJHNli6tI/AAAAAAAAA04/PNKkQ1CU_8w/st_31.jpg
+    - 
+      text: © Alina Mikhailova, 2010. Model: Nastya Nastenko. Place: Kyiv, Tymoshenko St.
+      img: https://lh3.googleusercontent.com/_2QfkN50ck4A/TAV8Gho_AII/AAAAAAAAAYY/nK9MJV3lyKY/s720/DSC_1115%20copy%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
+      thumb: https://lh4.googleusercontent.com/_2QfkN50ck4A/TXlJHZsJjeI/AAAAAAAAA08/ioq1pov4kP4/st_32.jpg
   'Natural':
     -
-      text: © Alina Mikhailova. Kyiv, Botanic Garden. 2009
+      text: © Alina Mikhailova, 2009. Kyiv, Botanic Garden
       img: https://lh6.googleusercontent.com/_2QfkN50ck4A/TAV8TBGU_rI/AAAAAAAAAZQ/mSIC7kx8egQ/s720/DSC_0696%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
       thumb: https://lh5.googleusercontent.com/_2QfkN50ck4A/TXfqdYnIptI/AAAAAAAAAvQ/o2o9L7FIxzA/Natural_01.jpg
     -
-      text: © Alina Mikhailova. Kyiv, Botanic Garden. 2009
+      text: © Alina Mikhailova, 2009. Kyiv, Botanic Garden
       img: https://lh5.googleusercontent.com/_2QfkN50ck4A/TAV8T_nMjmI/AAAAAAAAAZY/mRZvj9U4850/s512/DSC_0699%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
       thumb: https://lh6.googleusercontent.com/_2QfkN50ck4A/TXfqdb5ZjyI/AAAAAAAAAvM/O52jfcksomw/Natural_02.jpg
     -
-      text: © Alina Mikhailova. Kyiv, Botanic Garden. 2009
+      text: © Alina Mikhailova, 2009. Kyiv, Botanic Garden
       img: https://lh6.googleusercontent.com/_2QfkN50ck4A/TAV8WAyonwI/AAAAAAAAAZg/ll7dxI87kQg/s720/DSC_0713%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
       thumb: https://lh6.googleusercontent.com/_2QfkN50ck4A/TXfqdiZ8gaI/AAAAAAAAAvU/K7x_ipp0Sdc/Natural_04.jpg
     -
-      text: © Alina Mikhailova. Kyiv, Botanic Garden. 2009
+      text: © Alina Mikhailova, 2009. Kyiv, Botanic Garden
       img: https://lh4.googleusercontent.com/_2QfkN50ck4A/TAV8XbnNeOI/AAAAAAAAAZk/yoC4uLGQhFU/s512/DSC_0757%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
       thumb: https://lh6.googleusercontent.com/_2QfkN50ck4A/TXfqd9v3liI/AAAAAAAAAvY/4ceP4kboibo/Natural_05.jpg
     -
-      text: © Alina Mikhailova. Kyiv, Botanic Garden. 2009
-      img: https://lh3.googleusercontent.com/_2QfkN50ck4A/TAV8ZEzVBGI/AAAAAAAAAZs/5ncbUksr-G8/s720/DSC_0792%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
-      thumb: https://lh3.googleusercontent.com/_2QfkN50ck4A/TXfqd1pM53I/AAAAAAAAAvc/OFJd7s7YU14/Natural_06.jpg
+      text: © Alina Mikhailova, 2009. Kyiv, Botanic Garden
+      img: https://lh3.googleusercontent.com/_2QfkN50ck4A/TXkoJwVuK0I/AAAAAAAAAys/SHWmT4dOwjs/s720/DSC_0795.jpg
+      thumb: https://lh6.googleusercontent.com/_2QfkN50ck4A/TXkoNqUGYXI/AAAAAAAAAzI/qVnU6qyVAbo/DSC_0795_small.jpg
     -
-      text: © Alina Mikhailova. Kyiv, Botanic Garden. 2009
-      img: https://lh6.googleusercontent.com/_2QfkN50ck4A/TAV8aTqDQGI/AAAAAAAAAZw/gaL1fJLIRoQ/s720/DSC_0795%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg
-      thumb: https://lh4.googleusercontent.com/_2QfkN50ck4A/TXfqeGIUIgI/AAAAAAAAAvg/UFWfSzCv4xg/Natural_07.jpg
+      text: © Alina Mikhailova, 2009. Kyiv, Botanic Garden
+      img: https://lh5.googleusercontent.com/_2QfkN50ck4A/TXkoMvFdakI/AAAAAAAAAzU/GnYocmGr4ew/s720/DSC_0792.jpg
+      thumb: https://lh6.googleusercontent.com/_2QfkN50ck4A/TXkoNuvuRkI/AAAAAAAAAzM/yTaRh9lqk1k/DSC_0792_small.jpg
+    -
+      text: © Alina Mikhailova, 2009. Kara-Dag
+      img: https://lh5.googleusercontent.com/_2QfkN50ck4A/TXkoGrzFtyI/AAAAAAAAAyQ/FPOw91ueB-g/s512/CSC_0173.jpg
+      thumb: https://lh5.googleusercontent.com/_2QfkN50ck4A/TXkoM5wQIRI/AAAAAAAAAy0/wAUSFqGxSE0/CSC_0173_small.jpg
+    -
+      text: © Alina Mikhailova, 2009. Ordgonikidze
+      img: https://lh3.googleusercontent.com/_2QfkN50ck4A/TXkoGxm27aI/AAAAAAAAAyU/EddoKDMgYRI/s1024/DSC_0196.jpg
+      thumb: https://lh5.googleusercontent.com/_2QfkN50ck4A/TXkoM--M4DI/AAAAAAAAAy4/q992CSJXQzA/DSC_0196_small.jpg
+    -
+      text: © Alina Mikhailova, 2009. Ordgonikidze
+      img: https://lh3.googleusercontent.com/_2QfkN50ck4A/TXkoHl3rRII/AAAAAAAAAyY/1ymfsX4f5QI/s800/DSC_0205.jpg
+      thumb: https://lh6.googleusercontent.com/_2QfkN50ck4A/TXkoM7rNVoI/AAAAAAAAAy8/m4B8FYN1cL8/DSC_0205_small.jpg
+    -
+      text: © Alina Mikhailova, 2009. Ordgonikidze
+      img: https://lh6.googleusercontent.com/_2QfkN50ck4A/TXkoIpc61XI/AAAAAAAAAyk/lWdExw2IhPw/s912/DSC_0492.jpg
+      thumb: https://lh3.googleusercontent.com/_2QfkN50ck4A/TXkoNb50uZI/AAAAAAAAAzQ/AaCvQ9QnkJg/DSC_0492_small.jpg
+    -
+      text: © Alina Mikhailova, 2009. Model: Lubov Mikhailova. Place: Ordgonikidze
+      img: https://lh6.googleusercontent.com/_2QfkN50ck4A/TXkoInH2AuI/AAAAAAAAAyo/Ru_LJA4Tl1I/s800/DSC_0212.jpg
+      thumb: https://lh6.googleusercontent.com/_2QfkN50ck4A/TXkoNCgUl9I/AAAAAAAAAzA/dEj5Y8hrHxk/DSC_0212_small.jpg
+    -
+      text: © Alina Mikhailova, 2009. Feodosia
+      img: https://lh4.googleusercontent.com/_2QfkN50ck4A/TXkoIWEZgEI/AAAAAAAAAyg/nSqg9_N1vEE/s800/DSC_0306.jpg
+      thumb: https://lh5.googleusercontent.com/_2QfkN50ck4A/TXkoNaXGjQI/AAAAAAAAAzE/eIMZ02rH9cY/DSC_0306_small.jpg
+    -
+      text: © Alina Mikhailova, 2010. Sudak
+      img: https://lh5.googleusercontent.com/_2QfkN50ck4A/TGmZDJ1fH2I/AAAAAAAAAkk/DtqleEV0jlE/s512/DSC_1371.jpg
+      thumb: https://lh4.googleusercontent.com/_2QfkN50ck4A/TXk6K6KLraI/AAAAAAAAAzs/rPkLBP45gaw/Natural_14.jpg
+    -
+      text: © Alina Mikhailova, 2010. Sudak
+      img: https://lh5.googleusercontent.com/_2QfkN50ck4A/TGmZEFg3kLI/AAAAAAAAAko/J-xJ6EajtRY/s512/DSC_1406.jpg
+      thumb: https://lh5.googleusercontent.com/_2QfkN50ck4A/TXk6LLZLMNI/AAAAAAAAAzo/B6YMnfPfmvk/Natural_15.jpg
+    -
+      text: © Alina Mikhailova, 2010. Sudak
+      img: https://lh6.googleusercontent.com/_2QfkN50ck4A/TGmZJbi3_YI/AAAAAAAAAk0/K-4PPgKzXAM/s800/DSC_1424.jpg
+      thumb: https://lh6.googleusercontent.com/_2QfkN50ck4A/TXk6LN7cu4I/AAAAAAAAAzw/kYiQZ5gBktY/Natural_16.jpg
+    -
+      text: © Alina Mikhailova, 2010. Sudak
+      img: https://lh5.googleusercontent.com/_2QfkN50ck4A/TGmZKcBaqyI/AAAAAAAAAk8/c8BZgjhwnaI/s720/DSC_1450.jpg
+      thumb: https://lh3.googleusercontent.com/_2QfkN50ck4A/TXk6LaqI7SI/AAAAAAAAAz0/zJuoKNbAWpc/Natural_17.jpg
+    -
+      text: © Alina Mikhailova, 2010. Sudak
+      img: https://lh6.googleusercontent.com/_2QfkN50ck4A/TGmZLAbcaTI/AAAAAAAAAlA/jlqyFS_o2q0/s912/DSC_1476.jpg
+      thumb: https://lh5.googleusercontent.com/_2QfkN50ck4A/TXk6Liex1HI/AAAAAAAAAz4/1SDGI2entTc/Natural_18.jpg
+    -
+      text: © Alina Mikhailova, 2010. Sudak
+      img: https://lh6.googleusercontent.com/_2QfkN50ck4A/TGmZjmamAyI/AAAAAAAAAl0/UEj6sZNSvbk/s720/DSC_1608.jpg
+      thumb: https://lh6.googleusercontent.com/_2QfkN50ck4A/TXk6LoOyiOI/AAAAAAAAA0A/PjBkVYQ6UTw/Natural_19.jpg
+    -
+      text: © Alina Mikhailova, 2010. Sudak
+      img: https://lh4.googleusercontent.com/_2QfkN50ck4A/TGmZm9xPxZI/AAAAAAAAAl8/AClSVAupdwQ/s512/DSC_1623.jpg
+      thumb: https://lh5.googleusercontent.com/_2QfkN50ck4A/TXk6L7d8O9I/AAAAAAAAAz8/WD6G2F3ceLs/Natural_20.jpg
+    -
+      text: © Alina Mikhailova, 2010. Sudak
+      img: https://lh5.googleusercontent.com/_2QfkN50ck4A/TGmZuZBOzGI/AAAAAAAAAmI/fkMaXkybs3E/s1024/DSC_1685.jpg
+      thumb: https://lh6.googleusercontent.com/_2QfkN50ck4A/TXk6L_pVGRI/AAAAAAAAA0E/8Vbrhg9ux7I/Natural_21.jpg
+    -
+      text: © Alina Mikhailova, 2010. Sudak
+      img: https://lh4.googleusercontent.com/_2QfkN50ck4A/TGmZXtQs47I/AAAAAAAAAlU/Ul_8fSDy508/s720/DSC_1550.jpg
+      thumb: https://lh3.googleusercontent.com/_2QfkN50ck4A/TXk8kPZVRnI/AAAAAAAAA0I/LP4LObAMpOM/Natural_22.jpg
