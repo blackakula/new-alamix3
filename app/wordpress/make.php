@@ -50,18 +50,18 @@
     
     clear_folder($out_dir . '.');
     
-//    $style = <<<STYLE
-///*
-//Theme Name: {$theme[1]}
-//Theme URI: {$theme[2]}
-//Description: This is the special theme "{$theme[1]}" designed for $domain
-//Author: Akulinin Sergey, Alina Mikhailova
-//Author URI: $domain
-//*/
-//STYLE;
+    $style = <<<STYLE
+/*
+Theme Name: {$theme[1]}
+Theme URI: {$theme[2]}
+Description: This is the special theme "{$theme[1]}" designed for $domain
+Author: Akulinin Sergey, Alina Mikhailova
+Author URI: $domain
+*/
+STYLE;
 //    $style .= "\n" . file_get_contents($in_dir . '/style.css');
 //
-//    file_put_contents($out_dir . 'style.css', $style);
+    file_put_contents($out_dir . 'style.css', $style);
     make_folder($cur_dir, $out_dir, true);
     make_folder($in_dir, $out_dir);
   }
