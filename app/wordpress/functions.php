@@ -52,3 +52,5 @@ function _img($src, $alt = null, $global = false, $attr = array()) {
 function _get($key = null) {
   return MyWPRegistry::get('Controller')->get($key);
 }
+
+?>

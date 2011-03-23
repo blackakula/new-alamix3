@@ -21,7 +21,12 @@
       if ($isHaml) {
         $php = Haml::parse2($php);
       }
-      file_put_contents($out_dir . preg_replace('/\.haml$/', '.php', $f), $php);
+      
+      $outFile = $out_dir . preg_replace('/\.haml$/', '.php', $f);
+      if (is_file($outFile)) {
+        $php = file_get_contents($outFile) . $php;
+      }
+      file_put_contents($outFile, $php);
     }
   }
 
@@ -57,6 +62,6 @@ STYLE;
     $style .= "\n" . file_get_contents($in_dir . '/style.css');
 
     file_put_contents($out_dir . 'style.css', $style);
-    make_folder($in_dir, $out_dir);
     make_folder($cur_dir, $out_dir, true);
+    make_folder($in_dir, $out_dir);
   }

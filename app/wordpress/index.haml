@@ -1,5 +1,6 @@
 !!! 5
 - loadConfig()
+- loadSpecific()
 <html <?php language_attributes(); ?>>
 %head
   - _include('head.php')
@@ -7,7 +8,7 @@
   - _include('ie6update.php')
   .all
     .left
-      HERE WILL BE: 'menu'
+      - _include('menu.php')
       .content
         HERE WILL BE: 'left'
       - _include('copyright.php')
