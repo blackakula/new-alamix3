@@ -1,0 +1,7 @@
+.copyright
+  - foreach (_get('copyrights') as $author)
+    .name
+      &#169;
+      %a{href="$author[1]" target="_blank"}= $author[0]
+      , 2011
+    .contribution= $author[2]

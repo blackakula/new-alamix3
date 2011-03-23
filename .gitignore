@@ -3,3 +3,4 @@ config/base.yml
 app/views/*/*.php
 .sass-cache
 web/css
+app/wordpress/*/*.css
