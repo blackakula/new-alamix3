@@ -36,3 +36,13 @@
      */
     wp_head();
 ?>
+- foreach (_get('stylesheets') as $stylesheet)
+  -= _css($stylesheet)
+<!--[if gte IE 6 ]>
+-= _css('ie.css')
+<![endif]-->
+<!--[if IE 6 ]>
+-= _css('ie6.css')
+<![endif]-->
+- foreach (_get('javascripts') as $javascript)
+  -= _js($javascript)

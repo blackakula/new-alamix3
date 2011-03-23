@@ -34,7 +34,7 @@ function loadConfig() {
     public function header() { return _get_header(); }
   }
   MyWPRegistry::set('Controller', new MyWPController(array()));
-
+  MyWPRegistry::get('Controller')->push('javascripts', 'menu.js');
 }
 
 function _include($file) {
@@ -47,6 +47,10 @@ function _js($src, $global = false) {
 
 function _img($src, $alt = null, $global = false, $attr = array()) {
   return MyWPRegistry::get('Template')->_img($src, $alt, $attr);
+}
+
+function _css($src, $global = false) {
+  return MyWPRegistry::get('Template')->_css($src, $global);
 }
 
 function _get($key = null) {
