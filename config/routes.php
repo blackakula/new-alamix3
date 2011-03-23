@@ -7,5 +7,7 @@
   $r->connect('/ajax/photo.json', array('controller' => 'photo', 'action' => 'thumbs'));
 
   $r->named('about', '/about', array('controller' => 'about'));
-  $r->connect('/images.php', array('controller' => 'about', 'action' => 'gallery'))
+  $r->connect('/images.php', array('controller' => 'about', 'action' => 'gallery'));
+
+  $r->named('mix', '/mix/');
 ?>
