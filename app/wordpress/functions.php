@@ -29,12 +29,12 @@ function loadConfig() {
   if (!get_routes()->is_readonly())
     require_once(get_config('CONFIG_DIR').'routes.php');
 
-  MyWPRegistry::set('Template', new ApplicationTemplate('', '', array()));
   class MyWPController extends ApplicationController {
     public function header() { return _get_header(); }
   }
   MyWPRegistry::set('Controller', new MyWPController(array()));
   MyWPRegistry::get('Controller')->push('javascripts', 'menu.js');
+  MyWPRegistry::set('Template', new ApplicationTemplate('', '', array()));
 }
 
 function _include($file) {

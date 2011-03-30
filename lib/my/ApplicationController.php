@@ -11,7 +11,7 @@
 
       $r = get_routes();
       $this->set('alamix-menu', array(
-          array('новини', '#novyny'),
+          array('новини',  $r->build_path('news')),
           array('мікс', $r->build_path('mix')),
           array('фото', $r->build_path('photo')),
           array('лінки', '#linky'),

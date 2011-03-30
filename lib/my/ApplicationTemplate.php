@@ -31,7 +31,7 @@
     public function setMenu() {
       $r = get_routes();
       $menu = $this->get('alamix-menu');
-      if ($this->get('menu-replace')) {
+      if ($this->get('menu-replace') || $this->get('menu-replace') === 0) {
       	$replace = $this->get('menu-replace');
         foreach ($menu as $k => $item)
       	  if ($k == $replace) {

@@ -10,4 +10,5 @@
   $r->connect('/images.php', array('controller' => 'about', 'action' => 'gallery'));
 
   $r->named('mix', '/mix/');
+  $r->named('news', '/news/');
 ?>

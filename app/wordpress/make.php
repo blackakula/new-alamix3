@@ -42,7 +42,8 @@
   }
 
   foreach (array(
-      'mix' => array('alamix', 'AlaMix', $domain . 'mix/')
+      'mix'  => array('alamix', 'AlaMix', $domain . 'mix/'),
+      'news' => array('alamix', 'AlaMix', $domain . 'news/'),
   ) as $folder => $theme) {
 
     $in_dir = realpath($cur_dir . '/' . $folder);
