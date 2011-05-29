@@ -3,3 +3,5 @@ config/base.yml
 app/views/*/*.php
 .sass-cache
 web/css
+.idea/*
+.htpasswd
