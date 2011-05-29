@@ -1,7 +1,7 @@
 <?php
   class Config extends Hash {
     public function set($key, $value) { if ($this->is_readonly()) return; parent::set($key,$value); }
-    public function del($key) {}
+    public function del($key = null) {}
   	public function &get($key = null) {
   		if ($key === null) return $this->_params;
   		if (array_key_exists($key, $this->_params)) return $this->_params[$key];
