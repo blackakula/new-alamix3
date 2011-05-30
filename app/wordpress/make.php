@@ -21,7 +21,7 @@
       if ($isHaml) {
         $php = Haml::parse2($php);
       }
-      
+
       $outFile = $out_dir . preg_replace('/\.haml$/', '.php', $f);
       if (is_file($outFile)) {
         $php = file_get_contents($outFile) . $php;
@@ -47,10 +47,14 @@
   ) as $folder => $theme) {
 
     $in_dir = realpath($cur_dir . '/' . $folder);
-    $out_dir = realpath($cur_dir . '/../../' . $folder . '/wp-content/themes/' . $theme[0]) . '/';
+    $out_dir = realpath($cur_dir . '/../../' . $folder . '/wp-content/themes') . '/' . $theme[0];
+    if (!is_dir($out_dir)) {
+      mkdir($out_dir, 0777, true);
+    }
+    clear_folder($out_dir);
     
-    clear_folder($out_dir . '.');
-    
+    $out_dir .= '/';
+
     $style = <<<STYLE
 /*
 Theme Name: {$theme[1]}
@@ -60,8 +64,6 @@ Author: Akulinin Sergey, Alina Mikhailova
 Author URI: $domain
 */
 STYLE;
-//    $style .= "\n" . file_get_contents($in_dir . '/style.css');
-//
     file_put_contents($out_dir . 'style.css', $style);
     make_folder($cur_dir, $out_dir, true);
     make_folder($in_dir, $out_dir);
