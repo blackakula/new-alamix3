@@ -1,0 +1,21 @@
+!!! 5
+- loadConfig()
+- loadSpecific()
+<html <?php language_attributes(); ?>>
+%head
+  - _include('head.php')
+%body
+  - _include('ie6update.php')
+  .all
+    .left
+      - _include('menu.php')
+      .content
+        HERE WILL BE: 'left'
+      - _include('copyright.php')
+    .right
+      - _include('logo.php')
+      .content
+        - _include(MyWPRegistry::get('page') . '_right.php')
+    .clear
+  - wp_footer()
+</html>
