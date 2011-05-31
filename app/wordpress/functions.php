@@ -65,7 +65,7 @@ function _framework_get_config($fName) {
   if (!array_key_exists($fName, $_framework_config)) {
     $_framework_config[$fName] = sfYaml::load(ROOT_DIR . 'config/' . $fName . '.yml');
   }
-  return $_framework_config;
+  return $_framework_config[$fName];
 }
 
 ?>

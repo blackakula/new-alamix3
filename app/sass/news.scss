@@ -3,9 +3,11 @@
 $general_space: 7px;
 
 .sb-block {
+  margin-bottom: 4px;
   .box {
     @include round-corner($general_space);
     padding: $general_space;
+    float: left;
   }
   .descr { margin-left: $general_space; }
 }

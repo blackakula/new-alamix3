@@ -1,6 +1,18 @@
 .sb-block
   .b0.box
     - get_search_form();
-  .c0.descr
-    пошук
-<?php print_r(_get_config('right_sidebar')) ?>
+  .clear
+  .c0.descr= _get_config('search_text')
+- foreach (_get_config('right_sidebar') as $sbPart)
+  <?php
+    $c = 'c' . $sbPart['color'];
+    $b = 'b' . $sbPart['color'];
+  ?>
+  .sb-block
+    - if ($sbPart['pretext'])
+      .$c.descr.pre= $sbPart['pretext']
+    .$b.box
+      -= $sbPart['content']
+    .clear
+    - if ($sbPart['text'])
+      .$c.descr= $sbPart['text']
