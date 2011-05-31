@@ -1,1 +1,11 @@
 @import "layout";
+
+$general_space: 7px;
+
+.sb-block {
+  .box {
+    @include round-corner($general_space);
+    padding: $general_space;
+  }
+  .descr { margin-left: $general_space; }
+}
