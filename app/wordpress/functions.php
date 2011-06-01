@@ -57,15 +57,15 @@ function _get($key = null) {
   return MyWPRegistry::get('Controller')->get($key);
 }
 
-function _framework_get_config($fName) {
+function _framework_get_config($configName) {
   global $_framework_config;
   if (empty($_framework_config)) {
     $_framework_config = array();
   }
-  if (!array_key_exists($fName, $_framework_config)) {
-    $_framework_config[$fName] = sfYaml::load(ROOT_DIR . 'config/' . $fName . '.yml');
+  if (!array_key_exists($configName, $_framework_config)) {
+    $_framework_config[$configName] = get_config($configName);
   }
-  return $_framework_config[$fName];
+  return $_framework_config[$configName];
 }
 
 ?>
