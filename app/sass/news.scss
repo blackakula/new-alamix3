@@ -11,3 +11,8 @@ $general_space: 7px;
   }
   .descr { margin-left: $general_space; }
 }
+
+#searchform label {
+    font-weight: bold;
+    color: $menu_color0_b;
+}
