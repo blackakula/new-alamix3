@@ -1,1 +1,4 @@
 search_text: пошук
+search_button: Пошук
+not_found: не знайдено жодного допису
+continue_reading: <span class="meta-nav">&darr;</span> Більше

@@ -1,6 +1,7 @@
-@import "layout";
+@import "layout", "squares", "separator";
 
 $general_space: 7px;
+$hr_pre_post_outside: 5%;
 
 .sb-block {
   margin-bottom: 4px;
@@ -13,7 +14,37 @@ $general_space: 7px;
   .descr { margin-left: $general_space; }
 }
 
-#searchform label {
-    font-weight: bold;
-    color: $menu_color0_b;
+.search-block .box {
+  width: 100%;
+  $search_button_width: 80px;
+  .searchform {
+    margin-left: $search_button_width;
+  }
+  #s {
+    width: 100%;
+    margin-left: -$search_button_width;
+  }
+}
+
+.hr-pre-post {
+  background-color: $menu_color0_b;
+  height: 2px;
+  margin-bottom: 5px;
+  width: 100% + 2 * $hr_pre_post_outside;
+  margin-left: -$hr_pre_post_outside;
+}
+
+.left {
+  .sep {
+    @include separator(10px);
+  }
+}
+
+.entry-title a, .date { color: $titles_color; }
+.entry-title a {
+  font-size: 20pt;
+  font-weight: bold;
+  line-height: 22px;
+  text-decoration: none;
+  font-family: Calibri,"DejaVu Sans Condensed","DejaVu Sans",Verdana,sans-serif;
 }

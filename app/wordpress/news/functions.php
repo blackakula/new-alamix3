@@ -5,6 +5,9 @@
   }
   function _get_config($key = null) {
     $_config = _framework_get_config('news');
-    return is_null($key) ? $_config : $_config[$key];
+    if (is_null($key)) {
+      return $_config;
+    }
+    return array_key_exists($key, $_config) ? $_config[$key] : _get_wp_config($key);
   }
 ?>

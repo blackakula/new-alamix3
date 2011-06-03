@@ -1,0 +1,8 @@
+.squares
+  - foreach (MyWPRegistry::get('squares') as $i => $color)
+    <?php
+      $color = 'b' . $color;
+      if ($i === 0) $color .= ' first';
+    ?>
+    .sq.$color
+  .clear

@@ -1,8 +1,8 @@
-.sb-block
+.sb-block.search-block
+  .c0.descr.pre= _get_config('search_text')
   .b0.box
-    - get_search_form()
+    - _include('search_form.php')
   .clear
-  .c0.descr= _get_wp_config('search_text')
 - foreach (_get_config('right_sidebar') as $sbPart)
   <?php
     $c = 'c' . $sbPart['color'];
