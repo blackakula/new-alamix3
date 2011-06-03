@@ -10,7 +10,7 @@
     .left
       - _include('menu.php')
       .content
-        HERE WILL BE: 'left'
+        - get_template_part('loop', MyWPRegistry::get('loop'))
       - _include('copyright.php')
     .right
       - _include('logo.php')

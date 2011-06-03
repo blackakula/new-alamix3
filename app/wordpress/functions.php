@@ -67,5 +67,8 @@ function _framework_get_config($configName) {
   }
   return $_framework_config[$configName];
 }
-
+function _get_wp_config($key) {
+  $_config = _framework_get_config('wp');
+  return is_null($key) ? $_config : $_config[$key];
+}
 ?>

@@ -2,7 +2,7 @@
   .b0.box
     - get_search_form()
   .clear
-  .c0.descr= _get_config('search_text')
+  .c0.descr= _get_wp_config('search_text')
 - foreach (_get_config('right_sidebar') as $sbPart)
   <?php
     $c = 'c' . $sbPart['color'];

@@ -7,6 +7,7 @@ $general_space: 7px;
   .box {
     @include round-corner($general_space);
     padding: $general_space;
+    line-height: 0;
     float: left;
   }
   .descr { margin-left: $general_space; }
