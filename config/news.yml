@@ -11,3 +11,7 @@ right_sidebar:
   -
     color: 4
     content: <img src="../img/example_news_image2.jpg" alt="" />
+date_string: додано до розділу %s
+pagination:
+  previous: давні дописи
+  next: новіші дописи

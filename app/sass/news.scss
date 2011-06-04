@@ -40,11 +40,22 @@ $hr_pre_post_outside: 5%;
   }
 }
 
-.entry-title a, .date { color: $titles_color; }
-.entry-title a {
-  font-size: 20pt;
-  font-weight: bold;
-  line-height: 22px;
-  text-decoration: none;
-  font-family: Calibri,"DejaVu Sans Condensed","DejaVu Sans",Verdana,sans-serif;
+.entry-title a, .entry-meta { color: $titles_color; }
+.entry-title {
+  margin-bottom: 0;
+  a {
+    font-size: 20pt;
+    font-weight: bold;
+    line-height: 22px;
+    text-decoration: none;
+    font-family: Calibri,"DejaVu Sans Condensed","DejaVu Sans",Verdana,sans-serif;
+  }
+}
+.entry-content {
+  margin-bottom: 10px;
+  .more-link {
+    float: right;
+    font-size: 10pt;
+    text-decoration: none;
+  }
 }
