@@ -11,14 +11,9 @@
         <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
       .entry-meta
         - printf(_get_config('date_string'), get_the_date())
-      <?php if (is_archive() || is_search()): ?>
-        .entry-summary
-          - the_excerpt()
-      <?php else: ?>
-        .entry-content
-          - the_content(_get_config('continue_reading'))
-          .clear
-      <?php endif; ?>
+      .entry-content
+        - the_content(_get_config('continue_reading'))
+        .clear
       .entry-utility
         - $edit_post_link = _get_config('edit_post_link')
         - edit_post_link($edit_post_link[0], $edit_post_link[1], $edit_post_link[2])
