@@ -10,3 +10,9 @@ comments:
   - Без коментарів
   - 1 коментар
   - % коментарів
+archive:
+  title:
+    day: Добовий архів: <span>%s</span>
+    month: Місячний архів: <span>%s</span>
+    year: Річний архів: <span>%s</span>
+    common: Архів новин
