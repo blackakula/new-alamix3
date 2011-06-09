@@ -12,7 +12,13 @@ comments:
   - % коментарів
 archive:
   title:
-    day: Добовий архів: <span>%s</span>
-    month: Місячний архів: <span>%s</span>
-    year: Річний архів: <span>%s</span>
+    day:
+      text: Добовий архів: <span>%s</span>
+      format: ''
+    month:
+      text: Архів за %s
+      format: F, Y
+    year:
+      text: Річний архів: <span>%s</span>
+      format: Y
     common: Архів новин
