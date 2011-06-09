@@ -1,0 +1,15 @@
+- if (have_posts())
+  - the_post()
+  - $archive_config = _get_config('archive')
+  %h1.page-title
+    - if (is_day()):
+    - printf($archive_config['title']['day']['text'], get_the_date($archive_config['title']['day']['format']))
+    - elseif (is_month()):
+    - printf($archive_config['title']['month']['text'], get_the_date($archive_config['title']['month']['format']))
+    - elseif (is_year()):
+    - printf($archive_config['title']['year']['text'], get_the_date($archive_config['title']['year']['format']))
+    - else:
+    -= $archive_config['title']['common']
+    - endif
+  - rewind_posts()
+- _include('loop.php')
