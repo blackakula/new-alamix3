@@ -10,7 +10,7 @@
       %h2.entry-title
         <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
       .entry-meta
-        - printf(_get_config('date_string'), get_the_date())
+        - printf(str_replace('href="HOME"', 'href="' . get_routes()->build_path('news') . '"', _get_config('date_string')), get_the_date())
       .entry-content
         - the_content(_get_config('continue_reading'))
         .clear

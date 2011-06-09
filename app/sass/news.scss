@@ -33,6 +33,9 @@ $hr_pre_post_outside: 5%;
 }
 
 .entry-title a, .entry-title a:hover, .entry-title a:visited, .entry-meta { color: $titles_color; }
+.entry-meta a {
+  text-decoration: none;
+}
 .entry-title {
   margin-bottom: 0;
   a {
