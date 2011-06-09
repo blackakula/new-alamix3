@@ -22,3 +22,4 @@ archive:
       text: Річний архів: <span>%s</span>
       format: Y
     common: Архів новин
+search: 'Результати пошуку &#171;%s&#187;:'
