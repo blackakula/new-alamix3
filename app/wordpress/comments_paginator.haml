@@ -1,0 +1,6 @@
+- if (get_comment_pages_count() > 1 && get_option( 'page_comments' ))
+  .navigation
+    .nav-previous
+      - previous_comments_link($_comments_config['pagination']['previous'])
+    .nav-next
+      - next_comments_link($_comments_config['pagination']['next'])
