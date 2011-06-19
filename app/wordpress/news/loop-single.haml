@@ -6,6 +6,10 @@
   - _include('post_meta.php')
   .entry-content
     - the_content()
-    - wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'twentyten' ), 'after' => '</div>' ) )
+  .entry-utility
+    - $edit_text = _get_config('edit_post_link')
+    - edit_post_link($edit_text[0], '<span class="edit-link">', '</span>')
 </div>
+- _include('post_paginator.php')
+- comments_template( '', true )
 - endwhile

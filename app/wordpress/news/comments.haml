@@ -1,0 +1,17 @@
+#comments
+  - $comments_config = _get_config('post_comments')
+  - if (post_password_required())
+    %p.nopassword= $comments_config('passw_protection')
+    </div>
+    - return;
+  - if (have_comments())
+    %h3.comments-title
+      - printf(_n($comments_config['title'][0], $comments_config['title'][1], get_comments_number()), number_format_i18n(get_comments_number()), '<em>' . get_the_title() . '</em>')
+    - if (get_comment_pages_count() > 1 && get_option( 'page_comments' ))
+      .navigation
+        .nav-previous
+          - previous_comments_link($_comments_config['pagination']['previous'])
+        .nav-next
+          - next_comments_link($_comments_config['pagination']['next'])
+    %ol.commentlist
+      - wp_list_comments()

@@ -10,6 +10,14 @@ comments:
   - Без коментарів
   - 1 коментар
   - % коментарів
+post_comments:
+  passw_protection: This post is password protected. Enter the password to view any comments.
+  title:
+    - 'Одна відповідь на &#171;%2$s&#187;'
+    - '%1$s відповіді на &#171;%2$s&#187;'
+  pagination:
+    previous: '<span class="paginator-arrow">&#171;</span> Попередні коментарі'
+    next: 'Наступні коментарі <span class="paginator-arrow">&#187;</span>'
 archive:
   title:
     day:
