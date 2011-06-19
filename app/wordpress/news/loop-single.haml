@@ -1,0 +1,13 @@
+- if (have_posts()) while (have_posts()): the_post()
+.navigation#nav-above
+  - $pagination = _get_config('pagination')
+  .nav-previous
+    - alamix_previous_post_link('%link', $pagination['post']['previous'][0], $pagination['post']['previous'][1])
+  .nav-next
+    - alamix_next_post_link('%link', $pagination['post']['next'][0], $pagination['post']['next'][1])
+  .clear
+<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+  %h1.entry-title
+    - the_title()
+</div>
+- endwhile

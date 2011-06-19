@@ -15,3 +15,10 @@ date_string: додано до розділу <a href="HOME" class="c0">Нови
 pagination:
   previous: '<span class="paginator-arrow">&#171;</span> давні дописи'
   next: 'новіші дописи <span class="paginator-arrow">&#187;</span>'
+  post:
+    previous:
+      - '<span class="paginator-arrow">&#171;</span> %title'
+      - попередній допис
+    next:
+      - '%title <span class="paginator-arrow">&#187;</span>'
+      - наступний допис

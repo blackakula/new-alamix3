@@ -71,4 +71,27 @@ function _get_wp_config($key) {
   $_config = _framework_get_config('wp');
   return is_null($key) ? $_config : $_config[$key];
 }
+function _get_adjacent_post_text($real_text, $empty_title, $previous = true, $in_same_cat = false, $excluded_categories = '') {
+  if ($previous && is_attachment())
+    $post = &get_post($GLOBALS['post']->post_parent);
+  else
+    $post = get_adjacent_post($in_same_cat, $excluded_categories, $previous);
+
+  if (!$post)
+    return $real_text;
+
+  $title = $post->post_title;
+  if (empty($title))
+    $real_text = str_replace('%title', $empty_title, $real_text);
+
+  return $real_text;
+}
+function alamix_previous_post_link($format='&laquo; %link', $link='%title', $empty_title = '', $in_same_cat = false, $excluded_categories = '') {
+  $link = _get_adjacent_post_text($link, $empty_title, true, $in_same_cat, $excluded_categories);
+  previous_post_link($format, $link, $in_same_cat, $excluded_categories);
+}
+function alamix_next_post_link($format='&laquo; %link', $link='%title', $empty_title = '', $in_same_cat = false, $excluded_categories = '') {
+  $link = _get_adjacent_post_text($link, $empty_title, false, $in_same_cat, $excluded_categories);
+  next_post_link($format, $link, $in_same_cat, $excluded_categories);
+}
 ?>
