@@ -14,4 +14,17 @@
     - if (!comments_open())
       .nocomments= $comments_config['closed']
   - endif
-  - comment_form()
+  <?php
+    global $user_identity, $id;
+    comment_form(array(
+      'comment_field'        => '<p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>',
+      'must_log_in'          => '<p class="must-log-in">' .  sprintf( $comments_config['comment_form']['must_log_in'], wp_login_url( apply_filters( 'the_permalink', get_permalink( $id ) ) ) ) . '</p>',
+      'logged_in_as'         => '<p class="logged-in-as">' . sprintf( $comments_config['comment_form']['logged_in_as'], admin_url( 'profile.php' ), $user_identity, wp_logout_url( apply_filters( 'the_permalink', get_permalink( $id ) ) ) ) . '</p>',
+      'comment_notes_before' => '<p class="comment-notes">' . $comments_config['comment_form']['comment_notes_before'] . '</p>',
+      'comment_notes_after'  => '<p class="form-allowed-tags">' . sprintf( $comments_config['comment_form']['comment_notes_after'], ' <code>' . allowed_tags() . '</code>' ) . '</p>',
+      'title_reply'          => $comments_config['comment_form']['title_reply'],
+      'title_reply_to'       => $comments_config['comment_form']['title_reply_to'],
+      'cancel_reply_link'    => $comments_config['comment_form']['cancel_reply_link'],
+      'label_submit'         => $comments_config['comment_form']['label_submit'],
+    ))
+  ?>

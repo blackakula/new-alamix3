@@ -19,6 +19,15 @@ post_comments:
     previous: '<span class="paginator-arrow">&#171;</span> Попередні коментарі'
     next: 'Наступні коментарі <span class="paginator-arrow">&#187;</span>'
   closed: Коментарі закриті
+  comment_form:
+    must_log_in: Ви маєте <a href="%s">увійти</a> щоб залишити свій коментар.
+    logged_in_as: Ви війшли як <a href="%1$s">%2$s</a>. <a href="%3$s" title="Вийти з цього аккаунту">Вийти?</a>
+    comment_notes_before: Ваша email адреса не буде опублікована.
+    comment_notes_after: Ви можете використовувати наступні <abbr title="HyperText Markup Language">HTML</abbr> теги та атрибути: %s
+    title_reply: Залишити відповідь
+    title_reply_to: Залишити відповідь на %s
+    cancel_reply_link: Відмінити відповідь
+    label_submit: Залишити відгук
 archive:
   title:
     day:
