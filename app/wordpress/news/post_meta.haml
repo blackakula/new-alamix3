@@ -1,0 +1,2 @@
+.entry-meta
+  - printf(str_replace('href="HOME"', 'href="' . get_routes()->build_path('news') . '"', _get_config('date_string')), get_the_date())
