@@ -28,7 +28,5 @@
       .nav-next
         - previous_posts_link($pagination['next'])
       .clear
-  %ul.entry-archives
-    - wp_get_archives('type=monthly')
-    .clear
+  - _include('entry_archives.php')
 <?php endif; ?>
