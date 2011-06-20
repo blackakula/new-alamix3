@@ -13,13 +13,18 @@ comments:
 post_comments:
   passw_protection: Цей допис закритий паролем. Введіть пароль, щоб побачити коментарі.
   title:
-    - 'Одна відгук на &#171;%2$s&#187;'
+    - 'Один відгук на &#171;%2$s&#187;'
     - '%1$s відгуків на &#171;%2$s&#187;'
   pagination:
     previous: '<span class="paginator-arrow">&#171;</span> Попередні коментарі'
     next: 'Наступні коментарі <span class="paginator-arrow">&#187;</span>'
   closed: Коментарі закриті
   comment_form:
+    fields:
+      author: Ім'я
+      email: Email
+      url: Вебсайт
+    required_text: Обов'язкові поля відмічені %s
     must_log_in: Ви маєте <a href="%s">увійти</a> щоб залишити свій коментар.
     logged_in_as: Ви війшли як <a href="%1$s">%2$s</a>. <a href="%3$s" title="Вийти з цього аккаунту">Вийти?</a>
     comment_notes_before: Ваша email адреса не буде опублікована.

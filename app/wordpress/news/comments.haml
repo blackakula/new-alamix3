@@ -16,11 +16,23 @@
   - endif
   <?php
     global $user_identity, $id;
+    $req = get_option( 'require_name_email' );
+    $required_text = sprintf( ' ' . $comments_config['comment_form']['required_text'], '<span class="required">*</span>' );
+    $commenter = wp_get_current_commenter();
+    $aria_req = ( $req ? " aria-required='true'" : '' );
     comment_form(array(
+      'fields'               => array(
+        'author'             => '<p class="comment-form-author">' . '<label for="author">' . $comments_config['comment_form']['fields']['author'] . '</label> ' . ( $req ? '<span class="required">*</span>' : '' ) .
+		                              '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' /></p>',
+        'email'              => '<p class="comment-form-email"><label for="email">' . $comments_config['comment_form']['fields']['email'] . '</label> ' . ( $req ? '<span class="required">*</span>' : '' ) .
+                                  '<input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' /></p>',
+        'url'                => '<p class="comment-form-url"><label for="url">' . $comments_config['comment_form']['fields']['url'] . '</label>' .
+                                  '<input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></p>',
+      ),
       'comment_field'        => '<p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>',
       'must_log_in'          => '<p class="must-log-in">' .  sprintf( $comments_config['comment_form']['must_log_in'], wp_login_url( apply_filters( 'the_permalink', get_permalink( $id ) ) ) ) . '</p>',
       'logged_in_as'         => '<p class="logged-in-as">' . sprintf( $comments_config['comment_form']['logged_in_as'], admin_url( 'profile.php' ), $user_identity, wp_logout_url( apply_filters( 'the_permalink', get_permalink( $id ) ) ) ) . '</p>',
-      'comment_notes_before' => '<p class="comment-notes">' . $comments_config['comment_form']['comment_notes_before'] . '</p>',
+      'comment_notes_before' => '<p class="comment-notes">' . $comments_config['comment_form']['comment_notes_before'] . ( $req ? $required_text : '' ) . '</p>',
       'comment_notes_after'  => '<p class="form-allowed-tags">' . sprintf( $comments_config['comment_form']['comment_notes_after'], ' <code>' . allowed_tags() . '</code>' ) . '</p>',
       'title_reply'          => $comments_config['comment_form']['title_reply'],
       'title_reply_to'       => $comments_config['comment_form']['title_reply_to'],
