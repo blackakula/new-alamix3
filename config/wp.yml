@@ -29,9 +29,9 @@ post_comments:
     logged_in_as: Ви війшли як <a href="%1$s">%2$s</a>. <a href="%3$s" title="Вийти з цього аккаунту">Вийти?</a>
     comment_notes_before: Ваша email адреса не буде опублікована.
     comment_notes_after: Ви можете використовувати наступні <abbr title="HyperText Markup Language">HTML</abbr> теги та атрибути: %s
-    title_reply: Залишити відповідь
-    title_reply_to: Залишити відповідь на %s
-    cancel_reply_link: Відмінити відповідь
+    title_reply: Залишити відгук
+    title_reply_to: Залишити відгук на %s
+    cancel_reply_link: Відмінити відгук
     label_submit: Залишити відгук
 archive:
   title:
