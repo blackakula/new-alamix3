@@ -19,6 +19,12 @@ post_comments:
     previous: '<span class="paginator-arrow">&#171;</span> Попередні коментарі'
     next: 'Наступні коментарі <span class="paginator-arrow">&#187;</span>'
   closed: Коментарі закриті
+  says: сказав
+  reply_text: Відповісти
+  login_text: Увійдіть щоб прокоментувати
+  edit: Редагувати
+  date_str: %1$s о %2$s
+  premoderation: Ваш коментар очікує модерації
   comment_form:
     fields:
       author: Ім'я

@@ -96,6 +96,13 @@ $hr_pre_post_outside: 5%;
   }
 }
 
+li.comment {
+  margin-bottom: 15px;
+  p {
+    margin: 7px 0;
+  }
+}
+
 #commentform {
   p {
     width: 338px;

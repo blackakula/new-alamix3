@@ -9,7 +9,13 @@
     - printf(_n($comments_config['title'][0], $comments_config['title'][1], get_comments_number()), number_format_i18n(get_comments_number()), '<em>' . get_the_title() . '</em>')
   - _include('comments_paginator.php')
   %ol.commentlist
-    - wp_list_comments()
+    <?php
+      wp_list_comments(array(
+        'callback' => 'my_comments_performer',
+        'reply_text' => $comments_config['reply_text'],
+        'login_text' => $comments_config['login_text'],
+      ))
+    ?>
   - else:
     - if (!comments_open())
       .nocomments= $comments_config['closed']
