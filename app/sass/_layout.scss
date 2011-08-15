@@ -12,19 +12,20 @@ body {
 }
 
 .container-bottom {
-    float: left;
-    width: 100%;
-    background-color: #000;
-    overflow: hidden;
-    position: relative;
+  min-width: 900px;
+  float: left;
+  width: 100%;
+  background-color: #000;
+  overflow: hidden;
+  position: relative;
 }
 .container-upper {
-    float: left;
-    width: 100%;
-    background: $body_background_color;
-    position: relative;
-    right: 50%;
-    padding-bottom: $bottom_space;
+  float: left;
+  width: 100%;
+  background: $body_background_color;
+  position: relative;
+  right: 50%;
+  padding-bottom: $bottom_space;
 }
 .left, .right {
   width: 49.999%;
