@@ -11,17 +11,27 @@ body {
   background-color: $body_background_color;
 }
 
-.all {
-  min-width: 900px;
-  overflow: hidden;
-  width: 100%;
-  position: relative;
+.container-bottom {
+    float: left;
+    width: 100%;
+    background-color: #000;
+    overflow: hidden;
+    position: relative;
+}
+.container-upper {
+    float: left;
+    width: 100%;
+    background: $body_background_color;
+    position: relative;
+    right: 50%;
+    padding-bottom: $bottom_space;
 }
 .left, .right {
   width: 49.999%;
   float: left;
-  margin-bottom: $bottom_space - $large_size;
-  padding-bottom: $large_size;
+  left: 49.999%;
+  position: relative;
+  overflow: hidden;
 }
 
 .left {

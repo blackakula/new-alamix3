@@ -4,14 +4,15 @@
     - $this->_include('head')
   %body
     - $this->_include('ie6update')
-    .all
-      .left
-        - $this->_include('menu')
-        .content
-          - $this->_include('left')
-        - $this->_include('copyright')
-      .right
-        - $this->_include('logo')
-        .content
-          - $this->_include('right')
-      .clear
+    .container-bottom
+      .container-upper
+        .left
+          - $this->_include('menu')
+          .content
+            - $this->_include('left')
+          - $this->_include('copyright')
+        .right
+          - $this->_include('logo')
+          .content
+            - $this->_include('right')
+        .clear

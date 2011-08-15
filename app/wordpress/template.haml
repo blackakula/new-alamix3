@@ -6,16 +6,17 @@
   - _include('head.php')
 %body
   - _include('ie6update.php')
-  .all
-    .left
-      - _include('menu.php')
-      .content
-        - get_template_part('loop', MyWPRegistry::get('loop'))
-      - _include('copyright.php')
-    .right
-      - _include('logo.php')
-      .content
-        - _include(MyWPRegistry::get('page') . '_right.php')
-    .clear
+  .container-bottom
+    .container-upper
+      .left
+        - _include('menu.php')
+        .content
+          - get_template_part('loop', MyWPRegistry::get('loop'))
+        - _include('copyright.php')
+      .right
+        - _include('logo.php')
+        .content
+          - _include(MyWPRegistry::get('page') . '_right.php')
+      .clear
   - wp_footer()
 </html>
