@@ -65,7 +65,8 @@ function _framework_get_config($configName) {
   if (!array_key_exists($configName, $_framework_config)) {
     $_framework_config[$configName] = get_config($configName);
   }
-  return $_framework_config[$configName];
+  $config = $_framework_config[$configName];
+  return is_null($config) ? array() : $config;
 }
 function _get_wp_config($key) {
   $_config = _framework_get_config('wp');
