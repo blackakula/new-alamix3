@@ -1,0 +1,15 @@
+@import "layout";
+
+.navigation {
+  a, a:hover, a:visited {
+    text-decoration: none;
+    color: $menu_color0;
+  }
+  .paginator-arrow {
+    font-size: 3em;
+    position: relative;
+    top: 6px;
+  }
+  .nav-previous { float: left; }
+  .nav-next { float: right; }
+}

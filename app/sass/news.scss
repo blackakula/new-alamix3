@@ -1,4 +1,4 @@
-@import "layout", "squares", "separator";
+@import "wp", "squares", "separator";
 
 $general_space: 7px;
 $hr_pre_post_outside: 5%;
@@ -65,20 +65,6 @@ $hr_pre_post_outside: 5%;
 }
 .entry-utility {
   margin: 15px 0;
-}
-
-.navigation {
-  a, a:hover, a:visited {
-    text-decoration: none;
-    color: $menu_color0;
-  }
-  .paginator-arrow {
-    font-size: 3em;
-    position: relative;
-    top: 6px;
-  }
-  .nav-previous { float: left; }
-  .nav-next { float: right; }
 }
 
 .entry-archives {

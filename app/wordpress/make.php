@@ -5,11 +5,25 @@
   $lib_dir = realpath($cur_dir . '/../../lib/my') . '/';
   include_once($lib_dir . 'Haml.php');
 
-  function make_folder($in_dir, $out_dir, $skipMake = false) {
+  function make_folder($in_dir, $out_dir, $skipMake = false, $checkPhp = true) {
     $d = opendir($in_dir);
     while ($f = readdir($d)) {
+      if ($f == '.' || $f == '..') {
+        continue;
+      }
+
+      $in_subdir = $in_dir . '/' . $f;
+      if (is_dir($in_subdir) && !$skipMake) {
+        $out_subdir = $out_dir . $f;
+        if (!is_dir($out_subdir)) {
+          mkdir($out_subdir);
+        }
+        make_folder($in_subdir, $out_subdir . '/', false, false);
+        continue;
+      }
+
       $isHaml = preg_match('/\.haml$/', $f) != 0;
-      $isPhp = preg_match('/\.php$/', $f) != 0;
+      $isPhp = !$checkPhp || preg_match('/\.php$/', $f) != 0;
       if (!$isHaml && !$isPhp) {
         continue;
       }
@@ -34,6 +48,13 @@
     $d = opendir($dir);
     while ($f = readdir($d)) {
       if ($f == '.' || $f == '..') {
+        continue;
+      }
+
+      $subdir = $dir . '/' . $f;
+      if (is_dir($subdir)) {
+        clear_folder($subdir);
+        rmdir($subdir);
         continue;
       }
 

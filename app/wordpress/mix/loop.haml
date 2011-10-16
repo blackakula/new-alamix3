@@ -1,0 +1,49 @@
+<?php if (!have_posts()): ?>
+  .not-found
+    -= _get_config('not_found')
+<?php else: ?>
+  - while (have_posts())
+    - the_post()
+    .postEntry
+      .postHeader
+        .postTitle
+          %h2
+            <a href="<?php the_permalink();?>"><?php the_title();?></a>
+        .comemntsBox
+          <a href="<?php comments_link(); ?> " title="comments"> <?php comments_number('0','1','%');?></a>
+          .commentIcon
+        .permalinkIcon
+          <a href="<?php the_permalink();?>" title="read more">read more</a>
+      .postCotnent
+        .datePanel
+          %span.day
+            - the_time("j")
+          %span.dayth
+            - the_time("S")
+          %span.month
+            - the_time(" M ")
+          %span.year
+            - the_time("y")
+        - $srcImage = get_post_meta($post->ID,"thumb_image",true)
+        - if ($srcImage)
+          .thumbNail
+             <img src="<?php echo $srcImage; ?>" width="148" height="127" />
+        - $mainContentClass = 'mainContent' . (!$srcImage ? ' mainContentWide' : '');
+        .$mainContentClass
+        .mainContent
+          - the_excerpt("<span class='hiden'>read more</span>")
+          %br
+          %p
+            - the_tags()
+        .clear
+      .postFooter
+  - if ($wp_query->max_num_pages > 1)
+    - $pagination = _get_config('pagination')
+    .navigation#nav-below
+      .nav-previous
+        - next_posts_link($pagination['previous'])
+      .nav-next
+        - previous_posts_link($pagination['next'])
+      .clear
+  - _include('entry_archives.php')
+<?php endif; ?>
