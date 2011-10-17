@@ -65,6 +65,12 @@ $commentBoxHeight: 53px;
   }
 }
 .bookmarkBox {
-  background-image: url(../img/wp/bmIco.png);
-   &:hover {background-image: url(../img/wp/bmIcoH.png);}
+  background: url(../img/wp/bmIco.png) no-repeat;
+   &:hover {background: url(../img/wp/bmIcoH.png) no-repeat;}
+}
+.downloadBox {
+  background: url(../img/wp/dlIco.gif) no-repeat;
+}
+.torrentBox {
+  background: url(../img/wp/ttIco.jpg) no-repeat;
 }
