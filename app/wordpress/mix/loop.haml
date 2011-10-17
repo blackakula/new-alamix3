@@ -2,7 +2,7 @@
   .not-found
     -= _get_config('not_found')
 <?php else: ?>
-  - _include('bookmark-script.php')
+  - _include('theme-scripts.php')
   - while (have_posts())
     - the_post()
     <div id="post-<?php the_ID() ?>" <?php post_class() ?>>

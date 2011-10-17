@@ -1,20 +1,33 @@
 @import "wp";
 $roundPostRadius: 7px;
-$linksWidth: 70px;
+$entryLinkWidth: 33px;
+$entryLinkHeight: 31px;
+$entryLinkSpace: 3px;
+$linksWidth: 4 * ($entryLinkWidth + $entryLinkSpace);
+$commentBoxBottom: 17px;
+$commentBoxHeight: 53px;
 
 .entry-head {
   position: relative;
   .entry-links {
     position: absolute;
-    bottom: 0;
+    bottom: 1px;
     right: 0;
     margin-right: $roundPostRadius;
-    .entry-link {
+    .entry-link, .comemntsBox {
       float: right;
+      margin-left: $entryLinkSpace;
+      position: relative;
+      bottom: $entryLinkHeight - $commentBoxHeight;
+    }
+    .entry-link a {
+      display: block;
+      width: $entryLinkWidth;
+      height: $entryLinkHeight;
     }
   }
   .entry-title {
-    margin: 0 $linksWidth 0 $roundPostRadius;
+    margin: 15px $linksWidth + $roundPostRadius 0 $roundPostRadius;
     padding-bottom: 10px;
   }
 }
@@ -22,8 +35,36 @@ $linksWidth: 70px;
 .entry-content {
   background-color:#e1e5e7;
   padding: $roundPostRadius;
-  /*padding:25px 18px 18px 40px;*/
   color:#050809;
   position:relative;
   @include round-corner($roundPostRadius);
+}
+
+.comemntsBox {
+  height: $commentBoxHeight;
+  text-align: center;
+  width: $entryLinkWidth;
+  background: url(../img/wp/cmIco.png) no-repeat;
+  &:hover {background: url(../img/wp/cmIcoH.png) no-repeat;}
+  a, a:hover, a:visited, a:active {
+    color: #E1E5E7;
+    display: block;
+    height: $commentBoxBottom;
+    padding-top: 34px;
+    position: relative;
+    width: $entryLinkWidth;
+    z-index: 10;
+  }
+  .commentIcon {
+    background: url(../img/wp/cmBg.png) bottom no-repeat;
+    height: $commentBoxBottom;
+    margin-top: -19px;
+    position: relative;
+    width: $entryLinkWidth;
+    z-index: 9;
+  }
+}
+.bookmarkBox {
+  background-image: url(../img/wp/bmIco.png);
+   &:hover {background-image: url(../img/wp/bmIcoH.png);}
 }

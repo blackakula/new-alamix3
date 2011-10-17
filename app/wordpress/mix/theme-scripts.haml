@@ -1,0 +1,34 @@
+<<<SCRIPT
+<script type="text/javascript">
+  function CreateBookmarkLink() {
+    title = <?php echo json_encode(get_the_title()) ?>;
+    url = <?php echo json_encode(get_permalink()) ?>;
+
+    if (window.sidebar) { // Mozilla Firefox Bookmark
+      window.sidebar.addPanel(title, url,"");
+    } else if( window.external ) { // IE Favorite
+      window.external.AddFavorite( url, title);
+    } else if(window.opera && window.print) { // Opera Hotlist
+      return true;
+    }
+  }
+
+$(function () {
+			$(".commentIcon").css("display","none");
+			$(".commentIcon").animate({'opacity':'0'},100);
+
+			$('.comemntsBox a').hover(function (){
+												 $(".commentIcon").css("display","block");
+												 target = $(this).parent().children(".commentIcon");
+												 target.stop().animate({'opacity':'1'},400);
+
+													 },
+									   function(){
+
+											target = $(this).parent().children(".commentIcon");
+										    target.stop().animate({'opacity':'0'},400);
+
+										});
+			});
+</script>
+SCRIPT
