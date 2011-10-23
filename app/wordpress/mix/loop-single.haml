@@ -1,8 +1,14 @@
 - if (have_posts()) while (have_posts()): the_post()
 - _include('post_paginator.php')
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-  %h1.entry-title
-    - the_title()
+  .entry-head
+    .entry-links.post-links
+      - _include('icon-download.php')
+      - _include('icon-torrent.php')
+      - _include('icon-bookmark.php')
+      .clear
+    %h2.entry-title
+      - the_title()
   .entry-content
     - _include('date-panel.php')
     - the_content()

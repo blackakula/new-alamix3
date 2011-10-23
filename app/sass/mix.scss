@@ -15,11 +15,10 @@ $postBgColor: #E1E5E7;
     bottom: 1px;
     right: 0;
     margin-right: $roundPostRadius;
-    .entry-link, .comemntsBox {
+    .entry-link, .commentsBox {
       float: right;
       margin-left: $entryLinkSpace;
       position: relative;
-      bottom: $entryLinkHeight - $commentBoxHeight;
     }
     .entry-link a {
       display: block;
@@ -27,6 +26,7 @@ $postBgColor: #E1E5E7;
       height: $entryLinkHeight;
     }
   }
+  .loop-links .entry-link, .commentsBox { bottom: $entryLinkHeight - $commentBoxHeight;}
   .entry-title {
     margin: 15px $linksWidth + $roundPostRadius 0 $roundPostRadius;
     padding-bottom: 10px;
@@ -41,7 +41,7 @@ $postBgColor: #E1E5E7;
   @include round-corner($roundPostRadius);
 }
 
-.comemntsBox {
+.commentsBox {
   height: $commentBoxHeight;
   text-align: center;
   width: $entryLinkWidth;

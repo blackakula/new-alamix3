@@ -4,6 +4,10 @@
   a, a:hover, a:visited {
     text-decoration: none;
     color: $menu_color0;
+    margin-top: -20px;
+    .paginator-arrow {
+      line-height: 0;
+    }
   }
   .paginator-arrow {
     font-size: 3em;
@@ -12,6 +16,10 @@
   }
   .nav-previous { float: left; }
   .nav-next { float: right; }
+  .nav-previous, .nav-next { width: 35%;}
+}
+.entry-utility {
+  margin: 15px 0;
 }
 
 #commentform {
