@@ -6,6 +6,7 @@ $entryLinkSpace: 3px;
 $linksWidth: 4 * ($entryLinkWidth + $entryLinkSpace);
 $commentBoxBottom: 17px;
 $commentBoxHeight: 53px;
+$postBgColor: #E1E5E7;
 
 .entry-head {
   position: relative;
@@ -33,10 +34,10 @@ $commentBoxHeight: 53px;
 }
 
 .entry-content {
-  background-color:#e1e5e7;
+  background-color: $postBgColor;
   padding: $roundPostRadius;
-  color:#050809;
-  position:relative;
+  color: #050809;
+  position: relative;
   @include round-corner($roundPostRadius);
 }
 
@@ -47,13 +48,14 @@ $commentBoxHeight: 53px;
   background: url(../img/wp/cmIco.png) no-repeat;
   &:hover {background: url(../img/wp/cmIcoH.png) no-repeat;}
   a, a:hover, a:visited, a:active {
-    color: #E1E5E7;
+    color: $postBgColor;
     display: block;
     height: $commentBoxBottom;
     padding-top: 34px;
     position: relative;
     width: $entryLinkWidth;
     z-index: 10;
+    text-decoration: none;
   }
   .commentIcon {
     background: url(../img/wp/cmBg.png) bottom no-repeat;
@@ -73,4 +75,34 @@ $commentBoxHeight: 53px;
 }
 .torrentBox {
   background: url(../img/wp/ttIco.jpg) no-repeat;
+}
+
+.datePanel {
+  @include round-corner(4px);
+  background: url("../img/wp/dateIcon.png") no-repeat scroll -4px 0 $postBgColor;
+  color: #000000;
+  left: -30px;
+  padding-bottom: 5px;
+  padding-left: 2px;
+  padding-top: 26px;
+  position: absolute;
+  text-align: left;
+  top: 7px;
+  width: 33px;
+  
+  .dayth {
+    color: #4C5F65;
+    font-size: 7pt;
+  }
+  .day {
+    font-size: 9pt;
+    font-weight: bold;
+  }
+  .month {
+    font-size: 9pt;
+    font-weight: bold;
+  }
+  .year {
+    font-size: 8pt;
+  }
 }

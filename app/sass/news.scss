@@ -2,6 +2,7 @@
 
 $general_space: 7px;
 $hr_pre_post_outside: 5%;
+$search_button_width: 80px;
 
 .sb-block {
   margin-bottom: 4px;
@@ -10,13 +11,13 @@ $hr_pre_post_outside: 5%;
     padding: $general_space;
     line-height: 0;
     float: left;
+    form { margin: 0;}
   }
   .descr { margin-left: $general_space; }
 }
 
 .search-block .box {
   width: 100%;
-  $search_button_width: 80px;
   .searchform {
     margin-left: $search_button_width;
   }
