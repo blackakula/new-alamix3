@@ -89,17 +89,3 @@ li.comment {
     margin: 7px 0;
   }
 }
-
-#commentform {
-  p {
-    width: 338px;
-    input { float: right; }
-    label, span {
-      position: relative;
-      top: 4px;
-    }
-  }
-  p.comment-notes, p.form-allowed-tags { width: auto; }
-  p.form-submit input { float: none; }
-  p.comment-notes span { position: static; }
-}
