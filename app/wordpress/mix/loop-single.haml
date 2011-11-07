@@ -1,6 +1,7 @@
 - if (have_posts()) while (have_posts()): the_post()
 - _include('post_paginator.php')
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+  - _include('theme-scripts.php')
   .entry-head
     .entry-links.post-links
       - _include('icon-download.php')
