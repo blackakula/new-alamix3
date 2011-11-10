@@ -1,0 +1,10 @@
+.right-title.c3
+  Бібліотека
+.right-library
+  <?php
+    $links = array();
+    foreach (_get_config('library') as $link) {
+      $links[] = '<a href="' . $link[1] . '">' . $link[0] . '</a>';
+    }
+  ?>
+  -= implode(' | ', $links)

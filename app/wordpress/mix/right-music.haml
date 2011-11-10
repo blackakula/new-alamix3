@@ -1,0 +1,10 @@
+.right-title.c1
+  Музархів
+.right-music
+  <?php
+    $links = array();
+    foreach (_get_config('music') as $link) {
+      $links[] = '<a href="' . $link[1] . '">' . $link[0] . '</a>';
+    }
+  ?>
+  -= implode(' | ', $links)

@@ -102,15 +102,46 @@ $postBgColor: #E1E5E7;
     font-size: 9pt;
     font-weight: bold;
   }
-  .year {
-    font-size: 8pt;
+  .year { font-size: 8pt;}
+}
+
+.right-title { margin-bottom: 5px;}
+
+.i-menu { @include i_menu('mix-parts.jpg', 4);}
+
+.right-space {
+  $rightHeightScpace: 20px;
+  line-height: $rightHeightScpace;
+  height: $rightHeightScpace;
+}
+
+$rightBlockRoundRadius: 6px;
+$rightBlockPadding: 5px;
+
+.right-music {
+  background-color: $menu_color1_b;
+  @include round-corner($rightBlockRoundRadius);
+  padding: $rightBlockPadding;
+  a:hover, a:visited:hover {
+    color: $menu_color1;
+    text-decoration: underline;
+  }
+  a, a:visited {
+    color: $menu_color1;
+    text-decoration: none;
   }
 }
 
-.right-title {
-  margin-bottom: 5px;
-}
-
-.i-menu {
-  @include i_menu('mix-parts.jpg', 4);
+.right-library {
+  background-color: $menu_color3_b;
+  @include round-corner($rightBlockRoundRadius);
+  padding: $rightBlockPadding;
+  a:hover, a:visited:hover {
+    color: $menu_color3;
+    text-decoration: underline;
+  }
+  a, a:visited {
+    color: $menu_color3;
+    text-decoration: none;
+  }
 }
