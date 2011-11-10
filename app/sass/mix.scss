@@ -118,30 +118,27 @@ $postBgColor: #E1E5E7;
 $rightBlockRoundRadius: 6px;
 $rightBlockPadding: 5px;
 
-.right-music {
-  background-color: $menu_color1_b;
+.right-music, .right-library {
   @include round-corner($rightBlockRoundRadius);
   padding: $rightBlockPadding;
   a:hover, a:visited:hover {
-    color: $menu_color1;
+    white-space: nowrap;
     text-decoration: underline;
   }
   a, a:visited {
-    color: $menu_color1;
+    white-space: nowrap;
     text-decoration: none;
   }
 }
 
+.right-music {
+  background-color: $menu_color1_b;
+  color: $menu_color1;
+  a:hover, a:visited:hover, a, a:visited { color: $menu_color1;}
+}
+
 .right-library {
   background-color: $menu_color3_b;
-  @include round-corner($rightBlockRoundRadius);
-  padding: $rightBlockPadding;
-  a:hover, a:visited:hover {
-    color: $menu_color3;
-    text-decoration: underline;
-  }
-  a, a:visited {
-    color: $menu_color3;
-    text-decoration: none;
-  }
+  color: $menu_color3;
+  a:hover, a:visited:hover, a, a:visited { color: $menu_color3;}
 }
