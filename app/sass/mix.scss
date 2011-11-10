@@ -45,8 +45,8 @@ $postBgColor: #E1E5E7;
   height: $commentBoxHeight;
   text-align: center;
   width: $entryLinkWidth;
-  background: url(../img/wp/cmIco.png) no-repeat;
-  &:hover {background: url(../img/wp/cmIcoH.png) no-repeat;}
+  background: url('#{$_img}wp/cmIco.png') no-repeat;
+  &:hover {background: url('#{$_img}wp/cmIcoH.png') no-repeat;}
   a, a:hover, a:visited, a:active {
     color: $postBgColor;
     display: block;
@@ -58,7 +58,7 @@ $postBgColor: #E1E5E7;
     text-decoration: none;
   }
   .commentIcon {
-    background: url(../img/wp/cmBg.png) bottom no-repeat;
+    background: url('#{$_img}wp/cmBg.png') bottom no-repeat;
     height: $commentBoxBottom;
     margin-top: -19px;
     position: relative;
@@ -67,19 +67,19 @@ $postBgColor: #E1E5E7;
   }
 }
 .bookmarkBox {
-  background: url(../img/wp/bmIco.png) no-repeat;
-   &:hover {background: url(../img/wp/bmIcoH.png) no-repeat;}
+  background: url('#{$_img}wp/bmIco.png') no-repeat;
+   &:hover {background: url('#{$_img}wp/bmIcoH.png') no-repeat;}
 }
 .downloadBox {
-  background: url(../img/wp/dlIco.gif) no-repeat;
+  background: url('#{$_img}wp/dlIco.gif') no-repeat;
 }
 .torrentBox {
-  background: url(../img/wp/ttIco.jpg) no-repeat;
+  background: url('#{$_img}wp/ttIco.jpg') no-repeat;
 }
 
 .datePanel {
   @include round-corner(4px);
-  background: url("../img/wp/dateIcon.png") no-repeat scroll -4px 0 $postBgColor;
+  background: url('#{$_img}wp/dateIcon.png') no-repeat scroll -4px 0 $postBgColor;
   color: #000000;
   left: -30px;
   padding-bottom: 5px;
