@@ -1,4 +1,4 @@
-@import "wp";
+@import "wp", "i_menu";
 $roundPostRadius: 7px;
 $entryLinkWidth: 33px;
 $entryLinkHeight: 31px;
@@ -105,4 +105,12 @@ $postBgColor: #E1E5E7;
   .year {
     font-size: 8pt;
   }
+}
+
+.right-title {
+  margin-bottom: 5px;
+}
+
+.i-menu {
+  @include i_menu('mix-parts.jpg', 4);
 }

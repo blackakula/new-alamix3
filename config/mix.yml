@@ -1,0 +1,29 @@
+videos:
+  -
+    color: 2
+    title: OTH
+    items:
+      - ['Серия 1', '#video_seriya1']
+      - ['Серия 2', '#video_seriya2']
+      - ['Серия 3', '#video_seriya3']
+      - ['Серия 4', '#video_seriya4']
+      - ['Серия 5', '#video_seriya5']
+  -
+    color: 1
+    title: Gossip Girl
+    items:
+      - ['Серия 1', '#video_seriya1']
+      - ['Серия 2', '#video_seriya2']
+      - ['Серия 3', '#video_seriya3']
+  -
+    color: 4
+    title: Big Bang Theory
+    items:
+      - ['Серия 1', '#video_seriya1']
+      - ['Серия 2', '#video_seriya2']
+      - ['Серия 3', '#video_seriya3']
+  -
+    color: 0
+    title: Something else
+    items:
+      - ['Серия 1', '#video_seriya1']

@@ -27,7 +27,7 @@
 
       $photo_data = get_config('photo');
       $photo_count = 0;
-      foreach ($photo_data['photos'] as $album => $photos)
+      foreach ($photo_data['photos'] as $photos)
         $photo_count += count($photos);
       $random_index = mt_rand(1, $photo_count);
       foreach ($photo_data['photos'] as $album => $photos) {
