@@ -119,6 +119,7 @@ $rightBlockRoundRadius: 6px;
 $rightBlockPadding: 5px;
 
 .right-music, .right-library {
+  text-align: justify;
   @include round-corner($rightBlockRoundRadius);
   padding: $rightBlockPadding;
   a:hover, a:visited:hover {
