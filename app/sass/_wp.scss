@@ -1,18 +1,19 @@
 @import "layout";
 
 .navigation {
+  $navigationLineHeight: 13px;
   a, a:hover, a:visited {
     text-decoration: none;
     color: $menu_color0;
-    margin-top: -20px;
-    .paginator-arrow {
-      line-height: 0;
-    }
+    vertical-align: middle;
+    line-height: $navigationLineHeight;
   }
   .paginator-arrow {
     font-size: 3em;
     position: relative;
-    top: 6px;
+    top: -4px;
+    vertical-align: middle;
+    line-height: $navigationLineHeight;
   }
   .nav-previous { float: left; }
   .nav-next { float: right; }
