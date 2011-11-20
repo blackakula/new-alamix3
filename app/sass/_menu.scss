@@ -99,12 +99,13 @@ $menu_text_height: .34;
   }
 }
 
-@mixin logo($menu_height, $margin_left: 10%) {
+@mixin logo($menu_height) {
   $menu_text_real_height: $menu_text_height * $menu_item_height * $menu_height;
   $logo_top_margin: ($menu_height - $menu_text_real_height) / 2;
 
-  margin: $logo_top_margin 0 0 $margin_left;
-  img { height: $menu_text_real_height; }
+  margin: $logo_top_margin 0 0 0;
+  a { float: left; }
+  img { height: $menu_text_real_height; margin-left: -50%; overflow: hidden; }
   font-size: 0;
 }
 

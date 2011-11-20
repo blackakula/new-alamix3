@@ -75,4 +75,4 @@ body {
 
 
 .menu { @include alamix-menu($menu_width, $menu_height); }
-.logo { @include logo($menu_height, $margin_left_aligned); }
+.logo { @include logo($menu_height); }
