@@ -44,9 +44,9 @@ $(function() {
     $('.menu .up .head, .menu .down .tail').height(itemTab)
     $('.menu .item .text').height(itemText + 1)
     $('.menu .down .head, .menu .up .tail').height(itemTail)
-    $('.logo').css({marginTop: itemTab})
-    $('.logo img').css({height: itemText})
-    $('.right .content').css({marginTop: itemTab + 60})
+    $('.logo').css({marginTop: itemTab / 2})
+    $('.logo img').css({height: itemText + itemTail + itemTab / 2})
+    $('.right .content').css({marginTop: itemTab - itemTail + 60})
 
     //border radius
     var borderRadius = (.15 * $('.menu .item').width()) + 'px ' + (.15 * item) + 'px'
