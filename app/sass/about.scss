@@ -11,6 +11,7 @@ $content_margins: 150px;
       font-size: 25pt;
       font-weight: normal;
       &:hover { color: $titles_color; }
+      font-family: $title_font_family;
     }
   }
   .selected a {

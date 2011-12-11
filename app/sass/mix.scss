@@ -30,6 +30,7 @@ $postBgColor: #E1E5E7;
   .entry-title {
     margin: 15px $linksWidth + $roundPostRadius 0 $roundPostRadius;
     padding-bottom: 10px;
+    font-family: $title_font_family;
   }
 }
 

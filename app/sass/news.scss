@@ -38,13 +38,13 @@ $search_button_width: 80px;
   text-decoration: none;
 }
 .entry-title {
+  font-family: $title_font_family;
   margin-bottom: 0;
   a {
     font-size: 20pt;
     font-weight: bold;
     line-height: 22px;
     text-decoration: none;
-    font-family: Calibri,"DejaVu Sans Condensed","DejaVu Sans",Verdana,sans-serif;
   }
 }
 .entry-content {
