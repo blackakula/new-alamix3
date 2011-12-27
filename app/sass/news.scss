@@ -38,17 +38,19 @@ $search_button_width: 80px;
   text-decoration: none;
 }
 .entry-title {
-  font-family: $title_font_family;
   margin-bottom: 0;
+  font-family: $title_font_family;
+  font-weight: normal;
   a {
     font-size: 20pt;
-    font-weight: bold;
     line-height: 22px;
     text-decoration: none;
   }
 }
 .entry-content {
   margin-bottom: 10px;
+  font-family: $text_font_family;
+  color: $news_text_color;
   .more-link {
     float: right;
     font-size: 10pt;

@@ -12,7 +12,7 @@
   .title { margin: 0; }
   .title a {
     font-size: 20pt;
-    font-weight: bold;
+    font-weight: normal;
     line-height: 22px;
     text-decoration: none;
     font-family: $title_font_family;
@@ -22,8 +22,9 @@
   .text {
     margin-top: 15px;
     font-size: 11pt;
+    font-family: $text_font_family;
+    color: $news_text_color;
   }
-  .text { color: $text_color; }
 }
 
 .right {
