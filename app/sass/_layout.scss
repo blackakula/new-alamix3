@@ -10,6 +10,8 @@ $margin_left_aligned: -$left_content_width / 2;
 $title_font_family: "Century Gothic",Arial,sans-serif;
 $text_font_family: Courier,Arial,serif;
 $news_text_color: #ababab;
+$news_separator_space_before: 50px;
+$news_separator_space_after: 25px;
 
 body {
   background-color: $body_background_color;

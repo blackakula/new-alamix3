@@ -38,7 +38,7 @@ $search_button_width: 80px;
   text-decoration: none;
 }
 .entry-title {
-  margin-bottom: 0;
+  margin: $news_separator_space_after 0 0 0;
   font-family: $title_font_family;
   font-weight: normal;
   a {
