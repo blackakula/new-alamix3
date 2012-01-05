@@ -1,4 +1,6 @@
-%h1.logo
-  %a{href="<?php echo get_routes()->build_path('root') ?>"}
-    -= $this->_img('logo.png', 'web-куточок Аля Мікс')
-  .clear
+- $showLogo = $this->get('show_menu_and_logo')
+- if (!isset($showLogo) || $showLogo)
+  %h1.logo
+    %a{href="<?php echo get_routes()->build_path('root') ?>"}
+      -= $this->_img('logo.png', 'web-куточок Аля Мікс')
+    .clear

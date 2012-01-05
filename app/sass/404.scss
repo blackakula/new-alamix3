@@ -1,0 +1,23 @@
+@import "layout";
+
+$copyright_total_height: 140px;
+
+html, body, .container-bottom, .container-upper, .container-upper .left, .container-upper .left .content { height: 100%; }
+.container-upper .left .content {
+  margin-top: -$copyright_total_height;
+  position: relative;
+}
+
+$err_logo_width: 423px;
+$err_logo_height: 141px;
+
+.left-404 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: $err_logo_width;
+  height: $err_logo_height;
+  margin-left: -$err_logo_width / 2;
+  margin-top: $copyright_total_height - $err_logo_height / 2 - 100px;
+  background-image: url('#{$_img}error_logo.png');
+}
