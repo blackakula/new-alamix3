@@ -8,16 +8,63 @@ html, body, .container-bottom, .container-upper, .container-upper .left, .contai
   position: relative;
 }
 
-$err_logo_width: 423px;
+$err_logo_width: 420px;
 $err_logo_height: 141px;
+$err_logo_margin_top: $copyright_total_height - $err_logo_height / 2 - 150px;
+$err_logo_margin_left: -$err_logo_width / 2;
 
-.left-404 {
+.left-404-logo, .left-404-menu {
   position: absolute;
   top: 50%;
   left: 50%;
+  margin-left: $err_logo_margin_left;
   width: $err_logo_width;
+}
+
+.left-404-logo {
   height: $err_logo_height;
-  margin-left: -$err_logo_width / 2;
-  margin-top: $copyright_total_height - $err_logo_height / 2 - 100px;
+  margin-top: $err_logo_margin_top;
   background-image: url('#{$_img}error_logo.png');
+}
+
+.left-404-menu {
+  margin-top: $err_logo_margin_top + $err_logo_height + 10px;
+}
+
+$err_sublogo_width: 146px;
+$err_sublogo_height: 104px;
+
+.left-404-menu-sublogo {
+  float: right;
+  margin: 0;
+  width: $err_sublogo_width;
+  background-image: url('#{$_img}error_404.png');
+  background-repeat: no-repeat;
+  position: relative;
+  h1 {
+    position: absolute;
+    text-indent: -9000px;
+  }
+}
+
+.menu-404 {
+  margin-top: $err_sublogo_height + 20px;
+  ul {
+    padding: 0;
+    list-style-type: none;
+    li {
+      a, a:hover, a:visited, a:visited:hover {
+        text-decoration: none;
+      }
+      a {
+        font-size: 13pt;
+        font-family: $title_font_family;
+        text-transform: uppercase;
+      }
+    }
+    li.back {
+      a { font-size: 18pt; }
+      margin-bottom: 10px;
+    }
+  }
 }

@@ -1,1 +1,18 @@
-.left-404
+.left-404-logo
+.left-404-menu
+  .left-404-menu-sublogo
+    %h1 404
+    .menu-404
+      %ul
+        %li.back
+          %a.c4{href="javascript: history.go(-1)"} назад
+        <?php
+          $this->setMenu();
+          $menu = $this->get('menu');
+          array_unshift($menu, array('головна', get_routes()->build_path('root')));
+        ?>
+        - foreach ($menu as $i => $item)
+          - $c = 'c' . (($i == 0) ? 2 : ($i - 1));
+          %li
+            %a.$c{href="$item[1]"}= $item[0]
+  .clear
