@@ -7,7 +7,7 @@ Options +FollowSymLinks -Indexes
   RewriteRule ^mix/(.*) mix/$1 [L,QSA]
   RewriteRule ^news/(.*) news/$1 [L,QSA]
 
-  RewriteCond %{REQUEST_URI} !^/(web|mix)
+  RewriteCond %{REQUEST_URI} !^/(web|mix|news)
   RewriteRule ^(.*)$ web/$1 [L,QSA]
 
   RewriteCond %{ENV:REDIRECT_STATUS} ^$
