@@ -1,8 +1,8 @@
-@import "layout";
+@import "layout", "menu";
 
 $copyright_total_height: 140px;
 
-html, body, .container-bottom, .container-upper, .container-upper .left, .container-upper .left .content {
+html, body, .container-bottom, .container-upper, .container-upper .left, .container-upper .left .content, .container-upper .right {
   height: 100%;
   min-height: 450px;
 }
@@ -70,4 +70,78 @@ $err_sublogo_height: 104px;
       margin-bottom: 10px;
     }
   }
+}
+
+.container-upper .right .content {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.right-404 {
+  height: 80%;
+  width: 10%;
+  position: absolute;
+  top: 10%;
+  left: 0;
+}
+
+.right-404-space {
+  height: 3.75%
+}
+
+.right-404-item {
+  height: 17%;
+}
+
+.right-404-item1, .right-404-item2 {
+  float: left;
+  background-color: red;
+  height: 100%;
+}
+
+$err_item1_width: 12%;
+.right-404-item1 { width: $err_item1_width; }
+
+$err_height_round: 19%;
+
+.even .right-404-item2 {
+  width: (99% - $err_item1_width) * 0.3973;
+  $err_width_round1: 80%;
+  @include round-corner($err_width_round1 $err_height_round, 'right', 'top');
+  @include round-corner($err_width_round1 $err_height_round, 'right', 'bottom');
+}
+.odd .right-404-item2 {
+  width: 99% - $err_item1_width;
+  $err_width_round2: 32%;
+  @include round-corner($err_width_round2 $err_height_round, 'right', 'top');
+  @include round-corner($err_width_round2 $err_height_round, 'right', 'bottom');
+}
+
+.be0 {
+  .right-404-item1 { background-color: $menu_color0_b; }
+  .right-404-item2 { background-color: $menu_color0; }
+}
+
+.be1 {
+  .right-404-item1 { background-color: $menu_color1_b; }
+  .right-404-item2 { background-color: $menu_color1; }
+}
+
+.be2 {
+  .right-404-item1 { background-color: $menu_color2_b; }
+  .right-404-item2 { background-color: $menu_color2; }
+}
+
+.be3 {
+  .right-404-item1 { background-color: $menu_color3_b; }
+  .right-404-item2 { background-color: $menu_color3; }
+}
+
+.be4 {
+  .right-404-item1 { background-color: $menu_color4_b; }
+  .right-404-item2 { background-color: $menu_color4; }
 }

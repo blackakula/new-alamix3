@@ -1,0 +1,12 @@
+.right-404
+  - foreach (array_reverse($this->get('menu')) as $k => $item)
+    <?php
+      $odd = ($k % 2) ? 'odd' : 'even';
+      $b = 'be' . (4 - $k);
+    ?>
+    - if ($k != 0)
+      .right-404-space
+    .right-404-item.$b.$odd
+      .right-404-item1
+      .right-404-item2
+      .clear
