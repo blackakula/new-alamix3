@@ -20,7 +20,6 @@
       $this->set('title', $this->data['title']);
       $this->set('content', $this->data['content']);
 
-      $contacts = $this->data['contacts'];
       $this->set('contacts', $this->data['contacts']);
     }
 
