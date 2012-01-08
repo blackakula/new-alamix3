@@ -20,17 +20,8 @@ $content_margins: 150px;
   .about-text {
     padding: 5px 0 20px;
   }
-  .socio-box {
-    $weheartit_width: 180px;
-    margin: $content_margins 0 20px 180px;
-    .widget-item { float: left; }
-    .weheartit {
-      width: $weheartit_width;
-      margin-left: -$weheartit_width;
-    }
-    .twitter { margin-left: 20px; }
-  }
   margin-top: $content_margins;
+  margin-bottom: $content_margins;
 }
 
 .right {
@@ -48,5 +39,15 @@ $content_margins: 150px;
   .gallery {
     margin-top: 50px;
     height: 600px;
+  }
+  .socio-box {
+    $weheartit_width: 180px;
+    margin: 40px 0 20px 180px;
+    .widget-item { float: left; }
+    .weheartit {
+      width: $weheartit_width;
+      margin-left: -$weheartit_width;
+    }
+    .twitter { margin-left: 20px; }
   }
 }

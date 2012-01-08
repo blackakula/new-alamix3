@@ -3,3 +3,9 @@
   <?php $src = $this->getIMG() . 'gallery.swf'?>
   %object{data="$src" style="width:100%;height:100%" type="application/x-shockwave-flash"}
     %param{name="movie" value="$src"}
+.socio-box
+  .weheartit.widget-item
+    - $this->_include('weheartit')
+  .twitter.widget-item
+    - $this->_include('twitter')
+  .clear
