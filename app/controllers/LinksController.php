@@ -26,6 +26,9 @@
 
         $column_item = &$columns[$columnIndex];
         if (count($column_item) > 0) $column_item[] = array('space');
+        if (!array_key_exists('squares', $item)) {
+          $item['squares'] = array(0, 1, 2);
+        }
         $column_item[] = array('squares', $item['squares']);
         $link = !isset($item['link']) || empty($item['link']) ? null : $item['link'];
         $column_item[] = array('title', array($item['title'], $link));

@@ -17,3 +17,7 @@ $columns_vspace: 40px;
 .space {
   height: $news_separator_space_before;
 }
+
+.sep {
+  @include separator(10px);
+}
