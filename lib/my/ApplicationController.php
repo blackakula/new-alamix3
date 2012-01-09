@@ -14,7 +14,7 @@
           array('новини',  $r->build_path('news')),
           array('мікс', $r->build_path('mix')),
           array('фото', $r->build_path('photo')),
-          array('лінки', '#linky'),
+          array('лінки', $r->build_path('links')),
           array('аля про', $r->build_path('about')),
       ));
 

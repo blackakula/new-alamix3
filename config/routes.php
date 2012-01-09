@@ -9,6 +9,8 @@
   $r->named('about', '/about', array('controller' => 'about'));
   $r->connect('/images.php', array('controller' => 'about', 'action' => 'gallery'));
 
+  $r->named('links', '/links', array('controller' => 'links'));
+
   $r->named('mix', '/mix/');
   $r->named('news', '/news/');
 ?>
