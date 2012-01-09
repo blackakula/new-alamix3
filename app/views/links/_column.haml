@@ -1,0 +1,6 @@
+.column
+  - foreach ($this->get('column') as $item)
+    - if ($item[0] == 'space')
+      .space
+      - continue
+    - $content = $item[1]

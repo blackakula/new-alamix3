@@ -3,8 +3,45 @@ content:
   -
     colors: [0, 1, 2]
     title: Тематический заголовок
-    link: #link1
+    link: '#link1'
     text: >
       Nam dapibus lobortis sollicitudin.
-      Maecenas cursus dui et tortor lobortis et sollicitudin nulla ultricies.
+      Maecenas cursus dui et tortor lobortis et sollicitudin nulla <a href="<-@->">ultricies</a>.
       Fusce auctor gravida volutpat. Nunc hendrerit tempor nulla, vel iaculis felis.
+  -
+    colors: [2, 3, 4]
+    title: Заголовок
+    link: '#link2'
+    text: >
+      Donec placerat erat blandit neque suscipit rutrum.<***>
+      Vivamus nec libero in erat viverra <a href="<-@->">auctor</a>.
+      Vivamus sollicitudin sollicitudin vestibulum.
+      Aliquam imperdiet urna sed nisi <a href="<-@->">condimentum</a> varius. Etiam convallis malesuada facilisis.
+      Fusce hendrerit ullamcorper dui, quis ultrices nulla commodo id.
+      Sed pulvinar, elit sed tincidunt cursus, nulla.
+  -
+    colors: [1, 4, 0]
+    title: Заголовок
+    text: >
+      Etiam pulvinar egestas tellus non luctus. Nullam vel laoreet dolor.
+      Aliquam ut leo nec nibh fermentum aliquet. Donec vitae massa arcu.
+      Aliquam non odio neque. Aliquam tempus rhoncus lacus, a suscipit orci molestie eget.
+      Suspendisse ornare turpis egestas ante elementum consectetur.
+      Mauris eu lectus quam. Morbi urna massa, commodo quis.
+  -
+    colors: [4, 2, 3]
+    title: Тематический заголовок
+    link: '#link3'
+    text: >
+      Aenean erat ipsum, sagittis ut malesuada ut, suscipit nec ipsum.
+      In malesuada magna eget elit vehicula tristique. Nam vitae neque.
+  -
+    colors: [0, 3, 1]
+    title: Заголовок
+    link: '#link4'
+    text: >
+      Praesent interdum, augue eu varius fermentum, dolor odio suscipit libero, convallis venenatis lectus dui at odio.
+      Nunc ut dolor in magna mattis viverra eu et felis. Sed bibendum accumsan augue.
+      Etiam turpis tellus, accumsan vel ullamcorper et, elementum id dui.
+      Nam tempus commodo leo, aliquet semper metus imperdiet sed. Aliquam sollicitudin fermentum sem nec viverra.
+      Ut fringilla ligula ut velit.

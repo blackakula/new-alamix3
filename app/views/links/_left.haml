@@ -1,0 +1,5 @@
+- $columns = $this->get('columns')
+- for ($i = 0; $i < 2; ++$i)
+  - if (isset($columns[$i]))
+    - $this->set('column', $columns[$i])
+    - $this->_include('column')
