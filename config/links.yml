@@ -23,7 +23,7 @@ content:
     squares: [1, 4, 0]
     title: Заголовок
     text: >
-      Etiam pulvinar egestas tellus non luctus. Nullam vel laoreet dolor.
+      Etiam pulvinar egestas tellus non luctus. Nullam vel laoreet dolor.<***>
       Aliquam ut leo nec nibh fermentum aliquet. Donec vitae massa arcu.
       Aliquam non odio neque. Aliquam tempus rhoncus lacus, a suscipit orci molestie eget.
       Suspendisse ornare turpis egestas ante elementum consectetur.
@@ -34,7 +34,7 @@ content:
     link: '#link3'
     text: >
       Aenean erat ipsum, sagittis ut malesuada ut, suscipit nec ipsum.
-      In malesuada magna eget elit vehicula tristique. Nam vitae neque.
+      In malesuada magna eget elit vehicula tristique. Nam vitae neque.<***>
   -
     squares: [0, 3, 1]
     title: Заголовок
