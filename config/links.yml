@@ -1,1 +1,10 @@
 title: This is links page
+content:
+  -
+    colors: [0, 1, 2]
+    title: Тематический заголовок
+    link: #link1
+    text: >
+      Nam dapibus lobortis sollicitudin.
+      Maecenas cursus dui et tortor lobortis et sollicitudin nulla ultricies.
+      Fusce auctor gravida volutpat. Nunc hendrerit tempor nulla, vel iaculis felis.
