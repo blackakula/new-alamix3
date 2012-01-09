@@ -1,7 +1,7 @@
 title: This is links page
 content:
   -
-    colors: [0, 1, 2]
+    squares: [0, 1, 2]
     title: Тематический заголовок
     link: '#link1'
     text: >
@@ -9,7 +9,7 @@ content:
       Maecenas cursus dui et tortor lobortis et sollicitudin nulla <a href="<-@->">ultricies</a>.
       Fusce auctor gravida volutpat. Nunc hendrerit tempor nulla, vel iaculis felis.
   -
-    colors: [2, 3, 4]
+    squares: [2, 3, 4]
     title: Заголовок
     link: '#link2'
     text: >
@@ -20,7 +20,7 @@ content:
       Fusce hendrerit ullamcorper dui, quis ultrices nulla commodo id.
       Sed pulvinar, elit sed tincidunt cursus, nulla.
   -
-    colors: [1, 4, 0]
+    squares: [1, 4, 0]
     title: Заголовок
     text: >
       Etiam pulvinar egestas tellus non luctus. Nullam vel laoreet dolor.
@@ -29,14 +29,14 @@ content:
       Suspendisse ornare turpis egestas ante elementum consectetur.
       Mauris eu lectus quam. Morbi urna massa, commodo quis.
   -
-    colors: [4, 2, 3]
+    squares: [4, 2, 3]
     title: Тематический заголовок
     link: '#link3'
     text: >
       Aenean erat ipsum, sagittis ut malesuada ut, suscipit nec ipsum.
       In malesuada magna eget elit vehicula tristique. Nam vitae neque.
   -
-    colors: [0, 3, 1]
+    squares: [0, 3, 1]
     title: Заголовок
     link: '#link4'
     text: >

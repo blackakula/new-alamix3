@@ -1,5 +1,19 @@
 @import "layout", "squares", "separator";
 
+$columns_vspace: 40px;
+.columns {
+  margin-left: $columns_vspace;
+}
+.column {
+  float:left;
+  width: 49.8%;
+  margin-left: $columns_vspace;
+}
+
+.column.first {
+  margin-left: -$columns_vspace;
+}
+
 .space {
   height: $news_separator_space_before;
 }

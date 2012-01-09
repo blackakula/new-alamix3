@@ -1,6 +1,9 @@
-.column
+- $addClass = $this->get('column_index') == 0 ? 'first' : ''
+.column.$addClass
   - foreach ($this->get('column') as $item)
     - if ($item[0] == 'space')
       .space
       - continue
     - $content = $item[1]
+    - if ($item[0] == 'squares')
+      - $this->set('squares', $content)
