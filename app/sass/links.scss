@@ -20,4 +20,25 @@ $columns_vspace: 40px;
 
 .sep {
   @include separator(10px);
+  margin-bottom: $news_separator_space_after;
+}
+
+.title {
+  font-family: $title_font_family;
+  font-size: $title_font_size;
+  font-weight: normal;
+  color: $titles_color;
+  a, a:hover, a:visited, a:visited:hover {
+    text-decoration: none;
+    color: $titles_color;
+  }
+  margin: 0 0 15px 0;
+}
+
+.column .text {
+  margin: 0;
+  font-size: 11pt;
+  font-family: $text_font_family;
+  text-align: justify;
+  color: $news_text_color;
 }

@@ -42,7 +42,7 @@ $search_button_width: 80px;
   font-family: $title_font_family;
   font-weight: normal;
   a {
-    font-size: 20pt;
+    font-size: $title_font_size;
     line-height: 22px;
     text-decoration: none;
   }

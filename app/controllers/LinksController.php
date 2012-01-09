@@ -31,7 +31,9 @@
         }
         $column_item[] = array('squares', $item['squares']);
         $link = !isset($item['link']) || empty($item['link']) ? null : $item['link'];
-        $column_item[] = array('title', array($item['title'], $link));
+        if (isset($item['title']) && !empty($item['title'])) {
+          $column_item[] = array('title', array($item['title'], $link));
+        }
 
         foreach (explode(self::DELIMITER, $item['text']) as $part) {
           $part = trim($part);
