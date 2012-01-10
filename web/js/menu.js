@@ -40,9 +40,10 @@ $(function() {
     var itemText = .34 * item
     var itemTab = ($('.menu').height() - itemText) / 2
     var itemTail = item - itemText - itemTab
+    var itemTextHeight = itemText + 1
     
     $('.menu .up .head, .menu .down .tail').height(itemTab)
-    $('.menu .item .text').height(itemText + 1)
+    $('.menu .item .text').height(itemTextHeight)
     $('.menu .down .head, .menu .up .tail').height(itemTail)
     var logoMarginTop = itemTab / 2;
     var logoHeight = itemText + itemTab * 3 / 2;
@@ -51,9 +52,23 @@ $(function() {
     $('.right .content').css({marginTop: 2 * itemTab + itemText + 60 - logoMarginTop - logoHeight})
 
     //border radius
-    var borderRadius = (.15 * $('.menu .item').width()) + 'px ' + (.15 * item) + 'px'
+    var menuItemWidth = $('.menu .item').width();
+    var borderRadius = (.15 * menuItemWidth) + 'px ' + (.15 * item) + 'px'
     $('.menu .item, .menu .tail').css(roundCss(borderRadius, 'bottom'))
     $('.menu .down, .menu .down .head').css(roundCss(borderRadius, 'top'))
+
+    var heartMenuItem = $('.item.item-heart');
+    if (heartMenuItem) {
+      //border radius
+      var heartMenuItemWidth = heartMenuItem.width();
+      var borderRadius = (.15 * heartMenuItemWidth) + 'px ' + (.15 * item * heartMenuItemWidth / menuItemWidth) + 'px'
+      $('.menu .item.item-heart, .menu .item.item-heart .tail').css(roundCss(borderRadius, 'bottom'))
+      $('.menu .item.item-heart.down, .menu .item.item-heart.down .head').css(roundCss(borderRadius, 'top'))
+      $('.menu .item.item-heart img').css({
+        height: Math.round(itemTextHeight * .6) + 'px',
+        marginTop: (itemTextHeight * .2) + 'px'
+      });
+    }
 
     //random photo
     $('.random-photo-box img').each(resizeRandomImage)
