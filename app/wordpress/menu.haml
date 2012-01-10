@@ -1,9 +1,17 @@
-- MyWPRegistry::get('Template')->set('alamix-menu', MyWPRegistry::get('Controller')->get('alamix-menu'))
-- MyWPRegistry::get('Template')->setMenu()
+<?php
+  $template = MyWPRegistry::get('Template');
+  $template->set('alamix-menu', MyWPRegistry::get('Controller')->get('alamix-menu'));
+  $template->setMenu();
+  $menu = $template->get('menu');
+  $menu[] = array($template->_img('heart.png', 'Heart'), '#heart', 'name' => 'heart');
+?>
 .menu
-  - foreach (MyWPRegistry::get('Template')->get('menu') as $i => $item)
+  - foreach ($menu as $i => $item)
     <?php
       $odd = ($i % 2 == 0) ? 'up' : 'down';
+      if (isset($item['name'])) {
+        $i = '-' . $item['name'];
+      }
       $class = 'item' . $i;
       $color = 'c' . $i;
       $bg_color = 'b' . $i;
