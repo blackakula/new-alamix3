@@ -1,31 +1,6 @@
-@import "img";
-
-$body_background_color: #302c2d;
-$body_background_color2: #000;
-$large_size: 10000px;
-$bottom_space: 40px;
-$body_font: Arial,sans-serif;
-
-$text_color: #6b6b6b;
-$a_color_visited: #635151;
-$a_color_visited_hover: #5b3b3b;
-
-$titles_color: #cecac0;
+@import "img", "all0";
 
 $min_site_width: 900px;
-
-@mixin round-corner($round_size, $w: 'all', $h: 'all') {
-  @if $w == 'all' {
-    border-radius: $round_size;
-    -moz-border-radius: $round_size;
-    -webkit-border-radius: $round_size;
-  }
-  @else {
-    border-#{$h}-#{$w}-radius: $round_size;
-    -moz-border-radius-#{$h}#{$w}: $round_size;
-    -webkit-border-radius-#{$h}#{$w}: $round_size;
-  }
-}
 
 body {
   margin: 0;

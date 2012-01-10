@@ -1,4 +1,4 @@
-@import "menu_colors_default";
+@import "menu_colors_default", "all0";
 
 .c0, .c0:hover, .c0:visited, .c0:visited:hover  { color: $menu_color0; }
 .c1, .c1:hover, .c1:visited, .c1:visited:hover { color: $menu_color1; }
@@ -12,3 +12,5 @@
 .b3 { background-color: $menu_color3; }
 .b4 { background-color: $menu_color4; }
 
+$heart_bg_color: mix(#fff, $body_background_color, 10%);
+.b-heart { background-color: $heart_bg_color; }

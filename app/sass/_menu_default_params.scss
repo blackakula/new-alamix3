@@ -6,8 +6,9 @@ $menu_color2_b: darken($menu_color2, $menu_darken);
 $menu_color3_b: darken($menu_color3, $menu_darken);
 $menu_color4_b: darken($menu_color4, $menu_darken);
 
-$menu_item_width: .17;
-$menu_space_width: 100% * (1 - 5 * $menu_item_width) / 4;
+$menu_item_width: .15;
+$menu_heart_item_width: 0.088;
+$menu_space_width: 100% * (1 - 5 * $menu_item_width - $menu_heart_item_width) / 5;
 $menu_width: 390px;
 $menu_item_round_radius: .15;
 
@@ -31,5 +32,10 @@ $menu_item_round_radius: .15;
   .item4 {
     left: 4 * $menu_space_width;
     background-color: $c4;
+  }
+  
+  .item-heart {
+    background-color: mix($menu_color3, $heart_bg_color, 20%);
+    left: 5 * $menu_space_width;
   }
 }

@@ -1,10 +1,17 @@
 - $showMenu = $this->get('show_menu_and_logo')
 - if (!isset($showMenu) || $showMenu)
-  - $this->setMenu()
+  <?php
+    $this->setMenu();
+    $menu = $this->get('menu');
+    $menu[] = array($this->_img('heart.png', 'Heart'), '#heart', 'name' => 'heart');
+  ?>
   .menu
-    - foreach ($this->get('menu') as $i => $item)
+    - foreach ($menu as $i => $item)
       <?php
         $odd = ($i % 2 == 0) ? 'up' : 'down';
+        if (isset($item['name'])) {
+          $i = '-' . $item['name'];
+        }
         $class = 'item' . $i;
         $color = 'c' . $i;
         $bg_color = 'b' . $i;

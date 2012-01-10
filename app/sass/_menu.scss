@@ -53,6 +53,14 @@ $menu_text_height: .34;
     }
   }
 
+  .item.item-heart {
+    width: $menu_heart_item_width * 100%;
+    .text img {
+      margin-top: $menu_item_text_height * 0.2;
+      height: $menu_item_text_height * 0.6;
+    }
+  }
+
   .up, .down, .tail {
     @include round-corner($menu_item_round, 'right', 'bottom');
     @include round-corner($menu_item_round, 'left', 'bottom');
