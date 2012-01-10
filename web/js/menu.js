@@ -32,7 +32,7 @@ $(function() {
   }
 
   var resizeMenu = function() {
-    var k = $('.menu').width() / 39
+    var k = $('.menu').width() / 44
     $('.menu').height(k * 9)
     $('.menu').css({fontSize: k + 'pt'})
     
