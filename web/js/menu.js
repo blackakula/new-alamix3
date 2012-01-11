@@ -44,9 +44,11 @@ $(function() {
     $('.menu .up .head, .menu .down .tail').height(itemTab)
     $('.menu .item .text').height(itemText + 1)
     $('.menu .down .head, .menu .up .tail').height(itemTail)
-    $('.logo').css({marginTop: itemTab / 2})
-    $('.logo img').css({height: itemText + itemTail + itemTab / 2})
-    $('.right .content').css({marginTop: itemTab - itemTail + 60})
+    var logoMarginTop = itemTab * 3 / 4;
+    var logoHeight = itemText + itemTab / 3;
+    $('.logo').css({marginTop: logoMarginTop})
+    $('.logo img').css({height: logoHeight})
+    $('.right .content').css({marginTop: 2 * itemTab + itemText + 60 - logoMarginTop - logoHeight})
 
     //border radius
     var borderRadius = (.15 * $('.menu .item').width()) + 'px ' + (.15 * item) + 'px'
