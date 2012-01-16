@@ -12,6 +12,8 @@ $a_color_visited_hover: #5b3b3b;
 
 $titles_color: #cecac0;
 
+$min_site_width: 900px;
+
 @mixin round-corner($round_size, $w: 'all', $h: 'all') {
   @if $w == 'all' {
     border-radius: $round_size;

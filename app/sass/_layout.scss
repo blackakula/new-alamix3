@@ -19,7 +19,7 @@ body {
 }
 
 .container-bottom {
-  min-width: 900px;
+  min-width: $min_site_width;
   float: left;
   width: 100%;
   background-color: #000;

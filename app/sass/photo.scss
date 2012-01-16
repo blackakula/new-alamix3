@@ -4,7 +4,7 @@ $gallery_color: #F0F0F0;
 
 body {
   background-color: $body_background_color2;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 
@@ -17,9 +17,13 @@ $albumSelect_height: 18px;
 $albumSelect_width: 170px;
 $albumSelect_margin_right: 5px;
 
+.albumbar, #preview, #thumbsWrapper, .infobar {
+  min-width: $min_site_width;
+}
+
 .albumbar {
   height: $albumbar_height;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -183,7 +187,7 @@ $info_heigth: 30px;
   height: $info_heigth;
   left: 0;
   line-height: $info_heigth;
-  position: fixed;
+  position: absolute;
   text-align: center;
   width: 100%;
   font-size: 11pt;
@@ -193,10 +197,14 @@ $info_heigth: 30px;
     text-shadow: 0 0 1px $gallery_color;
   }
   .reference {
+    $reference_width: 500px;
     font-size: 75%;
     color: $text_color;
     bottom: 2px;
-    left: 10px;
-    position: fixed;
+    float: left;
+    width: $reference_width;
+    margin-right: -$reference_width;
+    text-align: left;
+    padding-left: 10px;
   }
 }
