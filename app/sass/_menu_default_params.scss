@@ -9,6 +9,7 @@ $menu_color4_b: darken($menu_color4, $menu_darken);
 $menu_item_width: .17;
 $menu_space_width: 100% * (1 - 5 * $menu_item_width) / 4;
 $menu_width: 390px;
+$menu_item_round_radius: .15;
 
 @mixin menu-items-position-and-colors($c0, $c1, $c2, $c3, $c4) {
   .item0 {

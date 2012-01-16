@@ -25,7 +25,6 @@ $menu_text_height: .34;
   $menu_item_tab_height: ($menu_height - $menu_item_text_height) / 2;
   $menu_item_tail_height: $menu_height * $menu_item_height - $menu_item_text_height - $menu_item_tab_height;
 
-  $menu_item_round_radius: .15;
   $menu_item_round: $menu_item_round_radius * $menu_width * $menu_item_width $menu_item_round_radius * $menu_item_height * $menu_height;
 
   //set styles

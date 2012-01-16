@@ -8,6 +8,12 @@
   font-size: 10pt;
 
   .item {
+    $horizontal_menu_item_round_radius: $menu_item_round_radius * 100%;
+    $vertical_menu_item_round_radius: $menu_width * $menu_item_round_radius * $menu_item_width;
+    @include round-corner($horizontal_menu_item_round_radius $vertical_menu_item_round_radius, 'left', 'top');
+    @include round-corner($horizontal_menu_item_round_radius $vertical_menu_item_round_radius, 'left', 'bottom');
+    @include round-corner($horizontal_menu_item_round_radius $vertical_menu_item_round_radius, 'right', 'top');
+    @include round-corner($horizontal_menu_item_round_radius $vertical_menu_item_round_radius, 'right', 'bottom');
     width: $menu_item_width * 100%;
     position: relative;
     float: left;
