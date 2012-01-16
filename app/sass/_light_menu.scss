@@ -7,8 +7,8 @@
   text-align: center;
   font-size: 10pt;
 
+  $horizontal_menu_item_round_radius: $menu_item_round_radius * 100%;
   .item {
-    $horizontal_menu_item_round_radius: $menu_item_round_radius * 100%;
     $vertical_menu_item_round_radius: $menu_width * $menu_item_round_radius * $menu_item_width;
     @include round-corner($horizontal_menu_item_round_radius $vertical_menu_item_round_radius, 'left', 'top');
     @include round-corner($horizontal_menu_item_round_radius $vertical_menu_item_round_radius, 'left', 'bottom');
@@ -28,5 +28,19 @@
       font-size: 115%;
       line-height: 150%;
     }
+  }
+
+  .item.item-heart {
+    width: $menu_heart_item_width * 100%;
+    .c-heart img {
+      margin-top: $menu_height * 0.2;
+      height: $menu_height * 0.6;
+    }
+
+    $vertical_menu_item_round_radius: $menu_width * $menu_item_round_radius * $menu_heart_item_width;
+    @include round-corner($horizontal_menu_item_round_radius $vertical_menu_item_round_radius, 'left', 'top');
+    @include round-corner($horizontal_menu_item_round_radius $vertical_menu_item_round_radius, 'left', 'bottom');
+    @include round-corner($horizontal_menu_item_round_radius $vertical_menu_item_round_radius, 'right', 'top');
+    @include round-corner($horizontal_menu_item_round_radius $vertical_menu_item_round_radius, 'right', 'bottom');
   }
 }
