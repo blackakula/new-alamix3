@@ -4,7 +4,7 @@ $copyright_total_height: 140px;
 
 html, body, .container-bottom, .container-upper, .container-upper .left, .container-upper .left .content, .container-upper .right {
   height: 100%;
-  min-height: 450px;
+  min-height: 480px;
 }
 .container-upper .left .content {
   margin-top: -$copyright_total_height;
@@ -13,7 +13,7 @@ html, body, .container-bottom, .container-upper, .container-upper .left, .contai
 
 $err_logo_width: 420px;
 $err_logo_height: 141px;
-$err_logo_margin_top: $copyright_total_height - $err_logo_height / 2 - 150px;
+$err_logo_margin_top: $copyright_total_height - $err_logo_height / 2 - 160px;
 $err_logo_margin_left: -$err_logo_width / 2;
 
 .left-404-logo, .left-404-menu {
@@ -68,6 +68,13 @@ $err_sublogo_height: 104px;
     li.back {
       a { font-size: 18pt; }
       margin-bottom: 10px;
+    }
+    li.heart {
+      a {
+        font-size: 22pt;
+        line-height: 18px;
+      }
+      margin-top: 10px;
     }
   }
 }

@@ -14,3 +14,5 @@
 
 $heart_bg_color: mix(#fff, $body_background_color, 10%);
 .b-heart { background-color: $heart_bg_color; }
+
+.c-heart, .c-heart:hover, .c-heart:visited, .c-heart:visited:hover { color: $menu_color3; }
