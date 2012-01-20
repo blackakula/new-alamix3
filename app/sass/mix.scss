@@ -33,6 +33,11 @@ $postBgColor: #E1E5E7;
     font-family: $title_font_family;
     font-weight: normal;
     font-size: $title_font_size;
+    color: $titles_color;
+    a, a:hover, a:visited, a:active {
+      text-decoration: none;
+      color: $titles_color;
+    }
   }
 }
 
