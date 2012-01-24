@@ -44,8 +44,8 @@ $(function() {
     $('.menu .up .head, .menu .down .tail').height(itemTab)
     $('.menu .item .text').height(itemText + 1)
     $('.menu .down .head, .menu .up .tail').height(itemTail)
-    var logoMarginTop = itemTab * 3 / 4;
-    var logoHeight = itemText + itemTab / 3;
+    var logoMarginTop = itemTab / 2;
+    var logoHeight = itemText + itemTab * 3 / 2;
     $('.logo').css({marginTop: logoMarginTop})
     $('.logo img').css({height: logoHeight})
     $('.right .content').css({marginTop: 2 * itemTab + itemText + 60 - logoMarginTop - logoHeight})
