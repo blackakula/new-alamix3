@@ -57,9 +57,6 @@ $(function() {
 
     //random photo
     $('.random-photo-box img').each(resizeRandomImage)
-
-    //about page
-    $('.right .contacts').css({marginTop: itemTail - itemTab - 40})
   }
 
   $('.random-photo-box img').load(function() {
