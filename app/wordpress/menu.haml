@@ -3,7 +3,7 @@
   $template->set('alamix-menu', MyWPRegistry::get('Controller')->get('alamix-menu'));
   $template->setMenu();
   $menu = $template->get('menu');
-  $menu[] = array($template->_img('heart.png', 'Heart'), '#heart', 'name' => 'heart');
+  $menu[] = array($template->_img('heart.png', 'Heart'), get_routes()->build_path('heart'), 'name' => 'heart');
 ?>
 .menu
   - foreach ($menu as $i => $item)

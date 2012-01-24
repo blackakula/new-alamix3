@@ -16,5 +16,6 @@
           %li
             %a.$c{href="$item[1]"}= $item[0]
         %li.heart
-          %a.c-heart{href="#heart"} &#9829;
+          - $heartHref = get_routes()->build_path('heart')
+          %a.c-heart{href="$heartHref"} &#9829;
   .clear

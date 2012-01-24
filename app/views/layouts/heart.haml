@@ -1,0 +1,18 @@
+!!! 5
+%html
+  %head
+    - $this->_include('head')
+  %body
+    - $this->_include('ie6update')
+    .albumbar
+      - $this->_include('light_menu')
+      .logo-box
+        .logo-box-inner
+          - $this->set('logo_use_mini', true);
+          - $this->_include('logo')
+          .clear
+      .clear
+    .frame
+      %iframe{src="http://alamix-la.tumblr.com/"}
+    .infobar
+      - $this->_include('copyrights')

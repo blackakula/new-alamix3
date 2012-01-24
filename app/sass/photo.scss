@@ -1,70 +1,4 @@
-@import "all", "menu_colors", "light_menu";
-
-$gallery_color: #F0F0F0;
-
-body {
-  background-color: $body_background_color2;
-  overflow-y: hidden;
-}
-
-
-/*** TOP of the page ***
-***********************/
-
-$albumbar_height: 30px;
-$items_height: 23px;
-$albumSelect_height: 18px;
-$albumSelect_width: 170px;
-$albumSelect_margin_right: 5px;
-
-.albumbar, #preview, #thumbsWrapper, .infobar {
-  min-width: $min_site_width;
-}
-
-.albumbar {
-  height: $albumbar_height;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 11;
-}
-
-.menu2 {
-  @include alamix-menu2($menu_width, 23px);
-  @include menu-items-position-and-colors($menu_color0_b, $menu_color1_b, $menu_color2_b, $menu_color3_b, $menu_color4_b);
-  margin-left: -$menu_width / 2;
-  z-index: 12;
-}
-
-.logo {
-  font-size: 0;
-  img { height: $items_height; }
-  a {
-    position: relative;
-    left: 50%;
-    margin-left: -130px;
-  }
-  width: 100%;
-  margin-left: -$albumSelect_width - $albumSelect_margin_right;
-}
-
-.logo-box {
-  width: 75%;
-  margin-left: -$menu_width / 2;
-}
-
-.logo-box-inner {
-  margin-left: $albumSelect_width + $albumSelect_margin_right + $menu_width / 2;
-}
-
-.logo-box, .menu2, .logo, .albumSelect { float: left; }
-
-.logo-box, .menu2 {
-  position: relative;
-  left: 25%;
-  margin-top: ($albumbar_height - $items_height) / 2;
-}
+@import "photo_heart";
 
 .albumSelect {
   height: $albumSelect_height;
@@ -155,7 +89,6 @@ noscript {
 **************************/
 
 $thumbs_height: 120px;
-$info_heigth: 30px;
 
 #thumbsWrapper {
   border-top: 2px solid #000000;
@@ -179,32 +112,5 @@ $info_heigth: 30px;
     margin: 2px;
     opacity: 0.4;
     height: $thumbs_height;
-  }
-}
-
-.infobar {
-  bottom: 0;
-  height: $info_heigth;
-  left: 0;
-  line-height: $info_heigth;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  font-size: 11pt;
-  color: $gallery_color;
-
-  #description {
-    text-shadow: 0 0 1px $gallery_color;
-  }
-  .reference {
-    $reference_width: 500px;
-    font-size: 75%;
-    color: $text_color;
-    bottom: 2px;
-    float: left;
-    width: $reference_width;
-    margin-right: -$reference_width;
-    text-align: left;
-    padding-left: 10px;
   }
 }

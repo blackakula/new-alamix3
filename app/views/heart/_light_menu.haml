@@ -3,14 +3,10 @@
   <?php
     $this->setMenu();
     $menu = $this->get('menu');
-    $menu[] = array($this->_img('heart.png', 'Heart'), get_routes()->build_path('heart'), 'name' => 'heart');
   ?>
   .menu2
     - foreach ($menu as $i => $item)
       <?php
-        if (isset($item['name'])) {
-          $i = '-' . $item['name'];
-        }
         $class = 'item' . $i;
         $color = 'c' . $i;
         $bg_color = 'b' . $i;

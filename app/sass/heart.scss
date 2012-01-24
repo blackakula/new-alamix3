@@ -1,0 +1,15 @@
+@import "photo_heart";
+
+.frame {
+  position: absolute;
+  top: $albumbar_height;
+  left: 0;
+  right: 0;
+  bottom: $info_heigth;
+  text-align: center;
+  iframe {
+    border: none;
+    height: 100%;
+    width: 100%;
+  }
+}

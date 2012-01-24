@@ -11,6 +11,8 @@
 
   $r->named('links', '/links', array('controller' => 'links'));
 
+  $r->named('heart', '/heart', array('controller' => 'heart'));
+
   $r->named('mix', '/mix/');
   $r->named('news', '/news/');
 ?>
