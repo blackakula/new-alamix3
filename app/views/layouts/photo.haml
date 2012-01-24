@@ -8,6 +8,7 @@
       - $this->_include('light_menu')
       .logo-box
         .logo-box-inner
+          - $this->set('logo_use_mini', true);
           - $this->_include('logo')
           - $this->_include('albums_select')
           .clear

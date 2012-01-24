@@ -2,5 +2,6 @@
 - if (!isset($showLogo) || $showLogo)
   %h1.logo
     %a{href="<?php echo get_routes()->build_path('root') ?>"}
-      -= $this->_img('logo.png', 'web-куточок Аля Мікс')
+      - $imgFile = $this->get('logo_use_mini') ? 'logo_mini.png' : 'logo.png'
+      -= $this->_img($imgFile, 'web-куточок Аля Мікс')
     .clear

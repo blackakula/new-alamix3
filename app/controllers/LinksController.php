@@ -12,7 +12,7 @@
     public function index() {
       $this->set('stylesheets', array('links.css'));
       $this->push('javascripts', 'right-click.js');
-      $this->push('javascripts', 'menu.js');
+//      $this->push('javascripts', 'menu.js');
 
       $this->set('menu-replace', 3);
 
