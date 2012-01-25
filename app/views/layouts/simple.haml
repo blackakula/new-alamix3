@@ -12,7 +12,6 @@
           - $this->_include('logo')
           .clear
       .clear
-    .frame
-      %iframe{src="http://alamix-la.tumblr.com/"}
+    -= $this->content()
     .infobar
       - $this->_include('copyrights')

@@ -31,19 +31,18 @@
     public function setMenu($useNamed = true) {
       $r = get_routes();
       $menu = $this->get('alamix-menu');
-      if ($this->get('menu-replace') || $this->get('menu-replace') === 0 || !$useNamed) {
-      	$replace = $this->get('menu-replace');
-        foreach ($menu as $k => $item) {
-          if (!$useNamed && isset($item['name'])) {
-            unset($menu[$k]);
-            continue;
-          }
-          if ($k == $replace) {
-            $menu[$k][0] = 'головна';
-            $menu[$k][1] = $r->build_path('root');
-          }
+      $replace = $this->get('menu-replace');
+      foreach ($menu as $k => $item) {
+        if (isset($item['name']) && (!$useNamed || $this->get('hide_menu') == $item['name'])) {
+          unset($menu[$k]);
+          continue;
+        }
+        if ($k === $replace) {
+          $menu[$k][0] = 'головна';
+          $menu[$k][1] = $r->build_path('root');
         }
       }
+      
       $this->set('menu', $menu);
     }
   }
