@@ -12,10 +12,8 @@
           array_unshift($menu, array('головна', get_routes()->build_path('root')));
         ?>
         - foreach ($menu as $i => $item)
-          - $c = 'c' . (($i == 0) ? 2 : ($i - 1));
-          %li
+          - $c = 'c' . (isset($item['name']) ? ('-' . $item['name']) : (($i == 0) ? 2 : ($i - 1)));
+          - $l = isset($item['name']) ? $item['name'] : '';
+          %li.$l
             %a.$c{href="$item[1]"}= $item[0]
-        %li.heart
-          - $heartHref = get_routes()->build_path('heart')
-          %a.c-heart{href="$heartHref"} &#9829;
   .clear

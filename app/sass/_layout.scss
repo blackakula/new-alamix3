@@ -50,11 +50,11 @@ body {
   }
   .content {
     margin-top: $content_menu_margin;
+    width: $left_content_width;
   }
 
   .content, .copyright {
     color: $text_color;
-    width: $left_content_width;
     margin-left: $margin_left_aligned;
   }
 
@@ -62,6 +62,7 @@ body {
     margin-top: $copyright_margin;
     font-size: 9pt;
     .name { margin-top: 7px; }
+    width: 250px;
   }
 }
 

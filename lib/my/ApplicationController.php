@@ -16,6 +16,7 @@
           array('фото', $r->build_path('photo')),
           array('лінки', $r->build_path('links')),
           array('аля про', $r->build_path('about')),
+          array('&#9829;', $r->build_path('heart'), 'name' => 'heart'),
       ));
 
       $this->set('copyrights', array(

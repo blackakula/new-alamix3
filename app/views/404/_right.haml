@@ -1,4 +1,5 @@
 .right-404
+  - $this->setMenu(false)
   - foreach (array_reverse($this->get('menu')) as $k => $item)
     <?php
       $odd = ($k % 2) ? 'odd' : 'even';
