@@ -35,7 +35,10 @@ $(function() {
     var k = $('.menu').width() / 44
     $('.menu').height(k * 9)
     $('.menu').css({fontSize: k + 'pt'})
-    
+    $('.menu .item.item-heart .text').css({
+      fontSize: (k * 2) + 'pt'
+    })
+
     var item = $('.menu .item').height()
     var itemText = .34 * item
     var itemTab = ($('.menu').height() - itemText) / 2
@@ -64,10 +67,6 @@ $(function() {
       var borderRadius = (.15 * heartMenuItemWidth) + 'px ' + (.15 * item * heartMenuItemWidth / menuItemWidth) + 'px'
       $('.menu .item.item-heart, .menu .item.item-heart .tail').css(roundCss(borderRadius, 'bottom'))
       $('.menu .item.item-heart.down, .menu .item.item-heart.down .head').css(roundCss(borderRadius, 'top'))
-      $('.menu .item.item-heart img').css({
-        height: Math.round(itemTextHeight * .6) + 'px',
-        marginTop: (itemTextHeight * .2) + 'px'
-      });
     }
 
     //random photo

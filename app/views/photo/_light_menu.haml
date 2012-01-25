@@ -3,7 +3,7 @@
   <?php
     $this->setMenu();
     $menu = $this->get('menu');
-    $menu[] = array($this->_img('heart.png', 'Heart'), get_routes()->build_path('heart'), 'name' => 'heart');
+    $menu[] = array('&#9829;', get_routes()->build_path('heart'), 'name' => 'heart');
   ?>
   .menu2
     - foreach ($menu as $i => $item)

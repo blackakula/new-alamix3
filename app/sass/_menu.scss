@@ -57,13 +57,9 @@ $menu_text_height: .34;
 
   .item.item-heart {
     width: $menu_heart_item_width * 100%;
-    .text img {
-      margin-top: $menu_item_text_height * 0.2;
-      height: $menu_item_text_height * 0.6;
-    }
-    a:hover .text {
-      font-size: 100%;
-      line-height: 170%;
+    a:hover .text, .text {
+      font-size: 200%;
+      line-height: 80%;
     }
   }
 
