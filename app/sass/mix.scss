@@ -79,10 +79,12 @@ $postBgColor: #E1E5E7;
    &:hover {background: url('#{$_img}wp/bmIcoH.png') no-repeat;}
 }
 .downloadBox {
-  background: url('#{$_img}wp/dlIco.gif') no-repeat;
+  background: url('#{$_img}wp/dlIco.png') no-repeat;
+   &:hover {background: url('#{$_img}wp/dlIcoH.png') no-repeat;}
 }
 .torrentBox {
-  background: url('#{$_img}wp/ttIco.jpg') no-repeat;
+  background: url('#{$_img}wp/ttIco.png') no-repeat;
+   &:hover {background: url('#{$_img}wp/ttIcoH.png') no-repeat;}
 }
 
 .datePanel {
