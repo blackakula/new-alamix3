@@ -78,7 +78,8 @@ $info_heigth: 30px;
   color: $gallery_color;
 
   #description {
-    text-shadow: 0 0 1px $gallery_color;
+    font-size: 75%;
+    color: $text_color;
   }
   .reference {
     $reference_width: 500px;
