@@ -15,6 +15,6 @@
 $heart_bg_color: mix(#fff, $body_background_color, 10%);
 .b-heart { background-color: $heart_bg_color; }
 
-.item-heart {
+.item-heart, .heart {
   a, a:hover, a:visited, a:visited:hover { color: $menu_color3; }
 }
