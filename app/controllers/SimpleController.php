@@ -6,6 +6,6 @@
     }
 
     public function portfolio() {
-      $this->set('stylesheets', array('heart.css'));
+      $this->set('stylesheets', array('simple.css'));
     }
   }
