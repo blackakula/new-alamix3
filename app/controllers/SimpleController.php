@@ -16,6 +16,7 @@
     public function portfolio() {
       $this->_prepareData('portfolio');
       $this->set('stylesheets', array('simple.css'));
+      $this->push('javascripts', 'portfolio.js');
       $this->set('content', $this->data['content']);
     }
   }
