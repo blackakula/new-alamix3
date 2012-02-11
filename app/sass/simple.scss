@@ -1,2 +1,39 @@
 @import "photo_heart_simple";
 
+.portfolio {
+  margin: 15px 0 20px 60px;
+}
+
+h2 {
+  margin: 0;
+  a, a:hover, a:visited, a:visited:hover {
+    font-family: $title_font_family;
+    font-size: 25pt;
+    font-weight: normal;
+    text-decoration: none;
+  }
+}
+
+.portfolio-line {
+  width: 350px;
+  height: 2px;
+  margin-top: 1px;
+}
+
+.item-description {
+  margin-top: 7px;
+  margin-bottom: 15px;
+  color: $text_color;
+  font-size: 11pt;
+}
+
+$round_radius: 7px;
+
+.item-content .subitem {
+  float: left;
+  margin-right: 20px;
+  overflow: hidden;
+  @include round-corner($round_radius $round_radius);
+  margin-bottom: 15px;
+  line-height: 0;
+}

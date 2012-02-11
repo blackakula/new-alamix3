@@ -1,5 +1,9 @@
 @import "photo_heart_simple";
 
+body {
+  overflow-y: hidden;
+}
+
 .albumbar {
   position: absolute;
   top: 0;

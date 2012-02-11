@@ -1,1 +1,13 @@
 .portfolio
+  - foreach ($this->get('content') as $item)
+    - $c = 'c' . $item['color']
+    - $b = 'b' . $item['color']
+    .portfolio-item
+      %h2
+        %a.$c= $item['title']
+      .item-content
+        .portfolio-line.$b
+        .item-description= $item['description']
+        - foreach ($item['items'] as $subitem)
+          .subitem= $subitem
+        .clear
