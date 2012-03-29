@@ -10,8 +10,9 @@
   		if (is_readable($f_name)) {
   			parent::set($key, sfYaml::load($f_name));
   			return $this->_params[$key];
-  		}
-  		return null;
+      }
+      $result = null;
+      return $result;
   	}
   }
 ?>
