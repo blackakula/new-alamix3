@@ -25,6 +25,9 @@
       $isHaml = preg_match('/\.haml$/', $f) != 0;
       $isPhp = !$checkPhp || preg_match('/\.php$/', $f) != 0;
       if (!$isHaml && !$isPhp) {
+        if (!is_dir($in_dir . '/' . $f)) {
+          copy($in_dir . '/' . $f, $out_dir . $f);
+        }
         continue;
       }
       if ($skipMake && $isPhp && ($f == 'make.php')) {
