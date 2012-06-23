@@ -99,7 +99,7 @@ $postBgColor: #E1E5E7;
   text-align: left;
   top: 7px;
   width: 33px;
-  
+
   .dayth {
     color: #4C5F65;
     font-size: 7pt;
@@ -117,7 +117,7 @@ $postBgColor: #E1E5E7;
 
 .right-title { margin-bottom: 5px;}
 
-.i-menu { @include i_menu('mix-parts.jpg', 4);}
+.i-menu { @include i_menu('mix-parts.jpg', 10);}
 
 .right-space {
   $rightHeightScpace: 20px;
