@@ -4,7 +4,7 @@
   $imenu_border_bottom: 10px;
   $imenu_separator: 5px;
   $imenu_left_space: 8px;
-  $imenu_opacity: .7;
+  $imenu_opacity: .4;
   $imenu_submenu_space: 25px;
   $imenu_submenu_width: 175px;
   $imenu_img_height: 472px;
@@ -93,5 +93,8 @@
   }
   .b4 ul, .b4 .title {
     background-color: transparentize($menu_color4, $imenu_opacity);
+  }
+  ul li a, ul li a:hover, ul li a:visited, .title {
+      color: transparentize(#F0F0F0, 0.2);
   }
 }

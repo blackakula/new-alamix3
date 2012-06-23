@@ -4,7 +4,6 @@
   .container
     - foreach (_get_config('videos') as $i => $part)
       <?php
-        $ci = 'c' . $part['color'];
         $bi = 'b' . $part['color'];
         $class = 'submenu';
         $itemi = 'item' . $i;
@@ -12,12 +11,12 @@
       ?>
       .$class.$itemi.$bi
         .inner
-          .title.$ci= $part['title']
+          .title= $part['title']
           .clear
           .list
             .space.$bi
             %ul
               - foreach ($part['items'] as $item)
                 %li
-                  %a.$ci{href="$item[1]"}= $item[0]
+                  %a{href="$item[1]"}= $item[0]
     .clear
