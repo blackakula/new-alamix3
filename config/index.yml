@@ -51,7 +51,6 @@ menu:
       - ['Дрита', '#media_Drita']
   -
     color: 4
-    title: AlaMix
     items:
       - ['Настенко', '#alamix_Nastenko']
       - ['Марго', '#alamix_Margo']

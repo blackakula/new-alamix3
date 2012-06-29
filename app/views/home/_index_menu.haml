@@ -10,8 +10,9 @@
       ?>
       .$class.$itemi.$bi
         .inner
-          .title.$ci= $part['title']
-          .clear
+          - if (!empty($part['title']))
+            .title.$ci= $part['title']
+            .clear
           .list
             .space.$bi
             %ul
