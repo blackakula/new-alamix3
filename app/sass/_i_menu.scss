@@ -1,4 +1,4 @@
-@mixin i_menu($bgImg, $imenu_items_count: 3) {
+@mixin i_menu($bgImg) {
   //set sizes
   $imenu_border_up: 6px;
   $imenu_border_bottom: 10px;
@@ -17,7 +17,6 @@
 
   .container {
     font-size: 16pt;
-    width: $imenu_items_count * ($imenu_submenu_width + $imenu_submenu_space) + 2 * $border_sides - $imenu_submenu_space;
     position: relative;
     left: -$border_sides;
     padding: 0 $border_sides;
@@ -30,16 +29,10 @@
     background-repeat: no-repeat;
     margin-left: $imenu_submenu_space;
     position: relative;
+    background-image: url('#{$_img}#{$bgImg}');
   }
 
   .submenu.first { margin-left: 0; }
-
-  @for $i from 0 through $imenu_items_count - 1 {
-    .item#{$i} {
-      background-image: url('#{$_img}#{$bgImg}');
-      background-position: -$i * $imenu_submenu_width $imenu_border_up;
-    }
-  }
 
   .inner {
     position: absolute;

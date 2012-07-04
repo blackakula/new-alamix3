@@ -1,15 +1,22 @@
 .right-title.c2
   Кіноархів
 .i-menu
-  .container
-    - foreach (_get_config('videos') as $i => $part)
+  <?php
+    $indexMenuParts = _get_config('videos');
+    $indexMenuSubmenuSpace = 25;
+    $indexMenuSubmenuWidth = 175;
+    $borderSides = 40;
+    $width = 'width:' . (count($indexMenuParts) * ($indexMenuSubmenuWidth + $indexMenuSubmenuSpace) + 2 * $borderSides - $indexMenuSubmenuSpace) . 'px';
+  ?>
+  .container{style="$width"}
+    - foreach ($indexMenuParts as $i => $part)
       <?php
         $bi = 'b' . $part['color'];
         $class = 'submenu';
-        $itemi = 'item' . $i;
+        $backgroundPosition = 'background-position: -' . ($i * $indexMenuSubmenuWidth) . 'px 6px';
         if ($i == 0) $class .= ' first';
       ?>
-      .$class.$itemi.$bi
+      .$class.$bi{style="$backgroundPosition"}
         .inner
           - if (!empty($part['title']))
             .title= $part['title']

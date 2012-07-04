@@ -1,14 +1,21 @@
 .i-menu
-  .container
-    - foreach ($this->get('index-menu') as $i => $part)
+  <?php
+    $indexMenuParts = $this->get('index-menu');
+    $indexMenuSubmenuSpace = 25;
+    $indexMenuSubmenuWidth = 175;
+    $borderSides = 40;
+    $width = 'width:' . (count($indexMenuParts) * ($indexMenuSubmenuWidth + $indexMenuSubmenuSpace) + 2 * $borderSides - $indexMenuSubmenuSpace) . 'px';
+  ?>
+  .container{style="$width"}
+    - foreach ($indexMenuParts as $i => $part)
       <?php
         $ci = 'c' . $part['color'];
         $bi = 'b' . $part['color'];
         $class = 'submenu';
-        $itemi = 'item' . $i;
+        $backgroundPosition = 'background-position: -' . ($i * $indexMenuSubmenuWidth) . 'px 6px';
         if ($i == 0) $class .= ' first';
       ?>
-      .$class.$itemi.$bi
+      .$class.$bi{style="$backgroundPosition"}
         .inner
           - if (!empty($part['title']))
             .title.$ci= $part['title']

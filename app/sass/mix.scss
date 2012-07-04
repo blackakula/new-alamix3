@@ -117,7 +117,7 @@ $postBgColor: #E1E5E7;
 
 .right-title { margin-bottom: 5px;}
 
-.i-menu { @include i_menu('mix-parts.jpg', 16);}
+.i-menu { @include i_menu('mix-parts.jpg');}
 
 .right-space {
   $rightHeightScpace: 20px;
