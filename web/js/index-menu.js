@@ -12,6 +12,9 @@ $(function() {
     e.attr('maxHeight', h)
   })
   $('.i-menu .title').css({marginBottom: titleMargin})
+  var menuPadding = parseInt($('.i-menu .container').css("padding-left"))
+  $('.i-menu .container').css({paddingRight: menuPadding})
+  $('.i-menu .container').width($('.i-menu .container').width() + 2 * menuPadding)
 
   var checkMouseHover = function(event) {
     return $(this).find('*').andSelf().not(function() {
@@ -55,19 +58,35 @@ $(function() {
     var side = aniElement.width() - aniElement.innerWidth()
     if (side > 0) side = -side
     if ($width >= aniElement.width() + side) return
-    var $left = (event.pageX - $this.offset().left) / $width
-    aniElement.css({left: maxLeft() * $left})
+    var $left = (event.pageX - $this.offset().left) * maxLeft() / $width
+    if ($left < maxLeft() - side / 2) {
+      $left = maxLeft() - side / 2;
+    }
+    if ($left > side / 2) {
+      $left = side / 2;
+    }
+    aniElement.css({left: $left})
   })
 
   $(window).resize(function() {
     var aniElement = $('.i-menu .container')
     var side = (aniElement.width() - aniElement.innerWidth()) / 2
     if (side > 0) side = -side
-    var mLeft = maxLeft() + side
+    var mLeft = maxLeft() - side
 
     var positionLeft = aniElement.position().left
-    //document.write(positionLeft + ' ' + side)
-    if (positionLeft < mLeft) aniElement.css({left: mLeft})
-    if (positionLeft > side) aniElement.css({left: side})
+
+    var shouldChange = false;
+    if (positionLeft < mLeft) {
+      positionLeft = mLeft;
+      shouldChange = true;
+    }
+    if (positionLeft > side) {
+      positionLeft = side;
+      shouldChange = true;
+    }
+    if (shouldChange) {
+      aniElement.css({left: positionLeft})
+    }
   })
 })

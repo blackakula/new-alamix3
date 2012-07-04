@@ -3,10 +3,13 @@
     $indexMenuParts = $this->get('index-menu');
     $indexMenuSubmenuSpace = 25;
     $indexMenuSubmenuWidth = 175;
-    $borderSides = 40;
-    $width = 'width:' . (count($indexMenuParts) * ($indexMenuSubmenuWidth + $indexMenuSubmenuSpace) + 2 * $borderSides - $indexMenuSubmenuSpace) . 'px';
+    $borderSides = count($indexMenuParts) * 60;
+    $containerStyle = 'width:'
+        . (count($indexMenuParts) * ($indexMenuSubmenuWidth + $indexMenuSubmenuSpace) - $indexMenuSubmenuSpace) . 'px; '
+        . 'left: -' . $borderSides . 'px; '
+        . 'padding-left: ' . $borderSides . 'px;';
   ?>
-  .container{style="$width"}
+  .container{style="$containerStyle"}
     - foreach ($indexMenuParts as $i => $part)
       <?php
         $ci = 'c' . $part['color'];

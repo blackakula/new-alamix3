@@ -9,7 +9,6 @@
   $imenu_submenu_width: 175px;
   $imenu_img_height: 472px;
   $imenu_submenu_height: $imenu_img_height + $imenu_border_up + $imenu_border_bottom;
-  $border_sides: 40px;
 
   width: 100%;
   overflow: auto;
@@ -18,8 +17,6 @@
   .container {
     font-size: 16pt;
     position: relative;
-    left: -$border_sides;
-    padding: 0 $border_sides;
   }
 
   .submenu {
