@@ -1,63 +1,65 @@
 videos:
   -
     color: 2
-    title: OTH
     items:
-      - ['Серия 1', '#video_seriya1']
-      - ['Серия 2', '#video_seriya2']
-      - ['Серия 3', '#video_seriya3']
-      - ['Серия 4', '#video_seriya4']
-      - ['Серия 5', '#video_seriya5']
+      - ['Season 1', 'http://al-mix.org.ua/mix/303']
+      - ['Season 2', 'http://al-mix.org.ua/mix/310']
+      - ['Season 3', 'http://al-mix.org.ua/mix/313']
+      - ['Season 4', 'http://al-mix.org.ua/mix/316']
+      - ['Season 5', 'http://al-mix.org.ua/mix/318']
+      - ['Season 6', 'http://al-mix.org.ua/mix/323']
+      - ['Season 7', 'http://al-mix.org.ua/mix/327']
+      - ['Season 8', 'http://al-mix.org.ua/mix/329']
+      - ['Season 9', 'http://al-mix.org.ua/mix/377']
   -
     color: 1
-    title: Gossip Girl
     items:
-      - ['Серия 1', '#video_seriya1']
-      - ['Серия 2', '#video_seriya2']
-      - ['Серия 3', '#video_seriya3']
+      - ['Season 1', 'http://al-mix.org.ua/mix/500/#gossip_girl_1']
+      - ['Season 2', 'http://al-mix.org.ua/mix/500/#gossip_girl_2']
+      - ['Season 3', 'http://al-mix.org.ua/mix/500/#gossip_girl_3']
+      - ['Season 4', 'http://al-mix.org.ua/mix/500/#gossip_girl_4']
+      - ['Season 5', 'http://al-mix.org.ua/mix/500/#gossip_girl_5']
   -
     color: 4
     items:
-      - ['Серия 1', '#video_seriya1']
-      - ['Серия 2', '#video_seriya2']
-      - ['Серия 3', '#video_seriya3']
+      - ['Season 1', 'http://al-mix.org.ua/mix/510/#The_Big_Bang_Theory_1']
+      - ['Season 2', 'http://al-mix.org.ua/mix/510/#The_Big_Bang_Theory_2']
+      - ['Season 3', 'http://al-mix.org.ua/mix/510/#The_Big_Bang_Theory_3']
+      - ['Season 4', 'http://al-mix.org.ua/mix/510/#The_Big_Bang_Theory_4']
+      - ['Season 5', 'http://al-mix.org.ua/mix/510/#The_Big_Bang_Theory_5']
   -
     color: 0
-    title: Something else
     items:
-      - ['Серия 1', '#video_seriya1']
+      - ['Season 1', 'http://al-mix.org.ua/mix/425#house_season_1']
+      - ['Season 2', 'http://al-mix.org.ua/mix/425#house_season_2']
+      - ['Season 3', 'http://al-mix.org.ua/mix/425#house_season_3']
+      - ['Season 4', 'http://al-mix.org.ua/mix/425#house_season_4']
+      - ['Season 5', 'http://al-mix.org.ua/mix/425#house_season_5']
+      - ['Season 6', 'http://al-mix.org.ua/mix/425#house_season_6']
+      - ['Season 7', 'http://al-mix.org.ua/mix/425#house_season_7']
+      - ['Season 8', 'http://al-mix.org.ua/mix/425#house_season_8']
+  -
+    color: 4
+    items:
+      - ['Season 1', 'http://al-mix.org.ua/mix/515']
+  -
+    color: 0
+    items:
+      - ['Season 1', 'http://al-mix.org.ua/mix/522']
+      - ['Season 2', 'http://al-mix.org.ua/mix/526']
+  -
+    color: 3
+    items:
+      - ['Season 1', 'http://al-mix.org.ua/mix/529']
+  -
+    color: 1
+    items:
+      - ['Season 1', 'link']
+  -
+    color: 1
+    items:
+      - ['Season 1', 'link']	  
 music:
-  - ['Aloha From Hell', '#aloha_from_hell']
-  - ['Barenaked ladies', '#barenaked_ladies']
-  - ['Blondie', '#blondie']
-  - ['Bloodhoung Gang', '#bloodhoung_gang']
-  - ['Cold', '#cold']
-  - ['Coldplay', '#coldplay']
-  - ['Dashboard Confessional', '#dashboard_confessional']
-  - ['Blondie', '#blondie']
-  - ['Bloodhoung Gang', '#bloodhoung_gang']
-  - ['Barenaked ladies', '#barenaked_ladies']
-  - ['Blondie', '#blondie']
-  - ['Cold', '#cold']
-  - ['Coldplay', '#coldplay']
-  - ['Dashboard Confessional', '#dashboard_confessional']
-  - ['Blondie', '#blondie']
-  - ['Bloodhoung Gang', '#bloodhoung_gang']
-  - ['Cold', '#cold']
-  - ['Coldplay', '#coldplay']
-  - ['Dashboard Confessional', '#dashboard_confessional']
-  - ['Blondie', '#blondie']
-  - ['Bloodhoung Gang', '#bloodhoung_gang']
-  - ['Barenaked ladies', '#barenaked_ladies']
-  - ['Blondie', '#blondie']
+  - ['Wakey! Wakey!', 'http://al-mix.org.ua/mix/451']
 library:
-  - ['Что-то из библиотеки', '#some_from_library1']
-  - ['Какая-то ссылка', '#some_from_library2']
-  - ['Библиотечный текст', '#some_from_library3']
-  - ['Ссылка на что-то', '#some_from_library4']
-  - ['Что-то еще', '#some_from_library5']
-  - ['А тут я не придумал', '#some_from_library6']
-  - ['Надо еще хотя бы пару линков', '#some_from_library7']
-  - ['Очередной линк библиотеки', '#some_from_library8']
-  - ['Предпоследний линк', '#some_from_library9']
-  - ['Последний линк', '#some_from_library10']
+  - ['Д.Ліндсей “Дрімаючий Декстерів демон” ', 'http://al-mix.org.ua/mix/460']
