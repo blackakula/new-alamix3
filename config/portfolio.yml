@@ -6,16 +6,9 @@ content:
     color: 0
     items:
       - '<div style="background-color:#e97749;width:420px;height:266px"></div>'
-      - >
-        <div style="background-color:#0f0f0f">
-          <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" style="width:420px;height:266px" >
-            <param name="movie" value="http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf?mode=mini&amp;shareMenuEnabled=false&amp;printButtonEnabled=false&amp;shareButtonEnabled=false&amp;searchButtonEnabled=false&amp;backgroundColor=%230f0f0f&amp;documentId=111106191213-deacdd934c8246cf85a6e1d4bcd3e573" />
-            <param name="allowfullscreen" value="true"/>
-            <param name="menu" value="false"/>
-            <param name="wmode" value="transparent"/>
-            <embed src="http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf" type="application/x-shockwave-flash" allowfullscreen="true" menu="false" wmode="transparent" style="width:420px;height:266px" flashvars="mode=mini&amp;shareMenuEnabled=false&amp;printButtonEnabled=false&amp;shareButtonEnabled=false&amp;searchButtonEnabled=false&amp;backgroundColor=%230f0f0f&amp;documentId=111106191213-deacdd934c8246cf85a6e1d4bcd3e573" />
-          </object>
-        </div>
+      -
+        document_id: 111106191213-deacdd934c8246cf85a6e1d4bcd3e573
+        color: 0f0f0f
       - '<div style="background-color:#88c02b;width:420px;height:266px"></div>'
       - '<div style="background-color:#06caff;width:420px;height:266px"></div>'
   -
@@ -25,16 +18,9 @@ content:
     items:
       - '<div style="background-color:#c37077;width:420px;height:266px"></div>'
       - '<div style="background-color:#e97749;width:420px;height:266px"></div>'
-      - >
-        <div style="background-color:#88c02b">
-          <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" style="width:420px;height:266px" >
-            <param name="movie" value="http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf?mode=mini&amp;embedBackground=%2388c02b&amp;backgroundColor=%23222222&amp;documentId=120318200651-2d943be64f5641aca5d33ace42bbc037" />
-            <param name="allowfullscreen" value="true"/>
-            <param name="menu" value="false"/>
-            <param name="wmode" value="transparent"/>
-            <embed src="http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf" type="application/x-shockwave-flash" allowfullscreen="true" menu="false" wmode="transparent" style="width:420px;height:266px" flashvars="mode=mini&amp;embedBackground=%2388c02b&amp;backgroundColor=%23222222&amp;documentId=120318200651-2d943be64f5641aca5d33ace42bbc037" />
-          </object>
-        </div>
+      -
+        document_id: 120318200651-2d943be64f5641aca5d33ace42bbc037
+        color: 88c02b
   -
     title: Назва 3
     description: небольшое описание 3
