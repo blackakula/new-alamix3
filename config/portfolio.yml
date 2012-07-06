@@ -1,22 +1,40 @@
-title: Портфоліо page
+title: Портфоліо
 content:
   -
-    title: Назва
-    description: небольшое описание
+    title: Університетські проекти
+    description: дипломна робота (2012): туристичний путівник "Україна tete-a-tete" (концепція, матеріальне наповнення, верстка); бакалаврська робота (2011): журнал з рукоділля "Мода Мікс" (концепція, матеріальне наповнення, верстка)
     color: 0
     items:
       - '<div style="background-color:#e97749;width:420px;height:266px"></div>'
-      - '<div style="background-color:#0f0f0f"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" style="width:420px;height:266px" id="b1149e9a-6fae-7b61-a291-51df58129ffe" ><param name="movie" value="http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf?mode=mini&amp;shareMenuEnabled=false&amp;printButtonEnabled=false&amp;shareButtonEnabled=false&amp;searchButtonEnabled=false&amp;backgroundColor=%23222222&amp;documentId=111106191213-deacdd934c8246cf85a6e1d4bcd3e573" /><param name="allowfullscreen" value="true"/><param name="menu" value="false"/><param name="wmode" value="transparent"/><embed src="http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf" type="application/x-shockwave-flash" allowfullscreen="true" menu="false" wmode="transparent" style="width:420px;height:266px" flashvars="mode=mini&amp;shareMenuEnabled=false&amp;printButtonEnabled=false&amp;shareButtonEnabled=false&amp;searchButtonEnabled=false&amp;backgroundColor=%23222222&amp;documentId=111106191213-deacdd934c8246cf85a6e1d4bcd3e573" /></object></div>'
+      - >
+        <div style="background-color:#0f0f0f">
+          <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" style="width:420px;height:266px" >
+            <param name="movie" value="http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf?mode=mini&amp;shareMenuEnabled=false&amp;printButtonEnabled=false&amp;shareButtonEnabled=false&amp;searchButtonEnabled=false&amp;backgroundColor=%230f0f0f&amp;documentId=111106191213-deacdd934c8246cf85a6e1d4bcd3e573" />
+            <param name="allowfullscreen" value="true"/>
+            <param name="menu" value="false"/>
+            <param name="wmode" value="transparent"/>
+            <embed src="http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf" type="application/x-shockwave-flash" allowfullscreen="true" menu="false" wmode="transparent" style="width:420px;height:266px" flashvars="mode=mini&amp;shareMenuEnabled=false&amp;printButtonEnabled=false&amp;shareButtonEnabled=false&amp;searchButtonEnabled=false&amp;backgroundColor=%230f0f0f&amp;documentId=111106191213-deacdd934c8246cf85a6e1d4bcd3e573" />
+          </object>
+        </div>
       - '<div style="background-color:#88c02b;width:420px;height:266px"></div>'
       - '<div style="background-color:#06caff;width:420px;height:266px"></div>'
   -
-    title: Назва 2
-    description: небольшое описание 2
+    title: Український історичний журнал (2010-2012)
+    description:
     color: 1
     items:
       - '<div style="background-color:#c37077;width:420px;height:266px"></div>'
       - '<div style="background-color:#e97749;width:420px;height:266px"></div>'
-      - '<div style="background-color:#88c02b;width:420px;height:266px"></div>'
+      - >
+        <div style="background-color:#88c02b">
+          <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" style="width:420px;height:266px" >
+            <param name="movie" value="http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf?mode=mini&amp;embedBackground=%2388c02b&amp;backgroundColor=%23222222&amp;documentId=120318200651-2d943be64f5641aca5d33ace42bbc037" />
+            <param name="allowfullscreen" value="true"/>
+            <param name="menu" value="false"/>
+            <param name="wmode" value="transparent"/>
+            <embed src="http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf" type="application/x-shockwave-flash" allowfullscreen="true" menu="false" wmode="transparent" style="width:420px;height:266px" flashvars="mode=mini&amp;embedBackground=%2388c02b&amp;backgroundColor=%23222222&amp;documentId=120318200651-2d943be64f5641aca5d33ace42bbc037" />
+          </object>
+        </div>
   -
     title: Назва 3
     description: небольшое описание 3
