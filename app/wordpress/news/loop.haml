@@ -18,7 +18,8 @@
         - edit_post_link($edit_post_link[0], $edit_post_link[1], $edit_post_link[2])
         %span.comments-link
           - $comments = _get_config('comments')
-          - comments_popup_link($comments[0], $comments[1], $comments[2])
+          - $post_comments = _get_config('post_comments')
+          - comments_popup_link($comments[0], $comments[1], $comments[2], '', $post_comments['closed'])
     </div>
   - if ($wp_query->max_num_pages > 1)
     - $pagination = _get_config('pagination')
