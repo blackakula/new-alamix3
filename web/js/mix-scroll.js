@@ -12,4 +12,5 @@ $(function() {
   }
   checkScroll()
   $(window).scroll(checkScroll)
+  $(window).resize(checkScroll)
 })
