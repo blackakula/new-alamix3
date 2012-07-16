@@ -5,12 +5,12 @@ content:
     description: дипломна робота (2012): туристичний путівник "Україна tete-a-tete" (концепція, матеріальне наповнення, верстка); бакалаврська робота (2011): журнал з рукоділля "Мода Мікс" (концепція, матеріальне наповнення, верстка)
     color: 0
     items:
-      - '<div style="background-color:#e97749;width:420px;height:266px"></div>'
+      - '<div style="background-color:#e97749;width:546px;height:346px"></div>'
       -
         document_id: 111106191213-deacdd934c8246cf85a6e1d4bcd3e573
         color: 0f0f0f
-      - '<div style="background-color:#88c02b;width:420px;height:266px"></div>'
-      - '<div style="background-color:#06caff;width:420px;height:266px"></div>'
+      - '<div style="background-color:#88c02b;width:546px;height:346px"></div>'
+      - '<div style="background-color:#06caff;width:546px;height:346px"></div>'
   -
     title: Український історичний журнал (2009-2012)
     description:
@@ -39,14 +39,14 @@ content:
     description: небольшое описание 3
     color: 2
     items:
-      - '<div style="background-color:#06caff;width:420px;height:266px"></div>'
-      - '<div style="background-color:#dd2150;width:420px;height:266px"></div>'
-      - '<div style="background-color:#e97749;width:420px;height:266px"></div>'
+      - '<div style="background-color:#06caff;width:546px;height:346px"></div>'
+      - '<div style="background-color:#dd2150;width:546px;height:346px"></div>'
+      - '<div style="background-color:#e97749;width:546px;height:346px"></div>'
   -
     title: Назва 4
     description: небольшое описание 4
     color: 4
     items:
-      - '<div style="background-color:#88c02b;width:420px;height:266px"></div>'
-      - '<div style="background-color:#06caff;width:420px;height:266px"></div>'
-      - '<div style="background-color:#c37077;width:420px;height:266px"></div>'
+      - '<div style="background-color:#88c02b;width:546px;height:346px"></div>'
+      - '<div style="background-color:#06caff;width:546px;height:346px"></div>'
+      - '<div style="background-color:#c37077;width:546px;height:346px"></div>'
