@@ -12,12 +12,25 @@ content:
       - '<div style="background-color:#88c02b;width:420px;height:266px"></div>'
       - '<div style="background-color:#06caff;width:420px;height:266px"></div>'
   -
-    title: Український історичний журнал (2010-2012)
+    title: Український історичний журнал (2009-2012)
     description:
     color: 1
     items:
-      - '<div style="background-color:#c37077;width:420px;height:266px"></div>'
-      - '<div style="background-color:#e97749;width:420px;height:266px"></div>'
+      -
+        document_id: 120318210239-41092804d22547669b7368c79124a265
+        color: 88c02b
+      -
+        document_id: 120318205547-fe7b86039b384429a6abaf5cdcbc868f
+        color: dd2150
+      -
+        document_id: 120318204839-63c1cfdf0a57428d8107c13e8257fcda
+        color: 06caff
+      -
+        document_id: 120318202634-25f45d767b1f495a8fa183750a05ce13
+        color: c37077
+      -
+        document_id: 120318202217-40e0e08fbfa1416080f07e192b955e8f
+        color: e9774
       -
         document_id: 120318200651-2d943be64f5641aca5d33ace42bbc037
         color: 88c02b
