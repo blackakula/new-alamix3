@@ -8,14 +8,38 @@ content:
       - '<div style="background-color:#e97749;width:460px;height:291px"></div>'
       -
         document_id: 111106191213-deacdd934c8246cf85a6e1d4bcd3e573
-        color: 0f0f0f
+        color: dd2150
       - '<div style="background-color:#88c02b;width:460px;height:291px"></div>'
       - '<div style="background-color:#06caff;width:460px;height:291px"></div>'
   -
-    title: Український історичний журнал (2009-2012)
+    title: Український історичний журнал [Ukrainian Historical Journal](2009-2012)
     description:
     color: 1
     items:
+      -
+        document_id: 120319095426-749e773c614a4c9292cad32da9330da9
+        color: 06caff
+      -
+        document_id: 120319102716-e4467691a86e4c3cbdece66b413b6b54
+        color: c37077
+      -
+        document_id: 120319101215-3779a096b6604dd493f26a01d111631e
+        color: e97749
+      -
+        document_id: 120319100833-77cc487e336047f2bcedbddd3409c2fd
+        color: 88c02b
+      -
+        document_id: 120319100855-74163dcb132c4cb1b847aadfe3ce658a
+        color: dd2150
+      -
+        document_id: 120319095426-749e773c614a4c9292cad32da9330da9
+        color: 06caff
+      -
+        document_id: 120318213415-5f163cdd8da943da80dfd0971cb29742
+        color: c37077
+      -
+        document_id: 120318212837-7c0611c41b284cc1b4d6fdcd78d1564c
+        color: e97749
       -
         document_id: 120318210239-41092804d22547669b7368c79124a265
         color: 88c02b
@@ -30,7 +54,7 @@ content:
         color: c37077
       -
         document_id: 120318202217-40e0e08fbfa1416080f07e192b955e8f
-        color: e9774
+        color: e97749
       -
         document_id: 120318200651-2d943be64f5641aca5d33ace42bbc037
         color: 88c02b
@@ -43,7 +67,7 @@ content:
       - '<div style="background-color:#dd2150;width:460px;height:291px"></div>'
       - '<div style="background-color:#e97749;width:460px;height:291px"></div>'
   -
-    title: Назва 4
+    title: Логотипи [Logos]
     description: небольшое описание 4
     color: 4
     items:
