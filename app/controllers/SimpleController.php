@@ -19,12 +19,27 @@
       $this->push('javascripts', 'portfolio.js');
       foreach ($this->data['content'] as &$row) {
           foreach ($row['items'] as &$item) {
-              if (is_array($item) && isset($item['document_id'])) {
-                  if (!isset($item['color'])) {
-                      $item['color'] = '000000';
+              $decorator = '<div class="subitem">%item%<div class="subitem-text">%text%</div></div>';
+              $text = '';
+              if (is_array($item)) {
+                  if (isset($item['text'])) {
+                      $text = $item['text'];
+                  } else if (array_values($item) === $item && count($item) > 1) {
+                      $text = $item[count($item) - 1];
                   }
-                  $item = '<div style="background-color:#' . $item['color'] . '"><object style="width:460px;height:291px" ><param name="movie" value="http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf?mode=mini&amp;embedBackground=%23' . $item['color'] . '&amp;backgroundColor=%23222222&amp;documentId=' . $item['document_id'] . '" /><param name="allowfullscreen" value="true"/><param name="menu" value="false"/><param name="wmode" value="transparent"/><embed src="http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf" type="application/x-shockwave-flash" allowfullscreen="true" menu="false" wmode="transparent" style="width:460px;height:291px" flashvars="mode=mini&amp;embedBackground=%23' . $item['color'] . '&amp;backgroundColor=%23222222&amp;documentId=' . $item['document_id'] . '" /></object></div>';
+                  if (isset($item['document_id'])) {
+                      if (!isset($item['color'])) {
+                          $item['color'] = '000000';
+                      }
+                      $item = '<div style="background-color:#' . $item['color'] . '" class="rounded"><object style="width:460px;height:291px" ><param name="movie" value="http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf?mode=mini&amp;embedBackground=%23' . $item['color'] . '&amp;backgroundColor=%23222222&amp;documentId=' . $item['document_id'] . '" /><param name="allowfullscreen" value="true"/><param name="menu" value="false"/><param name="wmode" value="transparent"/><embed src="http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf" type="application/x-shockwave-flash" allowfullscreen="true" menu="false" wmode="transparent" style="width:460px;height:291px" flashvars="mode=mini&amp;embedBackground=%23' . $item['color'] . '&amp;backgroundColor=%23222222&amp;documentId=' . $item['document_id'] . '" /></object></div>';
+                  } else if (isset($item['description'])) {
+                      $decorator = '%item%';
+                      $item = '<div class="item-description item-description-inline">' . $item['description'] . '</div>';
+                  } else {
+                      $item = array_shift($item);
+                  }
               }
+              $item = str_replace(array('%item%', '%text%'), array($item, $text), $decorator);
           }
       }
       $this->set('content', $this->data['content']);

@@ -27,13 +27,29 @@ h2 {
   font-size: 11pt;
 }
 
+.item-description-inline {
+    clear: both;
+}
+
+.subitem-text {
+  margin-top: 7px;
+  color: $text_color;
+  font-size: 9pt;
+  height: 23px;
+  overflow: visible;
+  line-height: 11px;
+}
+
 $round_radius: 7px;
 
 .item-content .subitem {
   float: left;
   margin-right: 20px;
-  overflow: hidden;
-  @include round-corner($round_radius $round_radius);
   margin-bottom: 15px;
   line-height: 0;
+}
+
+.rounded {
+  @include round-corner($round_radius $round_radius);
+  overflow: hidden;
 }

@@ -5,12 +5,15 @@ content:
     description: дипломна робота (2012): туристичний путівник "Україна tete-a-tete" (концепція, матеріальне наповнення, верстка); бакалаврська робота (2011): журнал з рукоділля "Мода Мікс" (концепція, матеріальне наповнення, верстка)
     color: 0
     items:
-      - '<div style="background-color:#e97749;width:460px;height:291px"></div>'
+      -
+        - '<div class="rounded" style="background-color:#e97749;width:460px;height:291px"></div>'
+        - какой-то текст<br>вторая строчка
       -
         document_id: 111106191213-deacdd934c8246cf85a6e1d4bcd3e573
         color: dd2150
-      - '<div style="background-color:#88c02b;width:460px;height:291px"></div>'
-      - '<div style="background-color:#06caff;width:460px;height:291px"></div>'
+        text: еще какой-то текст
+      - '<div class="rounded" style="background-color:#88c02b;width:460px;height:291px"></div>'
+      - '<div class="rounded" style="background-color:#06caff;width:460px;height:291px"></div>'
   -
     title: Український історичний журнал [Ukrainian Historical Journal](2009-2012)
     description:
@@ -41,6 +44,8 @@ content:
         document_id: 120318212837-7c0611c41b284cc1b4d6fdcd78d1564c
         color: e97749
       -
+        description: 2010 рік: верстка
+      -
         document_id: 120318210239-41092804d22547669b7368c79124a265
         color: 88c02b
       -
@@ -63,14 +68,53 @@ content:
     description: небольшое описание 3
     color: 2
     items:
-      - '<div style="background-color:#06caff;width:460px;height:291px"></div>'
-      - '<div style="background-color:#dd2150;width:460px;height:291px"></div>'
-      - '<div style="background-color:#e97749;width:460px;height:291px"></div>'
+      - '<div class="rounded" style="background-color:#06caff;width:460px;height:291px"></div>'
+      - '<div class="rounded" style="background-color:#dd2150;width:460px;height:291px"></div>'
+      - '<div class="rounded" style="background-color:#e97749;width:460px;height:291px"></div>'
   -
     title: Логотипи [Logos]
     description: небольшое описание 4
     color: 4
     items:
-      - '<div style="background-color:#88c02b;width:460px;height:291px"></div>'
-      - '<div style="background-color:#06caff;width:460px;height:291px"></div>'
-      - '<div style="background-color:#c37077;width:460px;height:291px"></div>'
+      - '<img class="rounded" src="/img/portfolio/eg_logo_3_preview.jpg" width="460" style="margin: 44px 0;" />'
+      -
+        - '<img class="rounded" src="/img/portfolio/eg_logo_6_preview.jpg" width="460" style="margin: 36px 0;" />'
+        - логотип с каким-то описанием
+      - '<div class="rounded" style="background-color:#c37077;width:460px;height:291px"></div>'
+      -
+        document_id: 120318212837-7c0611c41b284cc1b4d6fdcd78d1564c
+        color: e97749
+      -
+        document_id: 120318210239-41092804d22547669b7368c79124a265
+        color: 88c02b
+      -
+        document_id: 120318205547-fe7b86039b384429a6abaf5cdcbc868f
+        color: dd2150
+      -
+        document_id: 120318204839-63c1cfdf0a57428d8107c13e8257fcda
+        color: 06caff
+      -
+        document_id: 120318202634-25f45d767b1f495a8fa183750a05ce13
+        color: c37077
+      -
+        document_id: 120318202217-40e0e08fbfa1416080f07e192b955e8f
+        color: e97749
+      -
+        document_id: 120318200651-2d943be64f5641aca5d33ace42bbc037
+        color: 88c02b
+  -
+    title: Назва 3
+    description: небольшое описание 3
+    color: 2
+    items:
+      - '<div class="rounded" style="background-color:#06caff;width:460px;height:291px"></div>'
+      - '<div class="rounded" style="background-color:#dd2150;width:460px;height:291px"></div>'
+      - '<div class="rounded" style="background-color:#e97749;width:460px;height:291px"></div>'
+  -
+    title: Логотипи [Logos]
+    description: небольшое описание 4
+    color: 4
+    items:
+      - '<div class="rounded" style="background-color:#88c02b;width:460px;height:291px"></div>'
+      - '<div class="rounded" style="background-color:#06caff;width:460px;height:291px"></div>'
+      - '<div class="rounded" style="background-color:#c37077;width:460px;height:291px"></div>'
