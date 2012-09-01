@@ -31,7 +31,17 @@
                       if (!isset($item['color'])) {
                           $item['color'] = '000000';
                       }
-                      $item = '<div style="background-color:#' . $item['color'] . '" class="rounded"><object style="width:460px;height:291px" ><param name="movie" value="http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf?mode=mini&amp;embedBackground=%23' . $item['color'] . '&amp;backgroundColor=%23222222&amp;documentId=' . $item['document_id'] . '" /><param name="allowfullscreen" value="true"/><param name="menu" value="false"/><param name="wmode" value="transparent"/><embed src="http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf" type="application/x-shockwave-flash" allowfullscreen="true" menu="false" wmode="transparent" style="width:460px;height:291px" flashvars="mode=mini&amp;embedBackground=%23' . $item['color'] . '&amp;backgroundColor=%23222222&amp;documentId=' . $item['document_id'] . '" /></object></div>';
+                      if (!isset($item['width'])) {
+                          $item['width'] = '460';
+                      }
+                      $pageString = isset($item['page']) ? ('pageNumber=' . $item['page'] . '&amp;') : '';
+                      $layout = isset($item['layout']) && $item['layout'] ? 'viewMode=singlePage&amp;' : '';
+                      $item = '<div style="background-color:#' . $item['color'] . '" class="rounded"><object style="width:' . $item['width'] . 'px;height:291px" ><param name="movie" value="http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf?mode=mini&amp;'
+                          . $pageString . $layout . 'embedBackground=%23' . $item['color'] . '&amp;backgroundColor=%23222222&amp;documentId=' . $item['document_id']
+                          . '" /><param name="allowfullscreen" value="true"/><param name="menu" value="false"/><param name="wmode" value="transparent"/><embed src="http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf" type="application/x-shockwave-flash" allowfullscreen="true" menu="false" wmode="transparent" style="width:'
+                          . $item['width'] . 'px;height:291px" flashvars="mode=mini&amp;'
+                          . $pageString . $layout . 'embedBackground=%23' . $item['color'] . '&amp;backgroundColor=%23222222&amp;documentId=' . $item['document_id']
+                          . '" /></object></div>';
                   } else if (isset($item['description'])) {
                       $decorator = '%item%';
                       $item = '<div class="item-description item-description-inline">' . $item['description'] . '</div>';

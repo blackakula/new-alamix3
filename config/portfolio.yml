@@ -1,68 +1,103 @@
 title: Портфоліо
 content:
   -
-    title: Університетські проекти
-    description: дипломна робота (2012): туристичний путівник "Україна tete-a-tete" (концепція, матеріальне наповнення, верстка); бакалаврська робота (2011): журнал з рукоділля "Мода Мікс" (концепція, матеріальне наповнення, верстка)
+    title: Університетські проекти [University Projects] (2008-2012)
+    description: дипломна робота (2012): туристичний путівник "Ukraine tête-à-tête" ("Україна тет-а-тет") (написання матеріалів, проведення фотосесій, підготовка макету й ілюстрацій, редагування і верстка); бакалаврська робота (2011): журнал з рукоділля "Мода Мікс" (написання матеріалів, проведення фотосесій, підготовка макету й ілюстрацій, редагування і верстка); "Книга: від К до А афоризмами": збірник афоризмів про книгу і тих, хто їх створює (участь в інформаційному наповненні, створення макету і верстка); "Вітражі Зіниць": літературно-художній альманах студентів Інституту журналістики КНУ імені Тараса Шевченка (редизайн і верстка); "Видавнича справа та редагування: Бібліографічний покажчик журнальних статей 2004-2008 рр." (коректура та верстка).
     color: 0
     items:
       -
-        - '<div class="rounded" style="background-color:#e97749;width:460px;height:291px"></div>'
-        - какой-то текст<br>вторая строчка
+        document_id: 120831135304-002fd383d5e1425594e4165f83d59ac5
+        color: 88c02b
+        width: 580
+        page: 10
+        text: Україна тет-а-тет (Ukraine tête-à-tête), туристичний путівник, дипломна робота, 2012
       -
         document_id: 111106191213-deacdd934c8246cf85a6e1d4bcd3e573
         color: dd2150
-        text: еще какой-то текст
-      - '<div class="rounded" style="background-color:#88c02b;width:460px;height:291px"></div>'
-      - '<div class="rounded" style="background-color:#06caff;width:460px;height:291px"></div>'
+        text: Мода Мікс, бакалаврська робота, 2011
+      -
+        document_id: 120831132649-db2a7f4ad9324a25b30dd1902cb41c4e
+        color: e97749
+        layout: 1
+        width: 280
+        text: Книга: від К до А афоризмами, січень 2011
+      -
+        document_id: 120831141749-b3dc226d27b346c4aaa82f07cdf35e7a
+        color: 06caff
+        text: Вітражі Зіниць, Число 3, літературно-художній альманах, січень 2010
+      -
+        document_id: 120831194848-c77aac96108d4d65a52cc7490f22fd78
+        color: 88c02b
+        text: Бібліографічний покажчик журнальних статей 2004-2008 рр., грудень 2008
   -
-    title: Український історичний журнал [Ukrainian Historical Journal](2009-2012)
-    description:
+    title: Український історичний журнал [Ukrainian Historical Journal] (2009-2012)
+    description: «УІЖ» – науковий часопис, виходить з 1957 року у Києві під егідою Ін-ту історії України та Ін-ту політичних та етнонаціональних досліджень НАНУ. Розповсюджується у більш ніж 70-ти країнах світу. Авторами є відомі історики, статті яких розміщуються у рубриках "Історичні студії", "Методологія. Історіографія. Джерелознавство", "Рецензії та огляди", "Хроніка" тощо. Наповнення журналу (об'ємом у 240 сторінок) складають матеріали із діакритичними символами, специфічними шрифтами, ілюстраціями, масивними цитатами та зносками.
     color: 1
     items:
       -
-        document_id: 120319095426-749e773c614a4c9292cad32da9330da9
-        color: 06caff
+        document_id: 120809192037-4071250360c34e35953b223e811a9215
+        color: 88c02b
+        text: УІЖ №3 (504), травень-червень 2012
+      -
+        document_id: 120716192401-62e968d9c0ce4ad3a12dfeb0b8229983
+        color: dd2150
+        text: УІЖ №2 (503), березень-квітень 2012
       -
         document_id: 120319102716-e4467691a86e4c3cbdece66b413b6b54
         color: c37077
+        text: УІЖ №1 (502), січень-лютий 2012
+      -
+        description: 2011: редизайн основних архітекнонічних елементів оргінал-макету, верстка і переклад.
       -
         document_id: 120319101215-3779a096b6604dd493f26a01d111631e
         color: e97749
+        text: УІЖ №6 (501), листопад-грудень 2011
       -
         document_id: 120319100833-77cc487e336047f2bcedbddd3409c2fd
         color: 88c02b
+        text: УІЖ №5 (500), вересень-жовтень 2011
       -
         document_id: 120319100855-74163dcb132c4cb1b847aadfe3ce658a
         color: dd2150
+        text: УІЖ №4 (499), липень-серпень 2011
       -
         document_id: 120319095426-749e773c614a4c9292cad32da9330da9
         color: 06caff
+        text: УІЖ №3 (498), травень-червень 2011
       -
         document_id: 120318213415-5f163cdd8da943da80dfd0971cb29742
         color: c37077
+        text: УІЖ №2 (497), березень-квітень 2011
       -
         document_id: 120318212837-7c0611c41b284cc1b4d6fdcd78d1564c
         color: e97749
+        text: УІЖ №1 (496), січень-лютий 2011
       -
-        description: 2010 рік: верстка
+        description: 2010 рік: верстка, переклад на англійську мову анотацій і змісту.
       -
         document_id: 120318210239-41092804d22547669b7368c79124a265
         color: 88c02b
+        text: УІЖ №6 (495), листопад-грудень 2010
       -
         document_id: 120318205547-fe7b86039b384429a6abaf5cdcbc868f
         color: dd2150
+        text: УІЖ №5 (494), вересень-жовтень 2010
       -
         document_id: 120318204839-63c1cfdf0a57428d8107c13e8257fcda
         color: 06caff
+        text: УІЖ №4 (493), липень-серпень 2010
       -
         document_id: 120318202634-25f45d767b1f495a8fa183750a05ce13
         color: c37077
+        text: УІЖ №3 (492), травень-червень 2010
       -
         document_id: 120318202217-40e0e08fbfa1416080f07e192b955e8f
         color: e97749
+        text: УІЖ №2 (491), березень-квітень 2010
       -
         document_id: 120318200651-2d943be64f5641aca5d33ace42bbc037
         color: 88c02b
+        text: УІЖ №1 (490), січень-лютий 2010
   -
     title: Назва 3
     description: небольшое описание 3
@@ -73,35 +108,39 @@ content:
       - '<div class="rounded" style="background-color:#e97749;width:460px;height:291px"></div>'
   -
     title: Логотипи [Logos]
-    description: небольшое описание 4
+    description:
     color: 4
     items:
-      - '<img class="rounded" src="/img/portfolio/eg_logo_3_preview.jpg" width="460" style="margin: 44px 0;" />'
+      -
+        - '<img class="rounded" src="/img/portfolio/eg_logo_3_preview.jpg" width="460" style="margin: 44px 0;" />'
+        - Варіант логотипу для "Електронного журналу", ФОП Шевчук, 2010
       -
         - '<img class="rounded" src="/img/portfolio/eg_logo_6_preview.jpg" width="460" style="margin: 36px 0;" />'
-        - логотип с каким-то описанием
+        - Варіант логотипу для "Електронного журналу", ФОП Шевчук, 2010
       - '<div class="rounded" style="background-color:#c37077;width:460px;height:291px"></div>'
       -
-        document_id: 120318212837-7c0611c41b284cc1b4d6fdcd78d1564c
-        color: e97749
+        - '<img class="rounded" src="/img/portfolio/eg_logo_7_preview.jpg" width="460" style="margin: 44px 0;" />'
+        - Варіант логотипу для "Електронного журналу", ФОП Шевчук, 2010
       -
-        document_id: 120318210239-41092804d22547669b7368c79124a265
-        color: 88c02b
+        - '<img class="rounded" src="/img/portfolio/eg_logo_8_preview.jpg" width="460" style="margin: 44px 0;" />'
+        - Варіант логотипу для "Електронного журналу", ФОП Шевчук, 2010
       -
-        document_id: 120318205547-fe7b86039b384429a6abaf5cdcbc868f
-        color: dd2150
+        - '<img class="rounded" src="/img/portfolio/eg_logo_10_preview.png" width="460" style="margin: 36px 0;" />'
+        - Варіант логотипу для "Електронного журналу", ФОП Шевчук, 2010
+      - '<div class="rounded" style="background-color:#c37077;width:460px;height:291px"></div>'
       -
-        document_id: 120318204839-63c1cfdf0a57428d8107c13e8257fcda
-        color: 06caff
+        - '<img class="rounded" src="/img/portfolio/eg_logo_11_preview.jpg" width="460" style="margin: 44px 0;" />'
+        - Варіант логотипу для "Електронного журналу", ФОП Шевчук, 2010
       -
-        document_id: 120318202634-25f45d767b1f495a8fa183750a05ce13
-        color: c37077
+        - '<img class="rounded" src="/img/portfolio/eg_logo_13_preview.jpg" width="460" style="margin: 36px 0;" />'
+        - Варіант логотипу для "Електронного журналу", ФОП Шевчук, 2010
+      - '<div class="rounded" style="background-color:#c37077;width:460px;height:291px"></div>'
       -
-        document_id: 120318202217-40e0e08fbfa1416080f07e192b955e8f
-        color: e97749
+        - '<img class="rounded" src="/img/portfolio/eg_logo_15_preview.jpg" width="460" style="margin: 44px 0;" />'
+        - Варіант логотипу для "Електронного журналу", ФОП Шевчук, 2010
       -
-        document_id: 120318200651-2d943be64f5641aca5d33ace42bbc037
-        color: 88c02b
+        - '<img class="rounded" src="/img/portfolio/eg_logo_15_preview.jpg" width="460" style="margin: 44px 0;" />'
+        - Варіант логотипу для "", ФОП Шевчук, 2010
   -
     title: Назва 3
     description: небольшое описание 3
